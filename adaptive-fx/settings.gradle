@@ -1,0 +1,6 @@
+rootProject.name = 'adaptive-fx'
+
+include 'adaptive-fx-lib'
+
+include 'adaptive-fx-app'
+

@@ -35,13 +35,80 @@ Release:
 package me.adaptive.arp.api;
 
 /**
-   Interface for Managing the UI operations
+   Structure representing a service path for one endpoint
 
-   @author Carlos Lozano Diez
+   @author fnva
    @since ARP1.0
    @version 1.0
 */
-public interface IUI extends IBaseUI {
+public class ServicePath {
+
+     /**
+        The methods for calling a path
+     */
+     private IServiceMethod[] methods;
+     /**
+        The path for the endpoint
+     */
+     private String path;
+
+     /**
+        Default Constructor
+
+        @since ARP1.0
+     */
+     public ServicePath() {
+     }
+
+     /**
+        Constructor with parameters
+
+        @param path    The path for the endpoint
+        @param methods The methods for calling a path
+     */
+     public ServicePath(String path, IServiceMethod[] methods) {
+          this();
+          this.path = path;
+          this.methods = methods;
+     }
+
+     /**
+        Endpoint's path methods setter
+
+        @return Endpoint's path methods
+     */
+     public IServiceMethod[] getMethods() {
+          return this.methods;
+     }
+
+     /**
+        Endpoint's path methods setter
+
+        @param methods Endpoint's path methods
+     */
+     public void setMethods(IServiceMethod[] methods) {
+          this.methods = methods;
+     }
+
+     /**
+        Endpoint's Path Getter
+
+        @return Endpoint's Path
+     */
+     public String getPath() {
+          return this.path;
+     }
+
+     /**
+        Endpoint's path setter
+
+        @param path Endpoint's path
+     */
+     public void setPath(String path) {
+          this.path = path;
+     }
+
+
 }
 
 /**

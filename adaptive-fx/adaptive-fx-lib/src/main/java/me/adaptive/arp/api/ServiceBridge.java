@@ -27,7 +27,7 @@ Contributors:
 
 Release:
 
-    * @version v2.0.3
+    * @version v2.0.4
 
 -------------------------------------------| aut inveniam viam aut faciam |--------------------------------------------
 */
@@ -282,7 +282,7 @@ public class ServiceBridge extends BaseCommunicationBridge implements IService, 
                default:
                     // 404 - response null.
                     responseCode = 404;
-                    responseMessage = "ServiceBridge does not provide the function '"+request.getMethodName()+"' Please check your client-side API version; should be API version >= v2.0.3.";
+                    responseMessage = "ServiceBridge does not provide the function '"+request.getMethodName()+"' Please check your client-side API version; should be API version >= v2.0.4.";
           }
           response.setResponse(responseJSON);
           response.setStatusCode(responseCode);

@@ -27,7 +27,7 @@ Contributors:
 
 Release:
 
-    * @version v2.0.3
+    * @version v2.0.4
 
 -------------------------------------------| aut inveniam viam aut faciam |--------------------------------------------
 */
@@ -44,10 +44,6 @@ package me.adaptive.arp.api;
 public class Service extends APIBean {
 
      /**
-        The method used
-     */
-     private IServiceMethod method;
-     /**
         The type of the service
      */
      private IServiceType type;
@@ -58,7 +54,7 @@ public class Service extends APIBean {
      /**
         Endpoint of the service
      */
-     private ServiceEndpoint serviceEndpoint;
+     private ServiceEndpoint[] serviceEndpoints;
 
      /**
         Default constructor
@@ -71,38 +67,16 @@ public class Service extends APIBean {
      /**
         Constructor used by the implementation
 
-        @param serviceEndpoint Endpoint of the service
-        @param name            Name of the service
-        @param method          Method of the service
-        @param type            Type of the service
+        @param serviceEndpoints Endpoints of the service
+        @param name             Name of the service
+        @param type             Type of the service
         @since ARP1.0
      */
-     public Service(ServiceEndpoint serviceEndpoint, String name, IServiceMethod method, IServiceType type) {
+     public Service(ServiceEndpoint[] serviceEndpoints, String name, IServiceType type) {
           super();
-          this.serviceEndpoint = serviceEndpoint;
+          this.serviceEndpoints = serviceEndpoints;
           this.name = name;
-          this.method = method;
           this.type = type;
-     }
-
-     /**
-        Returns the method
-
-        @return method
-        @since ARP1.0
-     */
-     public IServiceMethod getMethod() {
-          return this.method;
-     }
-
-     /**
-        Set the method
-
-        @param method Method of the service
-        @since ARP1.0
-     */
-     public void setMethod(IServiceMethod method) {
-          this.method = method;
      }
 
      /**
@@ -146,23 +120,23 @@ public class Service extends APIBean {
      }
 
      /**
-        Returns the serviceEndpoint
+        Returns the serviceEndpoints
 
-        @return serviceEndpoint
+        @return serviceEndpoints
         @since ARP1.0
      */
-     public ServiceEndpoint getServiceEndpoint() {
-          return this.serviceEndpoint;
+     public ServiceEndpoint[] getServiceEndpoints() {
+          return this.serviceEndpoints;
      }
 
      /**
-        Set the serviceEndpoint
+        Set the serviceEndpoints
 
-        @param serviceEndpoint Endpoint of the service
+        @param serviceEndpoints Endpoint of the service
         @since ARP1.0
      */
-     public void setServiceEndpoint(ServiceEndpoint serviceEndpoint) {
-          this.serviceEndpoint = serviceEndpoint;
+     public void setServiceEndpoints(ServiceEndpoint[] serviceEndpoints) {
+          this.serviceEndpoints = serviceEndpoints;
      }
 
 

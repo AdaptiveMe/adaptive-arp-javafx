@@ -60,7 +60,7 @@ public class ServiceSessionAttribute extends KeyValue {
         @since v2.0.6
      */
      public ServiceSessionAttribute(String keyName, String keyData) {
-          super(keyNamekeyData);
+          super(keyName, keyData);
      }
 
 

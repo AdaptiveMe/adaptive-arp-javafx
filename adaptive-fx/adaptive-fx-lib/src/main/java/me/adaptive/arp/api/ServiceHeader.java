@@ -60,7 +60,7 @@ public class ServiceHeader extends KeyValue {
         @since v2.0.6
      */
      public ServiceHeader(String keyName, String keyData) {
-          super(keyNamekeyData);
+          super(keyName, keyData);
      }
 
 

@@ -60,7 +60,7 @@ public class ServiceRequestParameter extends KeyValue {
         @since v2.0.6
      */
      public ServiceRequestParameter(String keyName, String keyData) {
-          super(keyNamekeyData);
+          super(keyName, keyData);
      }
 
 

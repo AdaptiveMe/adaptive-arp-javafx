@@ -27,7 +27,7 @@ Contributors:
 
 Release:
 
-    * @version v2.0.5
+    * @version v2.0.8
 
 -------------------------------------------| aut inveniam viam aut faciam |--------------------------------------------
 */
@@ -76,7 +76,7 @@ public class DisplayBridge extends BaseSystemBridge implements IDisplay, APIBrid
         Add a listener to start receiving display orientation change events.
 
         @param listener Listener to add to receive orientation change events.
-        @since ARP 2.0.5
+        @since v2.0.5
      */
      public void addDisplayOrientationListener(IDisplayOrientationListener listener) {
           // Start logging elapsed time.
@@ -99,7 +99,7 @@ public class DisplayBridge extends BaseSystemBridge implements IDisplay, APIBrid
 of the device. For device orientation, use the IDevice APIs.
 
         @return The current orientation of the display.
-        @since ARP 2.0.5
+        @since v2.0.5
      */
      public ICapabilitiesOrientation getOrientationCurrent() {
           // Start logging elapsed time.
@@ -122,7 +122,7 @@ of the device. For device orientation, use the IDevice APIs.
         Remove a listener to stop receiving display orientation change events.
 
         @param listener Listener to remove from receiving orientation change events.
-        @since ARP 2.0.5
+        @since v2.0.5
      */
      public void removeDisplayOrientationListener(IDisplayOrientationListener listener) {
           // Start logging elapsed time.
@@ -143,7 +143,7 @@ of the device. For device orientation, use the IDevice APIs.
      /**
         Remove all listeners receiving display orientation events.
 
-        @since ARP 2.0.5
+        @since v2.0.5
      */
      public void removeDisplayOrientationListeners() {
           // Start logging elapsed time.
@@ -193,7 +193,7 @@ of the device. For device orientation, use the IDevice APIs.
                default:
                     // 404 - response null.
                     responseCode = 404;
-                    responseMessage = "DisplayBridge does not provide the function '"+request.getMethodName()+"' Please check your client-side API version; should be API version >= v2.0.5.";
+                    responseMessage = "DisplayBridge does not provide the function '"+request.getMethodName()+"' Please check your client-side API version; should be API version >= v2.0.8.";
           }
           response.setResponse(responseJSON);
           response.setStatusCode(responseCode);

@@ -27,7 +27,7 @@ Contributors:
 
 Release:
 
-    * @version v2.0.5
+    * @version v2.0.8
 
 -------------------------------------------| aut inveniam viam aut faciam |--------------------------------------------
 */
@@ -38,7 +38,7 @@ package me.adaptive.arp.api;
    Object for reporting orientation change events for device and display.
 
    @author Carlos Lozano Diez
-   @since ARP 2.0.5
+   @since v2.0.5
    @version 1.0
 */
 public class RotationEvent extends APIBean {
@@ -69,7 +69,7 @@ concluded.
      /**
         Default constructor.
 
-        @since ARP 2.0.5
+        @since v2.0.5
      */
      public RotationEvent() {
      }
@@ -81,7 +81,7 @@ concluded.
         @param destination Destination orientation when the event was fired.
         @param state       State of the event (WillBegin, DidFinish).
         @param timestamp   Timestamp in milliseconds when the event was fired.
-        @since ARP 2.0.5
+        @since v2.0.5
      */
      public RotationEvent(ICapabilitiesOrientation origin, ICapabilitiesOrientation destination, RotationEventState state, long timestamp) {
           super();
@@ -95,7 +95,7 @@ concluded.
         Gets the destination orientation of the event.
 
         @return Destination orientation.
-        @since ARP 2.0.5
+        @since v2.0.5
      */
      public ICapabilitiesOrientation getDestination() {
           return this.destination;
@@ -105,7 +105,7 @@ concluded.
         Sets the destination orientation of the event.
 
         @param destination Destination orientation.
-        @since ARP 2.0.5
+        @since v2.0.5
      */
      public void setDestination(ICapabilitiesOrientation destination) {
           this.destination = destination;
@@ -115,7 +115,7 @@ concluded.
         Get the origin orientation of the event.
 
         @return Origin orientation.
-        @since ARP 2.0.5
+        @since v2.0.5
      */
      public ICapabilitiesOrientation getOrigin() {
           return this.origin;
@@ -125,7 +125,7 @@ concluded.
         Set the origin orientation of the event.
 
         @param origin Origin orientation
-        @since ARP 2.0.5
+        @since v2.0.5
      */
      public void setOrigin(ICapabilitiesOrientation origin) {
           this.origin = origin;
@@ -135,7 +135,7 @@ concluded.
         Gets the current state of the event.
 
         @return State of the event.
-        @since ARP 2.0.5
+        @since v2.0.5
      */
      public RotationEventState getState() {
           return this.state;
@@ -145,7 +145,7 @@ concluded.
         Sets the current state of the event.
 
         @param state The state of the event.
-        @since ARP 2.0.5
+        @since v2.0.5
      */
      public void setState(RotationEventState state) {
           this.state = state;
@@ -155,7 +155,7 @@ concluded.
         Gets the timestamp in milliseconds of the event.
 
         @return Timestamp of the event.
-        @since ARP 2.0.5
+        @since v2.0.5
      */
      public long getTimestamp() {
           return this.timestamp;
@@ -165,7 +165,7 @@ concluded.
         Sets the timestamp in milliseconds of the event.
 
         @param timestamp Timestamp of the event.
-        @since ARP 2.0.5
+        @since v2.0.5
      */
      public void setTimestamp(long timestamp) {
           this.timestamp = timestamp;

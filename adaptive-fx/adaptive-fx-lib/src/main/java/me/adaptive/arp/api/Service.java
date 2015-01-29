@@ -27,7 +27,7 @@ Contributors:
 
 Release:
 
-    * @version v2.0.5
+    * @version v2.0.8
 
 -------------------------------------------| aut inveniam viam aut faciam |--------------------------------------------
 */
@@ -38,15 +38,11 @@ package me.adaptive.arp.api;
    Represents an instance of a service.
 
    @author Aryslan
-   @since ARP 2.0
+   @since v2.0
    @version 1.0
 */
-public class Service extends APIBean {
+public class Service {
 
-     /**
-        The type of the service
-     */
-     private IServiceType type;
      /**
         The service name
      */
@@ -59,7 +55,7 @@ public class Service extends APIBean {
      /**
         Default constructor
 
-        @since ARP 2.0
+        @since v2.0
      */
      public Service() {
      }
@@ -69,41 +65,19 @@ public class Service extends APIBean {
 
         @param serviceEndpoints Endpoints of the service
         @param name             Name of the service
-        @param type             Type of the service
-        @since ARP 2.0
+        @since v2.0.6
      */
-     public Service(ServiceEndpoint[] serviceEndpoints, String name, IServiceType type) {
-          super();
+     public Service(ServiceEndpoint[] serviceEndpoints, String name) {
+          this();
           this.serviceEndpoints = serviceEndpoints;
           this.name = name;
-          this.type = type;
-     }
-
-     /**
-        Returns the type
-
-        @return type
-        @since ARP 2.0
-     */
-     public IServiceType getType() {
-          return this.type;
-     }
-
-     /**
-        Set the type
-
-        @param type Type of the service
-        @since ARP 2.0
-     */
-     public void setType(IServiceType type) {
-          this.type = type;
      }
 
      /**
         Returns the name
 
         @return name
-        @since ARP 2.0
+        @since v2.0
      */
      public String getName() {
           return this.name;
@@ -113,7 +87,7 @@ public class Service extends APIBean {
         Set the name
 
         @param name Name of the service
-        @since ARP 2.0
+        @since v2.0
      */
      public void setName(String name) {
           this.name = name;
@@ -123,7 +97,7 @@ public class Service extends APIBean {
         Returns the serviceEndpoints
 
         @return serviceEndpoints
-        @since ARP 2.0
+        @since v2.0
      */
      public ServiceEndpoint[] getServiceEndpoints() {
           return this.serviceEndpoints;
@@ -133,7 +107,7 @@ public class Service extends APIBean {
         Set the serviceEndpoints
 
         @param serviceEndpoints Endpoint of the service
-        @since ARP 2.0
+        @since v2.0
      */
      public void setServiceEndpoints(ServiceEndpoint[] serviceEndpoints) {
           this.serviceEndpoints = serviceEndpoints;

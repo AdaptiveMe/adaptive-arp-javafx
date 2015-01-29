@@ -27,7 +27,7 @@ Contributors:
 
 Release:
 
-    * @version v2.0.5
+    * @version v2.0.8
 
 -------------------------------------------| aut inveniam viam aut faciam |--------------------------------------------
 */
@@ -38,44 +38,72 @@ package me.adaptive.arp.api;
    Structure representing a service path for one endpoint
 
    @author fnva
-   @since ARP 2.0
+   @since v2.0.4
    @version 1.0
 */
 public class ServicePath {
 
      /**
-        The methods for calling a path
+        Service endpoint type.
+     */
+     private IServiceType type;
+     /**
+        The methods for calling a path.
      */
      private IServiceMethod[] methods;
      /**
-        The path for the endpoint
+        The path for the endpoint.
      */
      private String path;
 
      /**
-        Default Constructor
+        Default Constructor.
 
-        @since ARP 2.0
+        @since v2.0.4
      */
      public ServicePath() {
      }
 
      /**
-        Constructor with parameters
+        Constructor with parameters.
 
         @param path    The path for the endpoint
         @param methods The methods for calling a path
+        @param type    Protocol type.
+        @since v2.0.6
      */
-     public ServicePath(String path, IServiceMethod[] methods) {
+     public ServicePath(String path, IServiceMethod[] methods, IServiceType type) {
           this();
           this.path = path;
           this.methods = methods;
+          this.type = type;
+     }
+
+     /**
+        Gets the protocol for the path.
+
+        @return Type of protocol.
+        @since v2.0.6
+     */
+     public IServiceType getType() {
+          return this.type;
+     }
+
+     /**
+        Sets the protocol for the path.
+
+        @param type Type of protocol.
+        @since v2.0.6
+     */
+     public void setType(IServiceType type) {
+          this.type = type;
      }
 
      /**
         Endpoint's path methods setter
 
         @return Endpoint's path methods
+        @since v2.0.4
      */
      public IServiceMethod[] getMethods() {
           return this.methods;
@@ -85,6 +113,7 @@ public class ServicePath {
         Endpoint's path methods setter
 
         @param methods Endpoint's path methods
+        @since v2.0.4
      */
      public void setMethods(IServiceMethod[] methods) {
           this.methods = methods;
@@ -94,6 +123,7 @@ public class ServicePath {
         Endpoint's Path Getter
 
         @return Endpoint's Path
+        @since v2.0.4
      */
      public String getPath() {
           return this.path;
@@ -103,6 +133,7 @@ public class ServicePath {
         Endpoint's path setter
 
         @param path Endpoint's path
+        @since v2.0.4
      */
      public void setPath(String path) {
           this.path = path;

@@ -1,7 +1,223 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="799bccc6-3859-40b5-9dff-ea5be5e488e4" name="Default" comment="" />
+    <list default="true" id="799bccc6-3859-40b5-9dff-ea5be5e488e4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/APIBean.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/APIBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/APIBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/APIBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/APIRequest.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/APIRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/APIResponse.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/APIResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Acceleration.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Acceleration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/AccelerationBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/AccelerationBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/AccelerationDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/AccelerationDelegate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/AccelerationListenerImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/AccelerationListenerImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/AppContextBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/AppContextBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/AppContextDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/AppContextDelegate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/AppContextWebviewBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/AppContextWebviewBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/AppContextWebviewDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/AppContextWebviewDelegate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/AppRegistryBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/AppRegistryBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/AppRegistryDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/AppRegistryDelegate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/BrowserBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/BrowserBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/BrowserDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/BrowserDelegate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Button.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Button.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ButtonListenerImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ButtonListenerImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/CapabilitiesBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/CapabilitiesBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/CapabilitiesDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/CapabilitiesDelegate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Contact.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Contact.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactAddress.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactAddress.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/ContactDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/ContactDelegate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactEmail.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactEmail.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactPersonalInfo.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactPersonalInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactPhone.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactPhone.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactPhotoResultCallbackImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactPhotoResultCallbackImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactProfessionalInfo.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactProfessionalInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactResultCallbackImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactResultCallbackImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactSocial.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactSocial.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactTag.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactTag.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactUid.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactUid.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactWebsite.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactWebsite.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Database.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Database.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DatabaseBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DatabaseBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DatabaseColumn.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DatabaseColumn.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/DatabaseDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/DatabaseDelegate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DatabaseResultCallbackImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DatabaseResultCallbackImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DatabaseRow.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DatabaseRow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DatabaseTable.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DatabaseTable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DatabaseTableResultCallbackImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DatabaseTableResultCallbackImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DeviceBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DeviceBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/DeviceDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/DeviceDelegate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DeviceInfo.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DeviceInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DisplayBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DisplayBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Email.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Email.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/EmailAddress.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/EmailAddress.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/EmailAttachmentData.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/EmailAttachmentData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileDataLoadResultCallbackImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileDataLoadResultCallbackImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileDataStoreResultCallbackImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileDataStoreResultCallbackImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/FileDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/FileDelegate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileDescriptor.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileDescriptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileListResultCallbackImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileListResultCallbackImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileResultCallbackImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileResultCallbackImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileSystemBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileSystemBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/FileSystemDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/FileSystemDelegate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Geolocation.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Geolocation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/GeolocationBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/GeolocationBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/GeolocationDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/GeolocationDelegate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/GeolocationListenerImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/GeolocationListenerImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/GlobalizationBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/GlobalizationBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/GlobalizationDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/GlobalizationDelegate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAcceleration.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAcceleration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAccelerationListener.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAccelerationListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAdaptiveRP.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAdaptiveRP.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAds.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAds.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAlarm.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAlarm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAmbientLight.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAmbientLight.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAnalytics.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAnalytics.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAppContext.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAppContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAppContextWebview.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAppContextWebview.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAppRegistry.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAppRegistry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAudio.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAudio.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBarcode.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBarcode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBarometer.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBarometer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseApplication.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseCallback.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseCallback.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseCommerce.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseCommerce.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseCommunication.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseCommunication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseData.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseListener.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseMedia.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseMedia.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseNotification.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseNotification.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBasePIM.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBasePIM.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseReader.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseSecurity.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseSecurity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseSensor.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseSensor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseSocial.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseSocial.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseSystem.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseSystem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseUI.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseUtil.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBluetooth.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBluetooth.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBrowser.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBrowser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IButtonListener.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IButtonListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ICalendar.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ICalendar.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ICamera.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ICamera.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ICapabilities.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ICapabilities.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ICloud.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ICloud.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ICompression.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ICompression.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IConcurrent.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IConcurrent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IContact.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IContact.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IContactPhotoResultCallback.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IContactPhotoResultCallback.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IContactResultCallback.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IContactResultCallback.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ICrypto.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ICrypto.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDataStream.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDataStream.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDatabase.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDatabase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDatabaseResultCallback.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDatabaseResultCallback.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDatabaseTableResultCallback.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDatabaseTableResultCallback.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDesktop.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDesktop.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDevice.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDevice.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDisplay.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDisplay.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFacebook.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFacebook.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFile.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFileDataLoadResultCallback.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFileDataLoadResultCallback.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFileDataStoreResultCallback.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFileDataStoreResultCallback.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFileListResultCallback.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFileListResultCallback.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFileResultCallback.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFileResultCallback.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFileSystem.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFileSystem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IGeolocation.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IGeolocation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IGeolocationListener.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IGeolocationListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IGlobalization.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IGlobalization.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IGooglePlus.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IGooglePlus.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IGyroscope.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IGyroscope.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IImaging.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IImaging.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IInternalStorage.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IInternalStorage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ILifecycle.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ILifecycle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ILifecycleListener.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ILifecycleListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ILinkedIn.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ILinkedIn.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ILogging.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ILogging.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IMagnetometer.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IMagnetometer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IMail.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IMail.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IManagement.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IManagement.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IMap.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IMap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IMessaging.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IMessaging.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IMessagingCallback.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IMessagingCallback.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INFC.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INFC.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INetworkInfo.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INetworkInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INetworkNaming.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INetworkNaming.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INetworkReachability.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INetworkReachability.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INetworkReachabilityCallback.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INetworkReachabilityCallback.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INetworkStatus.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INetworkStatus.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INetworkStatusListener.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INetworkStatusListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INotification.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INotification.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INotificationLocal.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INotificationLocal.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IOAuth.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IOAuth.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IOCR.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IOCR.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IOS.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IOS.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IOpenId.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IOpenId.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IPrinting.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IPrinting.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IProximity.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IProximity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IQRCode.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IQRCode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IRSS.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IRSS.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IRuntime.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IRuntime.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ISecurity.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ISecurity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ISecurityResultCallback.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ISecurityResultCallback.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IService.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IServiceResultCallback.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IServiceResultCallback.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ISettings.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ISettings.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ISocket.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ISocket.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IStore.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IStore.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ITelephony.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ITelephony.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ITimer.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ITimer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ITwitter.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ITwitter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IUI.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IUpdate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IUpdate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IVibration.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IVibration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IVideo.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IVideo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IWallet.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IWallet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IXML.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IXML.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/KeyPair.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/KeyPair.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Lifecycle.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Lifecycle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/LifecycleBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/LifecycleBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/LifecycleDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/LifecycleDelegate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/LifecycleListenerImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/LifecycleListenerImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Locale.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Locale.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/LoggingBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/LoggingBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/LoggingDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/LoggingDelegate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/MailBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/MailBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/MailDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/MailDelegate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/MessagingBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/MessagingBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/MessagingCallbackImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/MessagingCallbackImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/MessagingDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/MessagingDelegate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/NetworkReachabilityBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/NetworkReachabilityBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/NetworkReachabilityCallbackImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/NetworkReachabilityCallbackImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/NetworkReachabilityDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/NetworkReachabilityDelegate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/NetworkStatusBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/NetworkStatusBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/NetworkStatusDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/NetworkStatusDelegate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/NetworkStatusListenerImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/NetworkStatusListenerImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/OSBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/OSBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/OSDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/OSDelegate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/OSInfo.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/OSInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/RuntimeBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/RuntimeBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/RuntimeDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/RuntimeDelegate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/SecureKeyPair.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/SecureKeyPair.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/SecurityBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/SecurityBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/SecurityDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/SecurityDelegate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/SecurityResultCallbackImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/SecurityResultCallbackImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Service.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Service.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceCookie.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceCookie.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/ServiceDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/ServiceDelegate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceEndpoint.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceEndpoint.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceHeader.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceHeader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServicePath.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServicePath.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceRequest.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceResponse.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceResultCallbackImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceResultCallbackImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceSession.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceSession.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/TelephonyBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/TelephonyBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/TelephonyDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/TelephonyDelegate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/VideoBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/VideoBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/VideoDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/VideoDelegate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java-fx.ipr" afterPath="$PROJECT_DIR$/java-fx.ipr" />
+    </list>
     <ignored path="java-fx.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -35,7 +251,7 @@
       <file leaf-file-name="settings.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/settings.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
               <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
@@ -45,7 +261,7 @@
       <file leaf-file-name="BaseCommerceBridge.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/BaseCommerceBridge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1715161" vertical-offset="600" max-vertical-offset="1680">
+            <state vertical-scroll-proportion="0.6018883" vertical-offset="0" max-vertical-offset="1271">
               <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
               <folding />
             </state>
@@ -55,7 +271,7 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/adaptive-fx-lib/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+            <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="270">
               <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
               <folding />
             </state>
@@ -63,6 +279,9 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GradleLocalSettings">
     <option name="tasksExpandState">
@@ -602,6 +821,7 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/adaptive-fx-lib/build.gradle" />
+        <option value="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/BaseCommerceBridge.java" />
       </list>
     </option>
   </component>
@@ -609,12 +829,12 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2542" />
+    <option name="x" value="-2560" />
     <option name="y" value="-180" />
-    <option name="width" value="1440" />
-    <option name="height" value="1134" />
+    <option name="width" value="2560" />
+    <option name="height" value="1417" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -639,19 +859,18 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="adaptive-fx" />
+              <option name="myItemId" value="java-fx" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="adaptive-fx" />
+              <option name="myItemId" value="java-fx" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -659,8 +878,159 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-fx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adaptive-fx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adaptive-fx-lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-fx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adaptive-fx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adaptive-fx-lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-fx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adaptive-fx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adaptive-fx-lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-fx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adaptive-fx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adaptive-fx-lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-fx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adaptive-fx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adaptive-fx-lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-fx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adaptive-fx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adaptive-fx-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-fx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adaptive-fx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adaptive-fx-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -880,6 +1250,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
@@ -1052,43 +1428,44 @@
       <option name="number" value="Default" />
       <updated>1422011340145</updated>
       <workItem from="1422011341612" duration="1484000" />
+      <workItem from="1422526998514" duration="33000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1484000" />
+    <option name="totallyTimeSpent" value="1517000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2542" y="-180" width="1440" height="1134" extended-state="6" />
+    <frame x="-2560" y="-180" width="2560" height="1417" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22834645" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17739628" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22834645" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17712471" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297244" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1119,6 +1496,30 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/BaseCommerceBridge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adaptive-fx-lib/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="270">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
@@ -1135,7 +1536,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/BaseCommerceBridge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1715161" vertical-offset="0" max-vertical-offset="1080">
+        <state vertical-scroll-proportion="0.6018883" vertical-offset="0" max-vertical-offset="1271">
           <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
           <folding />
         </state>

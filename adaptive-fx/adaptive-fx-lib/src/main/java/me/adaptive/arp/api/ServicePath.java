@@ -27,7 +27,7 @@ Contributors:
 
 Release:
 
-    * @version v2.0.4
+    * @version v2.0.5
 
 -------------------------------------------| aut inveniam viam aut faciam |--------------------------------------------
 */
@@ -38,7 +38,7 @@ package me.adaptive.arp.api;
    Structure representing a service path for one endpoint
 
    @author fnva
-   @since ARP1.0
+   @since ARP 2.0
    @version 1.0
 */
 public class ServicePath {
@@ -55,7 +55,7 @@ public class ServicePath {
      /**
         Default Constructor
 
-        @since ARP1.0
+        @since ARP 2.0
      */
      public ServicePath() {
      }

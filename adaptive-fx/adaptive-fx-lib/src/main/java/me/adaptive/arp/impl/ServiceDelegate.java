@@ -27,7 +27,7 @@ Contributors:
 
 Release:
 
-    * @version v2.0.3
+    * @version v2.0.4
 
 -------------------------------------------| aut inveniam viam aut faciam |--------------------------------------------
 */
@@ -54,7 +54,7 @@ public class ServiceDelegate extends BaseCommunicationDelegate implements IServi
 
         @param serviceName Name of service.
         @return A service, if registered, or null of the service does not exist.
-        @since ARP1.0
+        @since ARP 2.0
      */
      public Service getService(String serviceName) {
           Service response;
@@ -69,7 +69,7 @@ public class ServiceDelegate extends BaseCommunicationDelegate implements IServi
         @param serviceRequest Service Request to invoke
         @param service        Service to call
         @param callback       Callback to execute with the result
-        @since ARP1.0
+        @since ARP 2.0
      */
      public void invokeService(ServiceRequest serviceRequest, Service service, IServiceResultCallback callback) {
           // TODO: Not implemented.
@@ -81,7 +81,7 @@ public class ServiceDelegate extends BaseCommunicationDelegate implements IServi
 
         @param service Service to check
         @return True if the service is registered, false otherwise.
-        @since ARP1.0
+        @since ARP 2.0
      */
      public boolean isRegistered(Service service) {
           boolean response;
@@ -95,7 +95,7 @@ public class ServiceDelegate extends BaseCommunicationDelegate implements IServi
 
         @param serviceName Name of service.
         @return True if the service is registered, false otherwise.
-        @since ARP1.0
+        @since ARP 2.0
      */
      public boolean isRegistered(String serviceName) {
           boolean response;
@@ -108,7 +108,7 @@ public class ServiceDelegate extends BaseCommunicationDelegate implements IServi
         Register a new service
 
         @param service to register
-        @since ARP1.0
+        @since ARP 2.0
      */
      public void registerService(Service service) {
           // TODO: Not implemented.
@@ -119,7 +119,7 @@ public class ServiceDelegate extends BaseCommunicationDelegate implements IServi
         Unregister a service
 
         @param service to unregister
-        @since ARP1.0
+        @since ARP 2.0
      */
      public void unregisterService(Service service) {
           // TODO: Not implemented.
@@ -129,7 +129,7 @@ public class ServiceDelegate extends BaseCommunicationDelegate implements IServi
      /**
         Unregister all services.
 
-        @since ARP1.0
+        @since ARP 2.0
      */
      public void unregisterServices() {
           // TODO: Not implemented.

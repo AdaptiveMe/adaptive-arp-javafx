@@ -27,7 +27,7 @@ Contributors:
 
 Release:
 
-    * @version v2.0.3
+    * @version v2.0.4
 
 -------------------------------------------| aut inveniam viam aut faciam |--------------------------------------------
 */
@@ -54,7 +54,7 @@ public class MailDelegate extends BasePIMDelegate implements IMail {
 
         @param data     Payload of the email
         @param callback Result callback of the operation
-        @since ARP1.0
+        @since ARP 2.0
      */
      public void sendEmail(Email data, IMessagingCallback callback) {
           // TODO: Not implemented.

@@ -35,84 +35,34 @@ Release:
 package me.adaptive.arp.api;
 
 /**
-   Represents an instance of a service.
+   The IAppResourceManager is the interface that must be followed for the implementation of secure resource
+reading from the application data container. Implementations of this class should provide the logic
+to read data from the application container (that may be compressed and encrypted in different formats)
+and return the uncompressed data in each case. Implementation specifics may vary between platforms but
+the ResourceData and formats returned must be coherent between platforms.
 
-   @author Aryslan
-   @since v2.0
+   @author Carlos Lozano Diez
+   @since v2.1.3
    @version 1.0
 */
-public class Service {
+public interface IAppResourceManager {
+     /**
+        Retrieve a configuration resource from the secure application data container.
+
+        @param id The id or relative path of the configuration resource to be retrieved.
+        @return ResourceData with the configuration resource payload.
+        @since v2.1.3
+     */
+     ResourceData retrieveConfigResource(String id);
 
      /**
-        The service name
+        Retrieve a web resource from the secure application data container.
+
+        @param id The id or relative path of the web resource to be retrieved.
+        @return ResourceData with the web resource payload.
+        @since v2.1.3
      */
-     private String name;
-     /**
-        Endpoint of the service
-     */
-     private ServiceEndpoint[] serviceEndpoints;
-
-     /**
-        Default constructor
-
-        @since v2.0
-     */
-     public Service() {
-     }
-
-     /**
-        Constructor used by the implementation
-
-        @param serviceEndpoints Endpoints of the service
-        @param name             Name of the service
-        @since v2.0.6
-     */
-     public Service(ServiceEndpoint[] serviceEndpoints, String name) {
-          this();
-          this.serviceEndpoints = serviceEndpoints;
-          this.name = name;
-     }
-
-     /**
-        Returns the name
-
-        @return name
-        @since v2.0
-     */
-     public String getName() {
-          return this.name;
-     }
-
-     /**
-        Set the name
-
-        @param name Name of the service
-        @since v2.0
-     */
-     public void setName(String name) {
-          this.name = name;
-     }
-
-     /**
-        Returns the serviceEndpoints
-
-        @return serviceEndpoints
-        @since v2.0
-     */
-     public ServiceEndpoint[] getServiceEndpoints() {
-          return this.serviceEndpoints;
-     }
-
-     /**
-        Set the serviceEndpoints
-
-        @param serviceEndpoints Endpoint of the service
-        @since v2.0
-     */
-     public void setServiceEndpoints(ServiceEndpoint[] serviceEndpoints) {
-          this.serviceEndpoints = serviceEndpoints;
-     }
-
+     ResourceData retrieveWebResource(String id);
 
 }
 

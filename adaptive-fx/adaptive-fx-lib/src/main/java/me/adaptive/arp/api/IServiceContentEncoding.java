@@ -35,28 +35,21 @@ Release:
 package me.adaptive.arp.api;
 
 /**
-   Enumeration IServiceResultCallbackWarning
+   Enumeration IServiceContentEncoding
 */
-public enum IServiceResultCallbackWarning {
+public enum IServiceContentEncoding {
 
-     CertificateUntrusted,
-     NotSecure,
-     Redirected,
-     Wrong_Params,
-     Forbidden,
-     NotFound,
-     MethodNotAllowed,
-     NotAllowed,
-     NotAuthenticated,
-     PaymentRequired,
-     ServerError,
+     ASCII,
+     UTF8,
+     ISOLatin1,
+     Unicode,
      Unknown;
 
      /**
         Register deserializer/serializer in common JSON Builder.
      */
      static {
-          AppRegistryBridge.getJSONInstance().registerTypeAdapter(IServiceResultCallbackWarning.class, new IServiceResultCallbackWarningAdapter());
+          AppRegistryBridge.getJSONInstance().registerTypeAdapter(IServiceContentEncoding.class, new IServiceContentEncodingAdapter());
      }
 
 }

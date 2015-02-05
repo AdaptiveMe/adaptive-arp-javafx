@@ -45,12 +45,12 @@ import com.google.gson.JsonSerializer;
 import java.lang.reflect.Type;
 
 /**
-   IMessagingCallbackError custom serializer/deserializer.
+   IServiceContentEncoding custom serializer/deserializer.
 */
-public class IMessagingCallbackErrorAdapter implements JsonDeserializer<IMessagingCallbackError>, JsonSerializer<IMessagingCallbackError> {
+public class IServiceContentEncodingAdapter implements JsonDeserializer<IServiceContentEncoding>, JsonSerializer<IServiceContentEncoding> {
 
      @Override
-     public IMessagingCallbackError deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
+     public IServiceContentEncoding deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
           String value = null;
           try {
                value = json.getAsJsonObject().get("value").getAsString();
@@ -60,11 +60,11 @@ public class IMessagingCallbackErrorAdapter implements JsonDeserializer<IMessagi
           if (value==null) {
                value = "Unknown";
           }
-          return IMessagingCallbackError.valueOf(IMessagingCallbackError.class, value);
+          return IServiceContentEncoding.valueOf(IServiceContentEncoding.class, value);
      }
 
      @Override
-     public JsonElement serialize(IMessagingCallbackError src, Type typeOfSrc, JsonSerializationContext context) {
+     public JsonElement serialize(IServiceContentEncoding src, Type typeOfSrc, JsonSerializationContext context) {
           JsonObject jsonObject = new JsonObject();
           if (src != null) {
                jsonObject.add("value", new JsonPrimitive(src.name()));

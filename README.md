@@ -1,7 +1,7 @@
 # Adaptive Runtime Platform for JavaFX 
 [![Build Status](https://travis-ci.org/AdaptiveMe/adaptive-arp-javafx.svg?branch=master)](https://travis-ci.org/AdaptiveMe/adaptive-arp-javafx)
 [![GitHub tag](https://img.shields.io/github/tag/AdaptiveMe/adaptive-arp-javafx.svg)](https://github.com/AdaptiveMe/adaptive-arp-javafx) 
-[![License](https://img.shields.io/badge/license-apache%202-blue.svg)](https://raw.githubusercontent.com/AdaptiveMe/adaptive-arp-api/master/LICENSE) 
+[![License](https://img.shields.io/badge/license-apache%202-blue.svg)](https://raw.githubusercontent.com/AdaptiveMe/adaptive-arp-javafx/master/LICENSE) 
 [![Adaptive Runtime Platform for JavaFX](https://img.shields.io/badge/arp-javafx-e76f00.svg)](https://github.com/AdaptiveMe/adaptive-arp-javafx)
 [![adaptive.me](https://img.shields.io/badge/adaptive-me-fdcb0e.svg)](http://adaptive.me)
 [![Adaptive Runtime Platform](https://raw.githubusercontent.com/AdaptiveMe/AdaptiveMe.github.io/master/assets/logos/arp_for_Java.png)](#)
@@ -37,6 +37,6 @@ We'd *love to accept your patches and contributions to this project*.  There are
 * All other logos are copyright of their respective owners.
 
 ## License
-All the source code of the Adaptive Runtime Platform (ARP), including all Adaptive Runtime Platform (ARP) sub-projects curated by [Carlos Lozano Diez](https://github.com/carloslozano), are distributed, and must be contributed to, under the terms of the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html). The [license](https://raw.githubusercontent.com/AdaptiveMe/adaptive-arp-api/master/LICENSE) is included in this [repository](https://raw.githubusercontent.com/AdaptiveMe/adaptive-arp-api/master/LICENSE).
+All the source code of the Adaptive Runtime Platform (ARP), including all Adaptive Runtime Platform (ARP) sub-projects curated by [Carlos Lozano Diez](https://github.com/carloslozano), are distributed, and must be contributed to, under the terms of the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html). The [license](https://raw.githubusercontent.com/AdaptiveMe/adaptive-arp-javafx/master/LICENSE) is included in this [repository](https://raw.githubusercontent.com/AdaptiveMe/adaptive-arp-javafx/master/LICENSE).
 
 Forged with :heart: in Barcelona, Catalonia · © 2013 - 2015 [adaptive.me](http://adaptive.me) / [Carlos Lozano Diez](http://google.com/+CarlosLozano).

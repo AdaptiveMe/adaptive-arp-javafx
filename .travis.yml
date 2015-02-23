@@ -1,4 +1,4 @@
-before_install: adaptive-fx
+before_install: cd adaptive-fx
 language: java
 jdk:
   - oraclejdk8

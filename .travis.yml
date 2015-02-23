@@ -1,4 +1,4 @@
-before_install: cd adaptive-arp-javafx
+before_install: adaptive-fx
 language: java
 jdk:
   - oraclejdk8

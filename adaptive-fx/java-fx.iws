@@ -2,221 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="799bccc6-3859-40b5-9dff-ea5be5e488e4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/APIBean.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/APIBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/APIBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/APIBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/APIRequest.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/APIRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/APIResponse.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/APIResponse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Acceleration.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Acceleration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/AccelerationBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/AccelerationBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/AccelerationDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/AccelerationDelegate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/AccelerationListenerImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/AccelerationListenerImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/AppContextBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/AppContextBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/AppContextDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/AppContextDelegate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/AppContextWebviewBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/AppContextWebviewBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/AppContextWebviewDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/AppContextWebviewDelegate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/AppRegistryBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/AppRegistryBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/AppRegistryDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/AppRegistryDelegate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/BrowserBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/BrowserBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/BrowserDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/BrowserDelegate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Button.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Button.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ButtonListenerImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ButtonListenerImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/CapabilitiesBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/CapabilitiesBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/CapabilitiesDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/CapabilitiesDelegate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Contact.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Contact.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactAddress.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactAddress.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/ContactDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/ContactDelegate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactEmail.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactEmail.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactPersonalInfo.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactPersonalInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactPhone.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactPhone.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactPhotoResultCallbackImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactPhotoResultCallbackImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactProfessionalInfo.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactProfessionalInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactResultCallbackImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactResultCallbackImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactSocial.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactSocial.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactTag.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactTag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactUid.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactUid.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactWebsite.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ContactWebsite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Database.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Database.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DatabaseBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DatabaseBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DatabaseColumn.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DatabaseColumn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/DatabaseDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/DatabaseDelegate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DatabaseResultCallbackImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DatabaseResultCallbackImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DatabaseRow.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DatabaseRow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DatabaseTable.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DatabaseTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DatabaseTableResultCallbackImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DatabaseTableResultCallbackImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DeviceBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DeviceBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/DeviceDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/DeviceDelegate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DeviceInfo.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DeviceInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DisplayBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/DisplayBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Email.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Email.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/EmailAddress.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/EmailAddress.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/EmailAttachmentData.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/EmailAttachmentData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileDataLoadResultCallbackImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileDataLoadResultCallbackImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileDataStoreResultCallbackImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileDataStoreResultCallbackImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/FileDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/FileDelegate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileDescriptor.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileListResultCallbackImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileListResultCallbackImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileResultCallbackImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileResultCallbackImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileSystemBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/FileSystemBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/FileSystemDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/FileSystemDelegate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Geolocation.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Geolocation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/GeolocationBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/GeolocationBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/GeolocationDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/GeolocationDelegate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/GeolocationListenerImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/GeolocationListenerImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/GlobalizationBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/GlobalizationBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/GlobalizationDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/GlobalizationDelegate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAcceleration.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAcceleration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAccelerationListener.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAccelerationListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAdaptiveRP.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAdaptiveRP.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAds.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAds.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAlarm.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAlarm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAmbientLight.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAmbientLight.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAnalytics.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAnalytics.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAppContext.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAppContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAppContextWebview.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAppContextWebview.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAppRegistry.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAppRegistry.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAudio.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IAudio.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBarcode.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBarcode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBarometer.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBarometer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseApplication.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseCallback.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseCallback.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseCommerce.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseCommerce.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseCommunication.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseCommunication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseData.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseListener.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseMedia.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseMedia.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseNotification.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseNotification.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBasePIM.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBasePIM.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseReader.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseSecurity.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseSecurity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseSensor.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseSensor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseSocial.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseSocial.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseSystem.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseSystem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseUI.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseUtil.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBaseUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBluetooth.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBluetooth.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBrowser.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IBrowser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IButtonListener.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IButtonListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ICalendar.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ICalendar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ICamera.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ICamera.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ICapabilities.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ICapabilities.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ICloud.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ICloud.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ICompression.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ICompression.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IConcurrent.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IConcurrent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IContact.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IContact.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IContactPhotoResultCallback.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IContactPhotoResultCallback.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IContactResultCallback.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IContactResultCallback.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ICrypto.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ICrypto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDataStream.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDataStream.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDatabase.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDatabase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDatabaseResultCallback.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDatabaseResultCallback.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDatabaseTableResultCallback.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDatabaseTableResultCallback.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDesktop.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDesktop.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDevice.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDevice.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDisplay.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IDisplay.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFacebook.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFacebook.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFile.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFileDataLoadResultCallback.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFileDataLoadResultCallback.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFileDataStoreResultCallback.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFileDataStoreResultCallback.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFileListResultCallback.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFileListResultCallback.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFileResultCallback.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFileResultCallback.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFileSystem.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IFileSystem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IGeolocation.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IGeolocation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IGeolocationListener.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IGeolocationListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IGlobalization.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IGlobalization.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IGooglePlus.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IGooglePlus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IGyroscope.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IGyroscope.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IImaging.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IImaging.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IInternalStorage.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IInternalStorage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ILifecycle.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ILifecycle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ILifecycleListener.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ILifecycleListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ILinkedIn.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ILinkedIn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ILogging.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ILogging.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IMagnetometer.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IMagnetometer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IMail.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IMail.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IManagement.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IManagement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IMap.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IMap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IMessaging.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IMessaging.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IMessagingCallback.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IMessagingCallback.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INFC.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INFC.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INetworkInfo.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INetworkInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INetworkNaming.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INetworkNaming.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INetworkReachability.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INetworkReachability.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INetworkReachabilityCallback.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INetworkReachabilityCallback.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INetworkStatus.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INetworkStatus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INetworkStatusListener.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INetworkStatusListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INotification.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INotification.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INotificationLocal.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/INotificationLocal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IOAuth.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IOAuth.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IOCR.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IOCR.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IOS.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IOS.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IOpenId.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IOpenId.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IPrinting.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IPrinting.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IProximity.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IProximity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IQRCode.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IQRCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IRSS.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IRSS.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IRuntime.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IRuntime.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ISecurity.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ISecurity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ISecurityResultCallback.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ISecurityResultCallback.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IService.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IServiceResultCallback.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IServiceResultCallback.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ISettings.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ISettings.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ISocket.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ISocket.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IStore.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IStore.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ITelephony.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ITelephony.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ITimer.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ITimer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ITwitter.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ITwitter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IUI.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IUpdate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IUpdate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IVibration.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IVibration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IVideo.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IVideo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IWallet.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IWallet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IXML.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/IXML.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/KeyPair.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/KeyPair.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Lifecycle.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Lifecycle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/LifecycleBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/LifecycleBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/LifecycleDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/LifecycleDelegate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/LifecycleListenerImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/LifecycleListenerImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Locale.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Locale.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/LoggingBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/LoggingBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/LoggingDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/LoggingDelegate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/MailBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/MailBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/MailDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/MailDelegate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/MessagingBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/MessagingBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/MessagingCallbackImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/MessagingCallbackImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/MessagingDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/MessagingDelegate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/NetworkReachabilityBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/NetworkReachabilityBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/NetworkReachabilityCallbackImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/NetworkReachabilityCallbackImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/NetworkReachabilityDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/NetworkReachabilityDelegate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/NetworkStatusBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/NetworkStatusBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/NetworkStatusDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/NetworkStatusDelegate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/NetworkStatusListenerImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/NetworkStatusListenerImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/OSBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/OSBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/OSDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/OSDelegate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/OSInfo.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/OSInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/RuntimeBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/RuntimeBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/RuntimeDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/RuntimeDelegate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/SecureKeyPair.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/SecureKeyPair.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/SecurityBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/SecurityBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/SecurityDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/SecurityDelegate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/SecurityResultCallbackImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/SecurityResultCallbackImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Service.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/Service.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceCookie.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceCookie.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/ServiceDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/ServiceDelegate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceEndpoint.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceEndpoint.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceHeader.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceHeader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServicePath.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServicePath.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceRequest.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceResponse.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceResponse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceResultCallbackImpl.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceResultCallbackImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceSession.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/ServiceSession.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/TelephonyBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/TelephonyBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/TelephonyDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/TelephonyDelegate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/VideoBridge.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/VideoBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/VideoDelegate.java" afterPath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/VideoDelegate.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/AccelerationDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/AppContextDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/AppContextWebviewDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/BaseApplicationDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/BaseCommerceDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/BaseCommunicationDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/BaseDataDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/BaseMediaDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/BaseNotificationDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/BasePIMDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/BaseReaderDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/BaseSecurityDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/BaseSensorDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/BaseSocialDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/BaseSystemDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/BaseUIDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/BaseUtilDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/BrowserDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/CapabilitiesDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/ContactDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/DatabaseDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/DeviceDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/DisplayDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/FileDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/FileSystemDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/GeolocationDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/GlobalizationDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/LifecycleDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/LoggingDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/MailDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/MessagingDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/NetworkReachabilityDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/NetworkStatusDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/OSDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/RuntimeDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/SecurityDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/ServiceDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/TelephonyDelegate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/impl/VideoDelegate.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-app/adaptive-fx-app.iml" afterPath="$PROJECT_DIR$/adaptive-fx-app/adaptive-fx-app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/adaptive-fx-lib.iml" afterPath="$PROJECT_DIR$/adaptive-fx-lib/adaptive-fx-lib.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-app/build.gradle" afterPath="$PROJECT_DIR$/adaptive-fx-app/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive-fx-lib/build.gradle" afterPath="$PROJECT_DIR$/adaptive-fx-lib/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java-fx.ipr" afterPath="$PROJECT_DIR$/java-fx.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java-fx.iws" afterPath="$PROJECT_DIR$/java-fx.iws" />
     </list>
     <ignored path="java-fx.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -239,46 +69,41 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DaemonCodeAnalyzer">
-    <disable_hints />
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/adaptive-fx-lib">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/adaptive-fx-app">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="adaptive-fx" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+            </PATH>
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="java-fx" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="settings.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseCommerceBridge.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/BaseCommerceBridge.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6018883" vertical-offset="0" max-vertical-offset="1271">
-              <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/adaptive-fx-lib/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="270">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -673,7 +498,7 @@
       <map>
         <entry key="$PROJECT_DIR$/../../adaptive-arp-api/out/JavaValidation" value="2835539108000" />
         <entry key="$PROJECT_DIR$/../../adaptive-arp-api/tools/osx/jenerator" value="2835453440000" />
-        <entry key="$PROJECT_DIR$" value="4266034746000" />
+        <entry key="$PROJECT_DIR$" value="4271576963000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -702,7 +527,6 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/563dcb685903c96ce8abbd03adf7fa49e19aa8b4/gson-2.3.1-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar" />
                           </list>
                         </option>
@@ -715,96 +539,96 @@
               <option name="name" value="adaptive-fx" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/announce" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/antlr" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/base-services" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/base-services-groovy" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/build-comparison" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/build-init" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/cli" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/code-quality" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/core" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/core-impl" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/cpp" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/diagnostics" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/ear" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/ide" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/internal-integ-testing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/internal-testing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/ivy" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/jacoco" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/javascript" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/jetty" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/language-base" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/language-jvm" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/launcher" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/maven" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/messaging" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/model-core" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/model-groovy" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/native" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/open-api" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/osgi" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/plugin-development" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/plugin-use" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/plugins" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/publish" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/reporting" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/resources" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/resources-http" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/scala" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/signing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/sonar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/tooling-api" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/ui" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/wrapper" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/ant-1.9.3.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/ant-launcher-1.9.3.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/gradle-base-services-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/gradle-base-services-groovy-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/gradle-cli-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/gradle-core-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/gradle-docs-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/gradle-launcher-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/gradle-messaging-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/gradle-model-core-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/gradle-model-groovy-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/gradle-native-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/gradle-open-api-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/gradle-resources-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/gradle-tooling-api-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/gradle-ui-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/gradle-wrapper-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/groovy-all-2.3.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/ant-antlr-1.9.3.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-announce-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-antlr-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-build-comparison-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-build-init-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-code-quality-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-core-impl-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-cpp-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-diagnostics-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-ear-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-ide-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-ivy-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-jacoco-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-javascript-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-jetty-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-language-base-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-language-jvm-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-maven-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-osgi-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-plugin-development-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-plugin-use-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-plugins-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-publish-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-reporting-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-resources-http-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-scala-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-signing-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/gradle-sonar-2.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/announce" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/antlr" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/base-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/base-services-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/build-comparison" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/build-init" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/cli" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/code-quality" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/core-impl" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/cpp" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/diagnostics" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/ear" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/ide" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/internal-integ-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/internal-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/ivy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/jacoco" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/javascript" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/jetty" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/language-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/language-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/launcher" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/maven" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/messaging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/model-core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/model-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/open-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/osgi" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/plugin-development" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/plugin-use" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/plugins" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/publish" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/reporting" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/resources" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/resources-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/signing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/sonar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/tooling-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/ui" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/src/wrapper" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/ant-1.9.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/ant-launcher-1.9.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/gradle-base-services-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/gradle-base-services-groovy-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/gradle-cli-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/gradle-core-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/gradle-docs-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/gradle-launcher-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/gradle-messaging-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/gradle-model-core-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/gradle-model-groovy-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/gradle-native-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/gradle-open-api-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/gradle-resources-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/gradle-tooling-api-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/gradle-ui-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/gradle-wrapper-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/groovy-all-2.3.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/ant-antlr-1.9.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-announce-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-antlr-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-build-comparison-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-build-init-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-code-quality-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-core-impl-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-cpp-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-diagnostics-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-ear-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-ide-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-ivy-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-jacoco-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-javascript-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-jetty-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-language-base-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-language-jvm-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-maven-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-osgi-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-plugin-development-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-plugin-use-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-plugins-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-publish-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-reporting-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-resources-http-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-scala-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-signing-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/gradle-sonar-2.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/488seql5pimt7vjvdsuqhh1ut/gradle-2.1/lib/plugins/ivy-2.2.0.jar" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -820,19 +644,29 @@
       <list>
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/settings.gradle" />
-        <option value="$PROJECT_DIR$/adaptive-fx-lib/build.gradle" />
         <option value="$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/BaseCommerceBridge.java" />
+        <option value="$PROJECT_DIR$/adaptive-fx-lib/build.gradle" />
+        <option value="$PROJECT_DIR$/adaptive-fx-app/build.gradle" />
       </list>
     </option>
   </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2560" />
-    <option name="y" value="-180" />
-    <option name="width" value="2560" />
-    <option name="height" value="1417" />
+    <option name="y" value="23" />
+    <option name="width" value="1424" />
+    <option name="height" value="831" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -859,7 +693,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -972,40 +805,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="adaptive-fx-lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-fx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adaptive-fx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="adaptive-fx-app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1031,6 +830,8 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1049,48 +850,9 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
+    <property name="FullScreen" value="false" />
   </component>
-  <component name="RunManager" selected="Gradle.adaptive-fx:adaptive-fx-lib [javadoc]">
-    <configuration default="false" name="adaptive-fx [javadoc]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="javadoc" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <RunnerSettings RunnerId="ExternalSystemTaskRunner" />
-      <ConfigurationWrapper RunnerId="ExternalSystemTaskRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="adaptive-fx:adaptive-fx-app [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/adaptive-fx-app" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="jar" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <RunnerSettings RunnerId="ExternalSystemTaskRunner" />
-      <ConfigurationWrapper RunnerId="ExternalSystemTaskRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Gradle.adaptive-fx [assemble]">
     <configuration default="false" name="adaptive-fx:adaptive-fx-lib [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -1103,26 +865,6 @@
         <option name="taskNames">
           <list>
             <option value="jar" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <RunnerSettings RunnerId="ExternalSystemTaskRunner" />
-      <ConfigurationWrapper RunnerId="ExternalSystemTaskRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="adaptive-fx:adaptive-fx-lib [compileJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/adaptive-fx-lib" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="compileJava" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -1151,23 +893,58 @@
       <ConfigurationWrapper RunnerId="ExternalSystemTaskRunner" />
       <method />
     </configuration>
-    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$" />
-      <setting name="debug" value="false" />
+    <configuration default="false" name="adaptive-fx [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="assemble" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
       <method />
     </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <module name="" />
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="depsClasspath" value="false" />
-      <setting name="passParentEnv" value="true" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <setting name="launchBrowser" value="false" />
+    <configuration default="false" name="adaptive-fx:adaptive-fx-lib [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/adaptive-fx-lib" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="assemble" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="false" name="adaptive-fx:adaptive-fx-lib [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/adaptive-fx-lib" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -1176,85 +953,87 @@
       <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
+      <module />
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
+      <module name="" />
       <envs />
-      <patterns />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <pass-parent-envs>true</pass-parent-envs>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
       <envs />
       <method />
     </configuration>
@@ -1293,30 +1072,18 @@
       <option name="usbDebugPort" value="7936" />
       <method />
     </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JarApplication" factoryName="JAR Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <envs />
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
@@ -1335,88 +1102,119 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
-        </LauncherParameters>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
       </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
+      <envs />
+      <patterns />
       <method />
     </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
+    <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
       <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
       <envs />
+      <properties />
+      <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Gradle.adaptive-fx [javadoc]" />
-      <item index="1" class="java.lang.String" itemvalue="Gradle.adaptive-fx:adaptive-fx-app [jar]" />
-      <item index="2" class="java.lang.String" itemvalue="Gradle.adaptive-fx:adaptive-fx-lib [jar]" />
-      <item index="3" class="java.lang.String" itemvalue="Gradle.adaptive-fx:adaptive-fx-lib [compileJava]" />
-      <item index="4" class="java.lang.String" itemvalue="Gradle.adaptive-fx:adaptive-fx-lib [javadoc]" />
+      <item index="0" class="java.lang.String" itemvalue="Gradle.adaptive-fx:adaptive-fx-lib [jar]" />
+      <item index="1" class="java.lang.String" itemvalue="Gradle.adaptive-fx:adaptive-fx-lib [javadoc]" />
+      <item index="2" class="java.lang.String" itemvalue="Gradle.adaptive-fx [assemble]" />
+      <item index="3" class="java.lang.String" itemvalue="Gradle.adaptive-fx:adaptive-fx-lib [assemble]" />
+      <item index="4" class="java.lang.String" itemvalue="Gradle.adaptive-fx:adaptive-fx-lib [build]" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.adaptive-fx:adaptive-fx-lib [javadoc]" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.adaptive-fx:adaptive-fx-lib [jar]" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.adaptive-fx:adaptive-fx-lib [compileJava]" />
-        <item index="3" class="java.lang.String" itemvalue="Gradle.adaptive-fx:adaptive-fx-app [jar]" />
-        <item index="4" class="java.lang.String" itemvalue="Gradle.adaptive-fx [javadoc]" />
+        <item index="0" class="java.lang.String" itemvalue="Gradle.adaptive-fx [assemble]" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.adaptive-fx:adaptive-fx-lib [build]" />
+        <item index="2" class="java.lang.String" itemvalue="Gradle.adaptive-fx:adaptive-fx-lib [assemble]" />
+        <item index="3" class="java.lang.String" itemvalue="Gradle.adaptive-fx:adaptive-fx-lib [javadoc]" />
+        <item index="4" class="java.lang.String" itemvalue="Gradle.adaptive-fx:adaptive-fx-lib [jar]" />
       </list>
     </recent_temporary>
   </component>
@@ -1429,43 +1227,45 @@
       <updated>1422011340145</updated>
       <workItem from="1422011341612" duration="1484000" />
       <workItem from="1422526998514" duration="33000" />
+      <workItem from="1424782159786" duration="234000" />
+      <workItem from="1424782506346" duration="313000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1517000" />
+    <option name="totallyTimeSpent" value="2064000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2560" y="-180" width="2560" height="1417" extended-state="6" />
+    <frame x="0" y="23" width="1424" height="831" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22834645" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17712471" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17872648" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297244" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25180897" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959327" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22834645" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1496,7 +1296,49 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adaptive-fx-app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/BaseCommerceBridge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#1686#1687#0" expanded="false" />
+            <element signature="e#1746#1747#0" expanded="false" />
+            <element signature="e#1884#1885#0" expanded="false" />
+            <element signature="e#1923#1924#0" expanded="false" />
+            <element signature="e#2049#2050#0" expanded="false" />
+            <element signature="e#2083#2084#0" expanded="false" />
+            <element signature="e#2304#2305#0" expanded="false" />
+            <element signature="e#2374#2375#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adaptive-fx-lib/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
@@ -1504,15 +1346,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/BaseCommerceBridge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#1686#1687#0" expanded="false" />
+            <element signature="e#1746#1747#0" expanded="false" />
+            <element signature="e#1884#1885#0" expanded="false" />
+            <element signature="e#1923#1924#0" expanded="false" />
+            <element signature="e#2049#2050#0" expanded="false" />
+            <element signature="e#2083#2084#0" expanded="false" />
+            <element signature="e#2304#2305#0" expanded="false" />
+            <element signature="e#2374#2375#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/adaptive-fx-lib/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="270">
+        <state vertical-scroll-proportion="0.0">
           <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
           <folding />
         </state>
@@ -1520,15 +1372,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+        <state vertical-scroll-proportion="0.0">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/BaseCommerceBridge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#1686#1687#0" expanded="false" />
+            <element signature="e#1746#1747#0" expanded="false" />
+            <element signature="e#1884#1885#0" expanded="false" />
+            <element signature="e#1923#1924#0" expanded="false" />
+            <element signature="e#2049#2050#0" expanded="false" />
+            <element signature="e#2083#2084#0" expanded="false" />
+            <element signature="e#2304#2305#0" expanded="false" />
+            <element signature="e#2374#2375#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/adaptive-fx-lib/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+        <state vertical-scroll-proportion="0.0">
           <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
           <folding />
         </state>
@@ -1536,8 +1406,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/adaptive-fx-lib/src/main/java/me/adaptive/arp/api/BaseCommerceBridge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6018883" vertical-offset="0" max-vertical-offset="1271">
+        <state vertical-scroll-proportion="0.0">
           <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#1686#1687#0" expanded="false" />
+            <element signature="e#1746#1747#0" expanded="false" />
+            <element signature="e#1884#1885#0" expanded="false" />
+            <element signature="e#1923#1924#0" expanded="false" />
+            <element signature="e#2049#2050#0" expanded="false" />
+            <element signature="e#2083#2084#0" expanded="false" />
+            <element signature="e#2304#2305#0" expanded="false" />
+            <element signature="e#2374#2375#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adaptive-fx-app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adaptive-fx-lib/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06666667">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="17" />
           <folding />
         </state>
       </provider>

@@ -1,0 +1,113 @@
+def ossrhUsername = hasProperty('ossrhUsername') ? ossrhUsername : System.getenv('ossrhUsername')
+def ossrhPassword = hasProperty('ossrhPassword') ? ossrhPassword : System.getenv('ossrhPassword')
+def getVersionName = { ->
+    def stdout = new ByteArrayOutputStream()
+    exec {
+        commandLine 'git', 'describe', '--tags'
+        standardOutput = stdout
+    }
+    if (stdout.toString().trim().indexOf('-') > 0) {
+        return stdout.toString().trim().substring(0, stdout.toString().trim().indexOf('-'))
+    } else {
+        return stdout.toString().trim()
+    }
+}
+ext."signing.keyId" = hasProperty('signing.keyId') ? ext."signing.keyId" : System.getenv('signing_keyId')
+ext."signing.password" = hasProperty('signing.password') ? ext."signing.password" : System.getenv('signing_password')
+ext."signing.secretKeyRingFile" = hasProperty('signing.secretKeyRingFile') ? ext."signing.secretKeyRingFile" : System.getenv('signing_secretKeyRingFile')
+ext."oss-releases.username" = hasProperty('ossrhUsername') ? ossrhUsername : System.getenv('ossrhUsername')
+ext."oss-releases.password" = hasProperty('ossrhPassword') ? ossrhPassword : System.getenv('ossrhPassword')
+ext."oss-releases.url" = "https://oss.sonatype.org/index.html#stagingRepositories"
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.adaptc.gradle:nexus-workflow:0.6'
+    }
+}
+
+apply plugin: 'nexus-workflow'
+apply plugin: 'maven'
+apply plugin: 'java'
+apply plugin: 'signing'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.8
+
+group = "me.adaptive"
+archivesBaseName = "adaptive-arp-fx-impl-nibble"
+version = getVersionName()
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'me.adaptive:adaptive-arp-lib:2.2.0'
+}
+
+task javadocJar(type: Jar) {
+    classifier = 'javadoc'
+    from javadoc
+}
+
+task sourcesJar(type: Jar) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+artifacts {
+    archives javadocJar, sourcesJar
+}
+
+signing {
+    sign configurations.archives
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
+
+            repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
+                authentication(userName: ossrhUsername, password: ossrhPassword)
+            }
+
+            snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots/") {
+                authentication(userName: ossrhUsername, password: ossrhPassword)
+            }
+
+            pom.project {
+                name 'AdaptiveMe Runtime Platform (ARP) API for Java'
+                packaging 'jar'
+                description 'This is the AdaptiveMe Runtime Platform (ARP) API for Java platforms.'
+                url 'http://adaptiveme.github.io/'
+
+                scm {
+                    connection 'scm:git:https://github.com/AdaptiveMe/adaptive-arp-api-lib-java.git'
+                    developerConnection 'scm:git:https://github.com/AdaptiveMe/adaptive-arp-api-lib-java.git'
+                    url 'https://github.com/AdaptiveMe/adaptive-arp-api-lib-java'
+                }
+
+                licenses {
+                    license {
+                        name 'The Apache License, Version 2.0'
+                        url 'https://raw.githubusercontent.com/AdaptiveMe/AdaptiveMe.github.io/master/LICENSE'
+                    }
+                }
+
+                developers {
+                    developer {
+                        id 'carloslozano'
+                        name 'Carlos Lozano'
+                        email 'carlos@adaptive.me'
+                    }
+                }
+            }
+        }
+    }
+}

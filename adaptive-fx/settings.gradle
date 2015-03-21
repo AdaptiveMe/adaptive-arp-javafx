@@ -1,6 +1,6 @@
 rootProject.name = 'adaptive-fx'
 
-include 'adaptive-fx-lib'
+include 'adaptive-arp-fx-impl'
 
-include 'adaptive-fx-app'
+include 'adaptive-arp-fx-impl-nibble'
 

@@ -6,6 +6,11 @@
 build
 *.iml
 
-adaptive-fx/.idea/
+adaptive-fx/.idea
 
-adaptive-fx/.idea/gradle.xml
+
+adaptive-fx/.idea/vcs.xml
+
+adaptive-fx/.idea/modules.xml
+
+adaptive-fx/.idea/misc.xml

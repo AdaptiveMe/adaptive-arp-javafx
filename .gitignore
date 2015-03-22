@@ -7,3 +7,5 @@ build
 *.iml
 
 adaptive-fx/.idea/
+
+adaptive-fx/.idea/gradle.xml

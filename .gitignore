@@ -4,3 +4,7 @@
 *.java.new
 
 build
+
+adaptive-fx/.idea/
+
+*.iml

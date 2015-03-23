@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-apache%202-blue.svg)](https://raw.githubusercontent.com/AdaptiveMe/adaptive-arp-javafx/master/LICENSE) 
 [![Adaptive Runtime Platform for JavaFX](https://img.shields.io/badge/arp-javafx-e76f00.svg)](https://github.com/AdaptiveMe/adaptive-arp-javafx)
 [![adaptive.me](https://img.shields.io/badge/adaptive-me-fdcb0e.svg)](http://adaptive.me)
-[![Adaptive Runtime Platform](https://raw.githubusercontent.com/AdaptiveMe/AdaptiveMe.github.io/master/assets/logos/transparent/arp_for_Java.png)](#)
+[![Adaptive Runtime Platform](https://raw.githubusercontent.com/AdaptiveMe/AdaptiveMe.github.io/master/assets/logos/normal/arp_for_Java.png)](#)
 
 ## Introduction
 

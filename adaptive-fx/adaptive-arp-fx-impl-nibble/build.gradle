@@ -82,7 +82,7 @@ uploadArchives {
             }
 
             pom.project {
-                name 'AdaptiveMe Runtime Platform (ARP) API for Java'
+                name 'AdaptiveMe Runtime Platform (ARP) Implementation for JavaFX Nibble Emulator'
                 packaging 'jar'
                 description 'This is the AdaptiveMe Runtime Platform (ARP) Implementation for AdaptiveMe Nibble.'
                 url 'http://adaptiveme.github.io/'

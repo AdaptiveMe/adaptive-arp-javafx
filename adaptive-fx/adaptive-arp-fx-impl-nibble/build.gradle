@@ -84,13 +84,13 @@ uploadArchives {
             pom.project {
                 name 'AdaptiveMe Runtime Platform (ARP) API for Java'
                 packaging 'jar'
-                description 'This is the AdaptiveMe Runtime Platform (ARP) API for Java platforms.'
+                description 'This is the AdaptiveMe Runtime Platform (ARP) Implementation for AdaptiveMe Nibble.'
                 url 'http://adaptiveme.github.io/'
 
                 scm {
-                    connection 'scm:git:https://github.com/AdaptiveMe/adaptive-arp-api-lib-java.git'
-                    developerConnection 'scm:git:https://github.com/AdaptiveMe/adaptive-arp-api-lib-java.git'
-                    url 'https://github.com/AdaptiveMe/adaptive-arp-api-lib-java'
+                    connection 'scm:git:https://github.com/AdaptiveMe/adaptive-arp-javafx.git'
+                    developerConnection 'scm:git:https://github.com/AdaptiveMe/adaptive-arp-javafx.git'
+                    url 'https://github.com/AdaptiveMe/adaptive-arp-javafx'
                 }
 
                 licenses {

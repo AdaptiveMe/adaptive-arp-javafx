@@ -47,7 +47,7 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
     compile 'com.google.code.gson:gson:2.3.1'
-    compile 'me.adaptive:adaptive-arp-lib:2.2.9'
+    compile 'me.adaptive:adaptive-arp-lib:2.2.12'
     compile 'io.codearte.jfairy:jfairy:0.3.1'
 }
 

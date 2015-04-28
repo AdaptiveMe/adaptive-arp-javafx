@@ -1,7 +1,7 @@
 # Adaptive Runtime Platform for JavaFX 
 [![Build Status](https://travis-ci.org/AdaptiveMe/adaptive-arp-javafx.svg?branch=master)](https://travis-ci.org/AdaptiveMe/adaptive-arp-javafx)
 [![GitHub tag](https://img.shields.io/github/tag/AdaptiveMe/adaptive-arp-javafx.svg)](https://github.com/AdaptiveMe/adaptive-arp-javafx) 
-[![Maven](https://img.shields.io/maven-central/v/me.adaptive/adaptive-arp-lib.svg)](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22adaptive-arp-lib%22) 
+[![Maven](https://img.shields.io/maven-central/v/me.adaptive/adaptive-arp-lib.svg)](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22adaptive-arp-fx-impl-nibble%22) 
 [![License](https://img.shields.io/badge/license-apache%202-blue.svg)](https://raw.githubusercontent.com/AdaptiveMe/adaptive-arp-javafx/master/LICENSE) 
 [![Adaptive Runtime Platform for JavaFX](https://img.shields.io/badge/arp-javafx-e76f00.svg)](https://github.com/AdaptiveMe/adaptive-arp-javafx)
 [![adaptive.me](https://img.shields.io/badge/adaptive-me-fdcb0e.svg)](http://adaptive.me)

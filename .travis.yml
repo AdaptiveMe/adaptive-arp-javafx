@@ -3,3 +3,11 @@ before_install: cd adaptive-fx
 language: java
 jdk:
   - oraclejdk8
+after_success: |-
+  if [ "$TRAVIS_BRANCH" == "$TRAVIS_TAG" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
+    echo "Releasing successful build."
+    ./gradlew uploadArchives
+    ./gradlew nexusStagingRelease
+  elif [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
+    echo "Processed successful build after pull."
+  fi

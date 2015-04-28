@@ -8,6 +8,6 @@ after_success: |-
     echo "Releasing successful build."
     ./gradlew uploadArchives
     ./gradlew nexusStagingRelease
-  elif [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
+  elif [ "$TRAVIS_PULL_REQUEST" == "true" ]; then
     echo "Processed successful build after pull."
   fi

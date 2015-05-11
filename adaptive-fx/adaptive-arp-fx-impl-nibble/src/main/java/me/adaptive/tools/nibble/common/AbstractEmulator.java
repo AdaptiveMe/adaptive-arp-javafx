@@ -33,6 +33,5 @@
  */
 package me.adaptive.tools.nibble.common;
 
-public class AbstractApp {
-
+public class AbstractEmulator {
 }

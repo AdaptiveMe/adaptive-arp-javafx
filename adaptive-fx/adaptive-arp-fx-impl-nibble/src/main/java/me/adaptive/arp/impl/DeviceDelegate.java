@@ -1,159 +1,207 @@
 /**
---| ADAPTIVE RUNTIME PLATFORM |----------------------------------------------------------------------------------------
-
-(C) Copyright 2013-2015 Carlos Lozano Diez t/a Adaptive.me <http://adaptive.me>.
-
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the
-License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 . Unless required by appli-
--cable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,  WITHOUT
-WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the  License  for the specific language governing
-permissions and limitations under the License.
-
-Original author:
-
-    * Carlos Lozano Diez
-            <http://github.com/carloslozano>
-            <http://twitter.com/adaptivecoder>
-            <mailto:carlos@adaptive.me>
-
-Contributors:
-
-    * Ferran Vila Conesa
-             <http://github.com/fnva>
-             <http://twitter.com/ferran_vila>
-             <mailto:ferran.vila.conesa@gmail.com>
-
-    * See source code files for contributors.
-
-Release:
-
-    * @version v2.2.0
-
--------------------------------------------| aut inveniam viam aut faciam |--------------------------------------------
-*/
+ * --| ADAPTIVE RUNTIME PLATFORM |----------------------------------------------------------------------------------------
+ * <p>
+ * (C) Copyright 2013-2015 Carlos Lozano Diez t/a Adaptive.me <http://adaptive.me>.
+ * <p>
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 . Unless required by appli-
+ * -cable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,  WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the  License  for the specific language governing
+ * permissions and limitations under the License.
+ * <p>
+ * Original author:
+ * <p>
+ * Carlos Lozano Diez
+ * <http://github.com/carloslozano>
+ * <http://twitter.com/adaptivecoder>
+ * <mailto:carlos@adaptive.me>
+ * <p>
+ * Contributors:
+ * <p>
+ * Ferran Vila Conesa
+ * <http://github.com/fnva>
+ * <http://twitter.com/ferran_vila>
+ * <mailto:ferran.vila.conesa@gmail.com>
+ * <p>
+ * See source code files for contributors.
+ * <p>
+ * Release:
+ *
+ * @version v2.2.0
+ * <p>
+ * -------------------------------------------| aut inveniam viam aut faciam |--------------------------------------------
+ */
 
 package me.adaptive.arp.impl;
 
 import me.adaptive.arp.api.*;
+import me.adaptive.tools.nibble.common.AbstractDevice;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
-   Interface for Managing the Device operations
-   Auto-generated implementation of IDevice specification.
-*/
+ * Interface for Managing the Device operations
+ * Auto-generated implementation of IDevice specification.
+ */
 public class DeviceDelegate extends BaseSystemDelegate implements IDevice {
 
-     /**
-        Default Constructor.
+    /**
+     * List of registered Button Listeners
      */
-     public DeviceDelegate() {
-          super();
-     }
+    private List<IButtonListener> buttonListeners;
 
-     /**
-        Register a new listener that will receive button events.
-
-        @param listener to be registered.
-        @since v2.0
+    /**
+     * List of registered Device Orientation listeners
      */
-     public void addButtonListener(IButtonListener listener) {
-          // TODO: Not implemented.
-          throw new UnsupportedOperationException(this.getClass().getName()+":addButtonListener");
-     }
+    private List<IDeviceOrientationListener> deviceOrientationListeners;
 
-     /**
-        Add a listener to start receiving device orientation change events.
-
-        @param listener Listener to add to receive orientation change events.
-        @since v2.0.5
+    /**
+     * Log Tag
      */
-     public void addDeviceOrientationListener(IDeviceOrientationListener listener) {
-          // TODO: Not implemented.
-          throw new UnsupportedOperationException(this.getClass().getName()+":addDeviceOrientationListener");
-     }
+    private static final String LOG_TAG = "DeviceDelegate";
 
-     /**
-        Returns the device information for the current device executing the runtime.
-
-        @return DeviceInfo for the current device.
-        @since v2.0
+    /**
+     * Current Device Orientation
      */
-     public DeviceInfo getDeviceInfo() {
-          DeviceInfo response;
-          // TODO: Not implemented.
-          throw new UnsupportedOperationException(this.getClass().getName()+":getDeviceInfo");
-          // return response;
-     }
+    private ICapabilitiesOrientation origin;
 
-     /**
-        Gets the current Locale for the device.
-
-        @return The current Locale information.
-        @since v2.0
+    /**
+     * Logger instance
      */
-     public Locale getLocaleCurrent() {
-          Locale response;
-          // TODO: Not implemented.
-          throw new UnsupportedOperationException(this.getClass().getName()+":getLocaleCurrent");
-          // return response;
-     }
+    private ILogging logger;
 
-     /**
-        Returns the current orientation of the device. Please note that this may be different from the orientation
-of the display. For display orientation, use the IDisplay APIs.
-
-        @return The current orientation of the device.
-        @since v2.0.5
+    /**
+     * Default Constructor.
      */
-     public ICapabilitiesOrientation getOrientationCurrent() {
-          ICapabilitiesOrientation response;
-          // TODO: Not implemented.
-          throw new UnsupportedOperationException(this.getClass().getName()+":getOrientationCurrent");
-          // return response;
-     }
+    public DeviceDelegate() {
+        super();
+        logger = AppRegistryBridge.getInstance().getLoggingBridge();
+        buttonListeners = new ArrayList<>();
+        deviceOrientationListeners = new ArrayList<>();
+        origin = this.getOrientationCurrent();
+    }
 
-     /**
-        De-registers an existing listener from receiving button events.
-
-        @param listener to be removed.
-        @since v2.0
+    /**
+     * Returns the device information for the current device executing the runtime.
+     *
+     * @return DeviceInfo for the current device.
+     * @since v2.0
      */
-     public void removeButtonListener(IButtonListener listener) {
-          // TODO: Not implemented.
-          throw new UnsupportedOperationException(this.getClass().getName()+":removeButtonListener");
-     }
+    public DeviceInfo getDeviceInfo() {
+        final AbstractDevice device = AbstractDevice.getCurrentDevice();
+        return new DeviceInfo(device.getDeviceName(), device.getDeviceModel(), device.getDeviceVendor(), "");
+    }
 
-     /**
-        Removed all existing listeners from receiving button events.
-
-        @since v2.0
+    /**
+     * Gets the current Locale for the device.
+     *
+     * @return The current Locale information.
+     * @since v2.0
      */
-     public void removeButtonListeners() {
-          // TODO: Not implemented.
-          throw new UnsupportedOperationException(this.getClass().getName()+":removeButtonListeners");
-     }
+    public Locale getLocaleCurrent() {
 
-     /**
-        Remove a listener to stop receiving device orientation change events.
+        final String language = java.util.Locale.getDefault().getLanguage();
+        final String country = java.util.Locale.getDefault().getCountry();
+        logger.log(ILoggingLogLevel.Debug, LOG_TAG, "getLocaleCurrent: " + language + ", " + country);
 
-        @param listener Listener to remove from receiving orientation change events.
-        @since v2.0.5
+        return new Locale(country, language);
+    }
+
+    /**
+     * Returns the current orientation of the device. Please note that this may be different from the orientation
+     * of the display. For display orientation, use the IDisplay APIs.
+     *
+     * @return The current orientation of the device.
+     * @since v2.0.5
      */
-     public void removeDeviceOrientationListener(IDeviceOrientationListener listener) {
-          // TODO: Not implemented.
-          throw new UnsupportedOperationException(this.getClass().getName()+":removeDeviceOrientationListener");
-     }
+    public ICapabilitiesOrientation getOrientationCurrent() {
+        // TODO: Not implemented.
+        return ICapabilitiesOrientation.PortraitUp;
+    }
 
-     /**
-        Remove all listeners receiving device orientation events.
-
-        @since v2.0.5
+    /**
+     * Register a new listener that will receive button events.
+     *
+     * @param listener to be registered.
+     * @since v2.0
      */
-     public void removeDeviceOrientationListeners() {
-          // TODO: Not implemented.
-          throw new UnsupportedOperationException(this.getClass().getName()+":removeDeviceOrientationListeners");
-     }
+    public void addButtonListener(IButtonListener listener) {
 
+        if (!buttonListeners.contains(listener)) {
+            buttonListeners.add(listener);
+            logger.log(ILoggingLogLevel.Debug, LOG_TAG, "addButtonListener: " + listener.toString() + " added!");
+        } else
+            logger.log(ILoggingLogLevel.Error, LOG_TAG, "addButtonListener: " + listener.toString() + " is already added!");
+    }
+
+    /**
+     * De-registers an existing listener from receiving button events.
+     *
+     * @param listener to be removed.
+     * @since v2.0
+     */
+    public void removeButtonListener(IButtonListener listener) {
+
+        if (buttonListeners.contains(listener)) {
+            buttonListeners.remove(listener);
+            logger.log(ILoggingLogLevel.Debug, LOG_TAG, "removeButtonListener: " + listener.toString() + " Removed!");
+        } else
+            logger.log(ILoggingLogLevel.Error, LOG_TAG, "removeButtonListener: " + listener.toString() + " is not registered");
+    }
+
+    /**
+     * Removed all existing listeners from receiving button events.
+     *
+     * @since v2.0
+     */
+    public void removeButtonListeners() {
+
+        buttonListeners.clear();
+        logger.log(ILoggingLogLevel.Debug, LOG_TAG, "removeButtonListeners: all ButtonListeners have been removed!");
+    }
+
+    /**
+     * Add a listener to start receiving device orientation change events.
+     *
+     * @param listener Listener to add to receive orientation change events.
+     * @since v2.0.5
+     */
+    public void addDeviceOrientationListener(IDeviceOrientationListener listener) {
+
+        if (!deviceOrientationListeners.contains(listener)) {
+            deviceOrientationListeners.add(listener);
+            logger.log(ILoggingLogLevel.Debug, LOG_TAG, "addDeviceOrientationListener: " + listener.toString() + " added!");
+        } else
+            logger.log(ILoggingLogLevel.Error, LOG_TAG, "addDeviceOrientationListener: " + listener.toString() + " is already added!");
+    }
+
+    /**
+     * Remove a listener to stop receiving device orientation change events.
+     *
+     * @param listener Listener to remove from receiving orientation change events.
+     * @since v2.0.5
+     */
+    public void removeDeviceOrientationListener(IDeviceOrientationListener listener) {
+
+        if (deviceOrientationListeners.contains(listener)) {
+            deviceOrientationListeners.remove(listener);
+            logger.log(ILoggingLogLevel.Debug, LOG_TAG, "removeDeviceOrientationListener: " + listener.toString() + " removed!");
+        } else
+            logger.log(ILoggingLogLevel.Error, LOG_TAG, "removeDeviceOrientationListener: " + listener.toString() + " is not registered");
+    }
+
+    /**
+     * Remove all listeners receiving device orientation events.
+     *
+     * @since v2.0.5
+     */
+    public void removeDeviceOrientationListeners() {
+
+        deviceOrientationListeners.clear();
+        logger.log(ILoggingLogLevel.Debug, LOG_TAG, "removeDeviceOrientationListeners: all DeviceOrientationListeners have been removed!");
+    }
 }
 /**
-------------------------------------| Engineered with ♥ in Barcelona, Catalonia |--------------------------------------
-*/
+ * ------------------------------------| Engineered with ♥ in Barcelona, Catalonia |--------------------------------------
+ */

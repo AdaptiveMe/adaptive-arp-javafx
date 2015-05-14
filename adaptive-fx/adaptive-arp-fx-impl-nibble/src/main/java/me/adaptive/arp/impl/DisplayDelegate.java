@@ -34,10 +34,10 @@
 
 package me.adaptive.arp.impl;
 
-import me.adaptive.arp.api.BaseSystemDelegate;
-import me.adaptive.arp.api.ICapabilitiesOrientation;
-import me.adaptive.arp.api.IDisplay;
-import me.adaptive.arp.api.IDisplayOrientationListener;
+import me.adaptive.arp.api.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  Interface for Managing the Display operations
@@ -46,10 +46,16 @@ import me.adaptive.arp.api.IDisplayOrientationListener;
 public class DisplayDelegate extends BaseSystemDelegate implements IDisplay {
 
     /**
+     * List of registered Device Orientation listeners
+     */
+    private List<IDisplayOrientationListener> displayOrientationListeners;
+
+    /**
      Default Constructor.
      */
     public DisplayDelegate() {
         super();
+        displayOrientationListeners = new ArrayList<>();
     }
 
     /**
@@ -98,6 +104,14 @@ public class DisplayDelegate extends BaseSystemDelegate implements IDisplay {
         throw new UnsupportedOperationException(this.getClass().getName() + ":removeDisplayOrientationListeners");
     }
 
+    /**
+     * Getter for registered orientation listeners.
+     *
+     * @return List of registered display orientation listeners
+     */
+    public List<IDisplayOrientationListener> getDisplayOrientationListeners() {
+        return displayOrientationListeners;
+    }
 }
 /**
  ------------------------------------| Engineered with ♥ in Barcelona, Catalonia |--------------------------------------

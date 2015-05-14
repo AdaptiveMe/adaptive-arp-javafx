@@ -38,6 +38,7 @@ import me.adaptive.arp.api.BaseSystemDelegate;
 import me.adaptive.arp.api.IOS;
 import me.adaptive.arp.api.IOSType;
 import me.adaptive.arp.api.OSInfo;
+import me.adaptive.tools.nibble.common.AbstractEmulator;
 import me.adaptive.tools.nibble.common.AbstractOs;
 
 /**
@@ -60,8 +61,8 @@ public class OSDelegate extends BaseSystemDelegate implements IOS {
      * @since v2.0
      */
     public OSInfo getOSInfo() {
-        final AbstractOs os = AbstractOs.getCurrentOs();
-        return new OSInfo(IOSType.valueOf(os.getOsName()), os.getOsVersion(), os.getOsVendor());
+        final AbstractOs os = AbstractEmulator.getCurrentEmulator().getOs();
+        return os.getOsInfo();
     }
 
 }

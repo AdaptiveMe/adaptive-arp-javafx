@@ -36,6 +36,7 @@ package me.adaptive.arp.impl;
 
 import me.adaptive.arp.api.*;
 import me.adaptive.tools.nibble.common.AbstractDevice;
+import me.adaptive.tools.nibble.common.AbstractEmulator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -89,8 +90,8 @@ public class DeviceDelegate extends BaseSystemDelegate implements IDevice {
      * @since v2.0
      */
     public DeviceInfo getDeviceInfo() {
-        final AbstractDevice device = AbstractDevice.getCurrentDevice();
-        return new DeviceInfo(device.getDeviceName(), device.getDeviceModel(), device.getDeviceVendor(), "");
+        final AbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
+        return device.getDeviceInfo();
     }
 
     /**
@@ -200,6 +201,24 @@ public class DeviceDelegate extends BaseSystemDelegate implements IDevice {
 
         deviceOrientationListeners.clear();
         logger.log(ILoggingLogLevel.Debug, LOG_TAG, "removeDeviceOrientationListeners: all DeviceOrientationListeners have been removed!");
+    }
+
+    /**
+     * Getter for registered button listeners.
+     *
+     * @return List of registered Button Listeners
+     */
+    public List<IButtonListener> getButtonListeners() {
+        return buttonListeners;
+    }
+
+    /**
+     * Getter for registered orientation listeners.
+     *
+     * @return List of registered device orientation listeners
+     */
+    public List<IDeviceOrientationListener> getDeviceOrientationListeners() {
+        return deviceOrientationListeners;
     }
 }
 /**

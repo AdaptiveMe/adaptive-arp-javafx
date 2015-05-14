@@ -33,10 +33,9 @@
  */
 package me.adaptive.tools.nibble.common;
 
-import me.adaptive.tools.nibble.common.types.CompatibilityType;
-
-import java.util.HashMap;
-import java.util.Map;
+import me.adaptive.arp.api.Email;
+import me.adaptive.arp.api.IMessagingCallback;
+import me.adaptive.arp.api.OSInfo;
 
 /**
  * Abstract class for inter-communication between the emulator (adaptive-tools-nibble)
@@ -46,99 +45,69 @@ import java.util.Map;
 public abstract class AbstractOs {
 
     /**
-     * List of current Operating Systems Registered on the system. The current Thread
-     * is the identifier for this os on the Map.
+     * Operating System Information
      */
-    private static final Map<Thread, AbstractOs> ACTIVE_OS = new HashMap<Thread, AbstractOs>();
-
-
-    // TODO: Change all of this to OSInfo?
-    private String osName;
-    private String osVersion;
-    private String osVendor;
-    private CompatibilityType osType;
-
-    // TODO: comment
-    public AbstractOs(String osName, String osVersion, String osVendor, CompatibilityType osType) {
-        this.osName = osName;
-        this.osVersion = osVersion;
-        this.osVendor = osVendor;
-        this.osType = osType;
-    }
+    private OSInfo osInfo;
 
     /**
-     * Method for returning the current running operating system of the emulator
+     * Operating System Constructor
      *
-     * @return AbstractOs with all the information of the operating system
+     * @param osInfo Operating System Information
      */
-    public static AbstractOs getCurrentOs() {
-
-        return ACTIVE_OS.get(Thread.currentThread());
+    public AbstractOs(OSInfo osInfo) {
+        this.osInfo = osInfo;
     }
 
     /**
-     * Method for registering a new Thread, or current Operating System
+     * Returns the Operating System information encapsulated in a bean.
      *
-     * @param os Operating System registered
+     * @return Operating System information
      */
-    public static void registerThread(AbstractOs os) {
-
-        ACTIVE_OS.put(Thread.currentThread(), os);
+    public OSInfo getOsInfo() {
+        return osInfo;
     }
 
     /**
-     * Method for deregistering the current Operating System from the
-     * pull of registered Threads
-     */
-    public static void deregisterThread() {
-
-        ACTIVE_OS.remove(Thread.currentThread());
-    }
-
-    /**
-     * Operating system name getter.
+     * Method that plays a url video inside the emulator. The emulator should
+     * implement a video player in JavaFx
      *
-     * @return Operating system name
+     * @param url URl of the stream
      */
-    public String getOsName() {
-        return osName;
-    }
+    public abstract void playStream(String url);
 
     /**
-     * Operating system version getter.
+     * This method executes a javascript inside the emulator's webview
      *
-     * @return Operating system version
+     * @param javaScriptText Javascript to execute
      */
-    public String getOsVersion() {
-        return osVersion;
-    }
+    public abstract void executeJavaScript(String javaScriptText);
 
     /**
-     * Operating system vendor getter.
+     * Method for sending an SMS to a concrete number with a text. The method executes a
+     * callback when there is a result to show
      *
-     * @return Operating System vendor
+     * @param number   Number to send the SMS
+     * @param text     Text to send.
+     * @param callback Callback fired when there is a result.
      */
-    public String getOsVendor() {
-        return osVendor;
-    }
+    public abstract void sendSMS(String number, String text, IMessagingCallback callback);
 
     /**
-     * Operating system type getter.
+     * Method for sending an Email to one or more receivers.  The method executes a
+     * callback when there is a result to show
      *
-     * @return Operating system type
+     * @param data     Email data encapsulated into a bean
+     * @param callback Callback fired when there is a result.
      */
-    public CompatibilityType getOsType() {
-        return osType;
-    }
+    public abstract void sendEmail(Email data, IMessagingCallback callback);
 
     /**
-     * ToString Implementation method.
+     * Method that opens a browser on the operating system of the running emulator.
      *
-     * @return String with all the information of the Operating System
+     * @param url URl to open. HAs to be a valid URL
+     * @return Returns the result of the operation.
      */
-    @Override
-    public String toString() {
-        return "AbstractOs{" + "osName='" + osName + '\'' + ", osVersion='" + osVersion + '\'' + ", osVendor='" +
-                osVendor + '\'' + ", osType=" + osType + '}';
-    }
+    public abstract boolean openExtenalBrowser(String url);
+
+    // TODO: inform all the os capabilities of the current emulator
 }

@@ -36,6 +36,7 @@ package me.adaptive.arp.impl;
 
 import me.adaptive.arp.api.IAppContext;
 import me.adaptive.arp.api.IOSType;
+import me.adaptive.tools.nibble.common.AbstractEmulator;
 import me.adaptive.tools.nibble.common.AbstractOs;
 
 /**
@@ -71,8 +72,8 @@ public class AppContextDelegate implements IAppContext {
      * @since v2.0
      */
     public IOSType getContextType() {
-        final AbstractOs os = AbstractOs.getCurrentOs();
-        return IOSType.valueOf(os.getOsName());
+        final AbstractOs os = AbstractEmulator.getCurrentEmulator().getOs();
+        return os.getOsInfo().getName();
     }
 
 }

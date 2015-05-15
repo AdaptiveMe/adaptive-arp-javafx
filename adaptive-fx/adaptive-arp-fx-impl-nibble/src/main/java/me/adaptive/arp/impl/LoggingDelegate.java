@@ -34,7 +34,9 @@ Release:
 
 package me.adaptive.arp.impl;
 
-import me.adaptive.arp.api.*;
+import me.adaptive.arp.api.BaseUtilDelegate;
+import me.adaptive.arp.api.ILogging;
+import me.adaptive.arp.api.ILoggingLogLevel;
 
 /**
    Interface for Managing the Logging operations
@@ -58,7 +60,6 @@ public class LoggingDelegate extends BaseUtilDelegate implements ILogging {
      */
      public void log(ILoggingLogLevel level, String message) {
           // TODO: Not implemented.
-          throw new UnsupportedOperationException(this.getClass().getName()+":log");
      }
 
      /**
@@ -71,7 +72,6 @@ public class LoggingDelegate extends BaseUtilDelegate implements ILogging {
      */
      public void log(ILoggingLogLevel level, String category, String message) {
           // TODO: Not implemented.
-          throw new UnsupportedOperationException(this.getClass().getName()+":log");
      }
 
 }

@@ -34,10 +34,7 @@
 package me.adaptive.tools.nibble.common;
 
 import me.adaptive.arp.api.*;
-import me.adaptive.arp.impl.AccelerationDelegate;
-import me.adaptive.arp.impl.DeviceDelegate;
-import me.adaptive.arp.impl.DisplayDelegate;
-import me.adaptive.arp.impl.GeolocationDelegate;
+import me.adaptive.arp.impl.*;
 
 /**
  * Abstract class for inter-communication between the emulator (adaptive-tools-nibble)
@@ -155,6 +152,21 @@ public abstract class AbstractDevice {
 
         for (IGeolocationListener listener : delegate.getListeners()) {
             listener.onResult(geolocation);
+        }
+    }
+
+    /**
+     * External method to notify all the registered device button listeners that
+     * a new Network Status event is fired.
+     *
+     * @param networkEvent Network event
+     */
+    public void notifyNetworkStatusListeners(NetworkEvent networkEvent) {
+
+        NetworkStatusDelegate delegate = (NetworkStatusDelegate) AppRegistryBridge.getInstance().getNetworkStatusBridge().getDelegate();
+
+        for (INetworkStatusListener listener : delegate.getListeners()) {
+            listener.onResult(networkEvent);
         }
     }
 

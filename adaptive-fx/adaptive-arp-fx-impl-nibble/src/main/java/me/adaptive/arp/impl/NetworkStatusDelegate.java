@@ -33,9 +33,10 @@
  */
 package me.adaptive.arp.impl;
 
-import me.adaptive.arp.api.BaseCommunicationDelegate;
-import me.adaptive.arp.api.INetworkStatus;
-import me.adaptive.arp.api.INetworkStatusListener;
+import me.adaptive.arp.api.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Interface for Managing the Network status
@@ -44,10 +45,27 @@ import me.adaptive.arp.api.INetworkStatusListener;
 public class NetworkStatusDelegate extends BaseCommunicationDelegate implements INetworkStatus {
 
     /**
+     * Logging Tag for this Implementation
+     */
+    private static final String LOG_TAG = "NetworkStatusDelegate";
+
+    /**
+     * Logger reference
+     */
+    private ILogging logger;
+
+    /**
+     * List of registered NetworkStatus listeners
+     */
+    private List<INetworkStatusListener> listeners;
+
+    /**
      * Default Constructor.
      */
     public NetworkStatusDelegate() {
         super();
+        logger = AppRegistryBridge.getInstance().getLoggingBridge();
+        listeners = new ArrayList<>();
     }
 
     /**
@@ -57,8 +75,12 @@ public class NetworkStatusDelegate extends BaseCommunicationDelegate implements 
      * @since v2.0
      */
     public void addNetworkStatusListener(INetworkStatusListener listener) {
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":addNetworkStatusListener");
+
+        if (!listeners.contains(listener)) {
+            listeners.add(listener);
+            logger.log(ILoggingLogLevel.Debug, LOG_TAG, "addNetworkStatusListener: " + listener.toString() + " added!");
+        } else
+            logger.log(ILoggingLogLevel.Error, LOG_TAG, "addNetworkStatusListener: " + listener.toString() + " is already added!");
     }
 
     /**
@@ -68,8 +90,12 @@ public class NetworkStatusDelegate extends BaseCommunicationDelegate implements 
      * @since v2.0
      */
     public void removeNetworkStatusListener(INetworkStatusListener listener) {
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":removeNetworkStatusListener");
+
+        if (listeners.contains(listener)) {
+            listeners.remove(listener);
+            logger.log(ILoggingLogLevel.Debug, LOG_TAG, "removeNetworkStatusListener" + listener.toString() + " removed!");
+        } else
+            logger.log(ILoggingLogLevel.Error, LOG_TAG, "removeNetworkStatusListener: " + listener.toString() + " is not registered");
     }
 
     /**
@@ -78,8 +104,18 @@ public class NetworkStatusDelegate extends BaseCommunicationDelegate implements 
      * @since v2.0
      */
     public void removeNetworkStatusListeners() {
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":removeNetworkStatusListeners");
+
+        listeners.clear();
+        logger.log(ILoggingLogLevel.Debug, LOG_TAG, "removeNetworkStatusListeners: all GeolocationListeners have been removed!");
+    }
+
+    /**
+     * Getter for registered listeners
+     *
+     * @return List of registered listeners
+     */
+    public List<INetworkStatusListener> getListeners() {
+        return listeners;
     }
 
 }

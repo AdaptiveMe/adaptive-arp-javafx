@@ -103,4 +103,28 @@ public abstract class AbstractApp {
      * @return Returns the result of the operation
      */
     public abstract boolean openInternalBrowser(String url, String title, String backButtonText);
+
+    /**
+     * Method for opening a browser embedded into the application in a modal window
+     *
+     * @param url            Url to open
+     * @param title          Title of the Navigation bar
+     * @param backButtonText Title of the Back button bar
+     * @return The result of the operation
+     */
+    public abstract boolean openInternalBrowserModal(String url, String title, String backButtonText);
+
+    /**
+     * Method for closing the splash screen of the application
+     *
+     * @return Result of the operation
+     */
+    public abstract boolean dismissSplashScreen();
+
+    /**
+     * Whether the application is in background or not
+     *
+     * @return true if the application is in background;false otherwise
+     */
+    public abstract boolean isBackground();
 }

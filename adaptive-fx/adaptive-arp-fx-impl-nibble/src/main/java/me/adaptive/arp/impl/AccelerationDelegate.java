@@ -1,4 +1,4 @@
-/**
+/*
  * --| ADAPTIVE RUNTIME PLATFORM |----------------------------------------------------------------------------------------
  *
  * (C) Copyright 2013-2015 Carlos Lozano Diez t/a Adaptive.me <http://adaptive.me>.

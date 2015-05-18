@@ -34,8 +34,10 @@
 package me.adaptive.tools.nibble.common;
 
 import me.adaptive.arp.api.*;
+import me.adaptive.arp.impl.AccelerationDelegate;
 import me.adaptive.arp.impl.DeviceDelegate;
 import me.adaptive.arp.impl.DisplayDelegate;
+import me.adaptive.arp.impl.GeolocationDelegate;
 
 /**
  * Abstract class for inter-communication between the emulator (adaptive-tools-nibble)
@@ -123,6 +125,36 @@ public abstract class AbstractDevice {
 
         for (IButtonListener listener : delegate.getButtonListeners()) {
             listener.onResult(button);
+        }
+    }
+
+    /**
+     * External method to notify all the registered device button listeners that
+     * a new acceleration event is fired.
+     *
+     * @param acceleration Acceleration event
+     */
+    public void notifyAccelerationListeners(Acceleration acceleration) {
+
+        AccelerationDelegate delegate = (AccelerationDelegate) AppRegistryBridge.getInstance().getAccelerationBridge().getDelegate();
+
+        for (IAccelerationListener listener : delegate.getListeners()) {
+            listener.onResult(acceleration);
+        }
+    }
+
+    /**
+     * External method to notify all the registered device button listeners that
+     * a new geolocation event is fired.
+     *
+     * @param geolocation Geolocation event
+     */
+    public void notifyGeolocationListeners(Geolocation geolocation) {
+
+        GeolocationDelegate delegate = (GeolocationDelegate) AppRegistryBridge.getInstance().getGeolocationBridge().getDelegate();
+
+        for (IGeolocationListener listener : delegate.getListeners()) {
+            listener.onResult(geolocation);
         }
     }
 

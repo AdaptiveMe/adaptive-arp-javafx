@@ -33,56 +33,92 @@
  */
 package me.adaptive.arp.impl;
 
-import me.adaptive.arp.api.BaseSensorDelegate;
-import me.adaptive.arp.api.IAcceleration;
-import me.adaptive.arp.api.IAccelerationListener;
+import me.adaptive.arp.api.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- Interface defining methods about the acceleration sensor
- Auto-generated implementation of IAcceleration specification.
+ * Interface defining methods about the acceleration sensor
+ * Auto-generated implementation of IAcceleration specification.
  */
 public class AccelerationDelegate extends BaseSensorDelegate implements IAcceleration {
 
     /**
-     Default Constructor.
+     * Logging Tag for this Implementation
+     */
+    private static final String LOG_TAG = "AccelerationDelegate";
+
+    /**
+     * Logger reference
+     */
+    private ILogging logger;
+
+    /**
+     * List of registered LifeCycle listeners
+     */
+    private List<IAccelerationListener> listeners;
+
+    /**
+     * Default Constructor.
      */
     public AccelerationDelegate() {
         super();
+        logger = AppRegistryBridge.getInstance().getLoggingBridge();
+        listeners = new ArrayList<>();
     }
 
     /**
-     Register a new listener that will receive acceleration events.
-
-     @param listener to be registered.
-     @since v2.0
+     * Register a new listener that will receive acceleration events.
+     *
+     * @param listener to be registered.
+     * @since v2.0
      */
     public void addAccelerationListener(IAccelerationListener listener) {
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":addAccelerationListener");
+
+        if (!listeners.contains(listener)) {
+            listeners.add(listener);
+            logger.log(ILoggingLogLevel.Debug, LOG_TAG, "addAccelerationListener: " + listener.toString() + " added!");
+        } else
+            logger.log(ILoggingLogLevel.Error, LOG_TAG, "addAccelerationListener: " + listener.toString() + " is already added!");
     }
 
     /**
-     De-registers an existing listener from receiving acceleration events.
-
-     @param listener to be registered.
-     @since v2.0
+     * De-registers an existing listener from receiving acceleration events.
+     *
+     * @param listener to be registered.
+     * @since v2.0
      */
     public void removeAccelerationListener(IAccelerationListener listener) {
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":removeAccelerationListener");
+
+        if (listeners.contains(listener)) {
+            listeners.remove(listener);
+            logger.log(ILoggingLogLevel.Debug, LOG_TAG, "removeAccelerationListener" + listener.toString() + " removed!");
+        } else
+            logger.log(ILoggingLogLevel.Error, LOG_TAG, "removeAccelerationListener: " + listener.toString() + " is not registered");
     }
 
     /**
-     Removed all existing listeners from receiving acceleration events.
-
-     @since v2.0
+     * Removed all existing listeners from receiving acceleration events.
+     *
+     * @since v2.0
      */
     public void removeAccelerationListeners() {
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":removeAccelerationListeners");
+
+        listeners.clear();
+        logger.log(ILoggingLogLevel.Debug, LOG_TAG, "removeAccelerationListeners: all AccelerationListeners have been removed!");
+    }
+
+    /**
+     * Getter for registered listeners
+     *
+     * @return List of registered listeners
+     */
+    public List<IAccelerationListener> getListeners() {
+        return listeners;
     }
 
 }
 /**
- ------------------------------------| Engineered with ♥ in Barcelona, Catalonia |--------------------------------------
+ * ------------------------------------| Engineered with ♥ in Barcelona, Catalonia |--------------------------------------
  */

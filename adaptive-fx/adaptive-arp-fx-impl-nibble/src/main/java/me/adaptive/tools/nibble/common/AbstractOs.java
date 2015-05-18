@@ -35,6 +35,7 @@ package me.adaptive.tools.nibble.common;
 
 import me.adaptive.arp.api.Email;
 import me.adaptive.arp.api.IMessagingCallback;
+import me.adaptive.arp.api.ITelephonyStatus;
 import me.adaptive.arp.api.OSInfo;
 
 /**
@@ -108,6 +109,14 @@ public abstract class AbstractOs {
      * @return Returns the result of the operation.
      */
     public abstract boolean openExtenalBrowser(String url);
+
+    /**
+     * Method for emulating a call in the current emulator and operating system.
+     *
+     * @param number Number to call
+     * @return Staus of the call
+     */
+    public abstract ITelephonyStatus call(String number);
 
     // TODO: inform all the os capabilities of the current emulator
 }

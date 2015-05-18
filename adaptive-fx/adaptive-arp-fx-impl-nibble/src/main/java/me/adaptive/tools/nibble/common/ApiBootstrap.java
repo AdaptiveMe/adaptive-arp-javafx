@@ -44,41 +44,48 @@ import me.adaptive.arp.impl.*;
 public class ApiBootstrap {
 
     /**
+     * Initialization Semaphone
+     */
+    private static boolean isBootstrapped = false;
+
+    /**
      * This method is responsible for populating all the delegates for the current API definition.
      *
      * @throws Exception Exception creating and populating the delegates
      */
     public static void bootstrap() throws Exception {
 
-        // Register Logging delegate
-        AppRegistryBridge.getInstance().getLoggingBridge().setDelegate(new LoggingDelegate());
+        if (!isBootstrapped) {
+            // Register Logging delegate
+            AppRegistryBridge.getInstance().getLoggingBridge().setDelegate(new LoggingDelegate());
 
-        // Register the application/platform delegates
-        AppRegistryBridge.getInstance().getPlatformContext().setDelegate(new AppContextDelegate());
-        AppRegistryBridge.getInstance().getPlatformContextWeb().setDelegate(new AppContextWebviewDelegate());
+            // Register the application/platform delegates
+            AppRegistryBridge.getInstance().getPlatformContext().setDelegate(new AppContextDelegate());
+            AppRegistryBridge.getInstance().getPlatformContextWeb().setDelegate(new AppContextWebviewDelegate());
 
-        // Register all the delegates
-        AppRegistryBridge.getInstance().getAccelerationBridge().setDelegate(new AccelerationDelegate());
-        AppRegistryBridge.getInstance().getBrowserBridge().setDelegate(new BrowserDelegate());
-        AppRegistryBridge.getInstance().getCapabilitiesBridge().setDelegate(new CapabilitiesDelegate());
-        AppRegistryBridge.getInstance().getContactBridge().setDelegate(new ContactDelegate());
-        AppRegistryBridge.getInstance().getDatabaseBridge().setDelegate(new DatabaseDelegate());
-        AppRegistryBridge.getInstance().getDeviceBridge().setDelegate(new DeviceDelegate());
-        AppRegistryBridge.getInstance().getDisplayBridge().setDelegate(new DisplayDelegate());
-        AppRegistryBridge.getInstance().getFileBridge().setDelegate(new FileDelegate());
-        AppRegistryBridge.getInstance().getFileSystemBridge().setDelegate(new FileSystemDelegate());
-        AppRegistryBridge.getInstance().getGeolocationBridge().setDelegate(new GeolocationDelegate());
-        AppRegistryBridge.getInstance().getGlobalizationBridge().setDelegate(new GlobalizationDelegate());
-        AppRegistryBridge.getInstance().getLifecycleBridge().setDelegate(new LifecycleDelegate());
-        AppRegistryBridge.getInstance().getMailBridge().setDelegate(new MailDelegate());
-        AppRegistryBridge.getInstance().getMessagingBridge().setDelegate(new MessagingDelegate());
-        AppRegistryBridge.getInstance().getNetworkReachabilityBridge().setDelegate(new NetworkReachabilityDelegate());
-        AppRegistryBridge.getInstance().getNetworkStatusBridge().setDelegate(new NetworkStatusDelegate());
-        AppRegistryBridge.getInstance().getOSBridge().setDelegate(new OSDelegate());
-        AppRegistryBridge.getInstance().getRuntimeBridge().setDelegate(new RuntimeDelegate());
-        AppRegistryBridge.getInstance().getSecurityBridge().setDelegate(new SecurityDelegate());
-        AppRegistryBridge.getInstance().getServiceBridge().setDelegate(new ServiceDelegate());
-        AppRegistryBridge.getInstance().getTelephonyBridge().setDelegate(new TelephonyDelegate());
-        AppRegistryBridge.getInstance().getVideoBridge().setDelegate(new VideoDelegate());
+            // Register all the delegates
+            AppRegistryBridge.getInstance().getAccelerationBridge().setDelegate(new AccelerationDelegate());
+            AppRegistryBridge.getInstance().getBrowserBridge().setDelegate(new BrowserDelegate());
+            AppRegistryBridge.getInstance().getCapabilitiesBridge().setDelegate(new CapabilitiesDelegate());
+            AppRegistryBridge.getInstance().getContactBridge().setDelegate(new ContactDelegate());
+            AppRegistryBridge.getInstance().getDatabaseBridge().setDelegate(new DatabaseDelegate());
+            AppRegistryBridge.getInstance().getDeviceBridge().setDelegate(new DeviceDelegate());
+            AppRegistryBridge.getInstance().getDisplayBridge().setDelegate(new DisplayDelegate());
+            AppRegistryBridge.getInstance().getFileBridge().setDelegate(new FileDelegate());
+            AppRegistryBridge.getInstance().getFileSystemBridge().setDelegate(new FileSystemDelegate());
+            AppRegistryBridge.getInstance().getGeolocationBridge().setDelegate(new GeolocationDelegate());
+            AppRegistryBridge.getInstance().getGlobalizationBridge().setDelegate(new GlobalizationDelegate());
+            AppRegistryBridge.getInstance().getLifecycleBridge().setDelegate(new LifecycleDelegate());
+            AppRegistryBridge.getInstance().getMailBridge().setDelegate(new MailDelegate());
+            AppRegistryBridge.getInstance().getMessagingBridge().setDelegate(new MessagingDelegate());
+            AppRegistryBridge.getInstance().getNetworkReachabilityBridge().setDelegate(new NetworkReachabilityDelegate());
+            AppRegistryBridge.getInstance().getNetworkStatusBridge().setDelegate(new NetworkStatusDelegate());
+            AppRegistryBridge.getInstance().getOSBridge().setDelegate(new OSDelegate());
+            AppRegistryBridge.getInstance().getRuntimeBridge().setDelegate(new RuntimeDelegate());
+            AppRegistryBridge.getInstance().getSecurityBridge().setDelegate(new SecurityDelegate());
+            AppRegistryBridge.getInstance().getServiceBridge().setDelegate(new ServiceDelegate());
+            AppRegistryBridge.getInstance().getTelephonyBridge().setDelegate(new TelephonyDelegate());
+            AppRegistryBridge.getInstance().getVideoBridge().setDelegate(new VideoDelegate());
+        }
     }
 }

@@ -158,5 +158,88 @@ public abstract class AbstractDevice {
         }
     }
 
-    // TODO: inform all the device capabilities of the current emulator
+    /**
+     * Obtains the default orientation of the device/display. If no default orientation is available on
+     * the platform, this method will return the current orientation. To capture device or display orientation
+     * changes please use the IDevice and IDisplay functions and listeners API respectively.
+     *
+     * @return The default orientation for the device/display.
+     */
+    public abstract ICapabilitiesOrientation getOrientationDefault();
+
+    /**
+     * Provides the device/display orientations supported by the platform. A platform will usually
+     * support at least one orientation. This is usually PortaitUp.
+     *
+     * @return The orientations supported by the device/display of the platform.
+     */
+    public abstract ICapabilitiesOrientation[] getOrientationsSupported();
+
+    /**
+     * Determines whether a specific hardware button is supported for interaction.
+     *
+     * @param type Type of feature to check.
+     * @return true is supported, false otherwise.
+     */
+    public abstract boolean hasButtonSupport(ICapabilitiesButton type);
+
+    /**
+     * Determines whether a specific Communication capability is supported by
+     * the device.
+     *
+     * @param type Type of feature to check.
+     * @return true if supported, false otherwise.
+     */
+    public abstract boolean hasCommunicationSupport(ICapabilitiesCommunication type);
+
+    /**
+     * Determines whether a specific Data capability is supported by the device.
+     *
+     * @param type Type of feature to check.
+     * @return true if supported, false otherwise.
+     */
+    public abstract boolean hasDataSupport(ICapabilitiesData type);
+
+    /**
+     * Determines whether a specific Media capability is supported by the
+     * device.
+     *
+     * @param type Type of feature to check.
+     * @return true if supported, false otherwise.
+     */
+    public abstract boolean hasMediaSupport(ICapabilitiesMedia type);
+
+    /**
+     * Determines whether a specific Net capability is supported by the device.
+     *
+     * @param type Type of feature to check.
+     * @return true if supported, false otherwise.
+     */
+    public abstract boolean hasNetSupport(ICapabilitiesNet type);
+
+    /**
+     * Determines whether a specific Notification capability is supported by the
+     * device.
+     *
+     * @param type Type of feature to check.
+     * @return true if supported, false otherwise.
+     */
+    public abstract boolean hasNotificationSupport(ICapabilitiesNotification type);
+
+    /**
+     * Determines whether the device/display supports a given orientation.
+     *
+     * @param orientation Orientation type.
+     * @return True if the given orientation is supported, false otherwise.
+     */
+    public abstract boolean hasOrientationSupport(ICapabilitiesOrientation orientation);
+
+    /**
+     * Determines whether a specific Sensor capability is supported by the
+     * device.
+     *
+     * @param type Type of feature to check.
+     * @return true if supported, false otherwise.
+     */
+    public abstract boolean hasSensorSupport(ICapabilitiesSensor type);
 }

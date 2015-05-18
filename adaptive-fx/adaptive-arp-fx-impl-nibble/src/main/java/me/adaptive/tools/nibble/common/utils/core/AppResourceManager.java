@@ -123,7 +123,6 @@ public class AppResourceManager {
             is.close();
 
         } catch (IOException e) {
-            System.out.println("------------- ERROR: " + e.getMessage());
             logger.log(ILoggingLogLevel.Error, LOG_TAG, e.getMessage());
             resource.setData("<html><body><h1>404</h1></body></html>".getBytes());
         }

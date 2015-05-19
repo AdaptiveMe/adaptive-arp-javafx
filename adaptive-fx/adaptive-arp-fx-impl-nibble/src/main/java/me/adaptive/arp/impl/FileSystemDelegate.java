@@ -33,9 +33,13 @@
  */
 package me.adaptive.arp.impl;
 
-import me.adaptive.arp.api.BaseDataDelegate;
-import me.adaptive.arp.api.FileDescriptor;
-import me.adaptive.arp.api.IFileSystem;
+import me.adaptive.arp.api.*;
+import me.adaptive.tools.nibble.common.AbstractApp;
+import me.adaptive.tools.nibble.common.AbstractEmulator;
+import me.adaptive.tools.nibble.common.utils.Utils;
+
+import java.io.File;
+import java.util.Date;
 
 /**
  * Interface for Managing the File System operations
@@ -44,10 +48,21 @@ import me.adaptive.arp.api.IFileSystem;
 public class FileSystemDelegate extends BaseDataDelegate implements IFileSystem {
 
     /**
+     * Log Tag
+     */
+    private static final String LOG_TAG = "FileSystemDelegate";
+
+    /**
+     * Logger instance
+     */
+    private ILogging logger;
+
+    /**
      * Default Constructor.
      */
     public FileSystemDelegate() {
         super();
+        logger = AppRegistryBridge.getInstance().getLoggingBridge();
     }
 
     /**
@@ -60,10 +75,15 @@ public class FileSystemDelegate extends BaseDataDelegate implements IFileSystem 
      * @since v2.0
      */
     public FileDescriptor createFileDescriptor(FileDescriptor parent, String name) {
-        FileDescriptor response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":createFileDescriptor");
-        // return response;
+
+        FileDescriptor response = new FileDescriptor();
+        response.setName(name);
+        response.setPath(parent.getPath() + "/" + name);
+        response.setPathAbsolute(parent.getPathAbsolute() + getSeparator() + name);
+        response.setDateCreated(new Date().getTime());
+        response.setDateModified(response.getDateCreated());
+        logger.log(ILoggingLogLevel.Debug, LOG_TAG, "createFileDescriptor: " + response.getPathAbsolute());
+        return response;
     }
 
     /**
@@ -75,10 +95,9 @@ public class FileSystemDelegate extends BaseDataDelegate implements IFileSystem 
      * @since v2.0
      */
     public FileDescriptor getApplicationCacheFolder() {
-        FileDescriptor response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":getApplicationCacheFolder");
-        // return response;
+
+        AbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
+        return Utils.toArp(new File(app.getApplicationPath()));
     }
 
     /**
@@ -89,10 +108,9 @@ public class FileSystemDelegate extends BaseDataDelegate implements IFileSystem 
      * @since v2.0
      */
     public FileDescriptor getApplicationCloudFolder() {
-        FileDescriptor response;
+
         // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":getApplicationCloudFolder");
-        // return response;
+        return null;
     }
 
     /**
@@ -103,10 +121,9 @@ public class FileSystemDelegate extends BaseDataDelegate implements IFileSystem 
      * @since v2.0
      */
     public FileDescriptor getApplicationDocumentsFolder() {
-        FileDescriptor response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":getApplicationDocumentsFolder");
-        // return response;
+
+        AbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
+        return Utils.toArp(new File(app.getApplicationPath()));
     }
 
     /**
@@ -117,10 +134,9 @@ public class FileSystemDelegate extends BaseDataDelegate implements IFileSystem 
      * @since v2.0
      */
     public FileDescriptor getApplicationFolder() {
-        FileDescriptor response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":getApplicationFolder");
-        // return response;
+
+        AbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
+        return Utils.toArp(new File(app.getApplicationPath()));
     }
 
     /**
@@ -131,10 +147,9 @@ public class FileSystemDelegate extends BaseDataDelegate implements IFileSystem 
      * @since v2.0
      */
     public FileDescriptor getApplicationProtectedFolder() {
-        FileDescriptor response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":getApplicationProtectedFolder");
-        // return response;
+
+        AbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
+        return Utils.toArp(new File(app.getApplicationPath()));
     }
 
     /**
@@ -144,10 +159,7 @@ public class FileSystemDelegate extends BaseDataDelegate implements IFileSystem 
      * @since v2.0
      */
     public char getSeparator() {
-        char response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":getSeparator");
-        // return response;
+        return '/';
     }
 
     /**
@@ -160,10 +172,9 @@ public class FileSystemDelegate extends BaseDataDelegate implements IFileSystem 
      * @since v2.0
      */
     public FileDescriptor getSystemExternalFolder() {
-        FileDescriptor response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":getSystemExternalFolder");
-        // return response;
+
+        AbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
+        return Utils.toArp(new File(app.getApplicationPath()));
     }
 
 }

@@ -33,9 +33,9 @@
  */
 package me.adaptive.tools.nibble.common.utils;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import me.adaptive.arp.api.FileDescriptor;
+
+import java.io.*;
 import java.util.Arrays;
 
 /**
@@ -77,6 +77,62 @@ public class Utils {
         arr = Arrays.copyOf(arr, N + 1);
         arr[N] = element;
         return arr;
+    }
+
+    /**
+     * Returns a FileDescriptor from a java File
+     *
+     * @param file to read
+     * @return the FileDescriptor
+     */
+    public static FileDescriptor toArp(File file) {
+
+        FileDescriptor fd = new FileDescriptor();
+        fd.setName(file.getName());
+        fd.setDateCreated(file.lastModified());
+        fd.setDateModified(file.lastModified());
+        fd.setPath(file.getPath());
+        fd.setPathAbsolute(file.getAbsolutePath());
+        fd.setSize(file.getTotalSpace());
+
+        return fd;
+
+    }
+
+    /**
+     * Returns the byte[] content of a File
+     *
+     * @param file to read
+     * @return the byte[] data
+     * @throws IOException
+     */
+    public static byte[] readFile(String file) throws IOException {
+        return readFile(new File(file));
+    }
+
+    /**
+     * Returns a byte[]
+     *
+     * @param file to read
+     * @return the byte[]
+     * @throws IOException
+     */
+    public static byte[] readFile(File file) throws IOException {
+        // Open file
+        RandomAccessFile f = new RandomAccessFile(file, "r");
+        try {
+            // Get and check length
+            long longlength = f.length();
+            int length = (int) longlength;
+            if (length != longlength)
+                throw new IOException("File size >= 2 GB");
+            // Read file and return data
+            byte[] data = new byte[length];
+            f.readFully(data);
+            return data;
+        } finally {
+            f.close();
+        }
     }
 
 }

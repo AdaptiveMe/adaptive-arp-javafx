@@ -36,6 +36,7 @@ package me.adaptive.tools.nibble.common.utils;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Arrays;
 
 /**
  * Utils class for public static methods
@@ -61,6 +62,21 @@ public class Utils {
         } catch (IOException e) {
             return null;
         }
+    }
+
+    /**
+     * Static method for appending element to an array
+     *
+     * @param arr     Array
+     * @param element Element
+     * @param <T>     Type of the element
+     * @return Return the element
+     */
+    public static <T> T[] append(T[] arr, T element) {
+        final int N = arr.length;
+        arr = Arrays.copyOf(arr, N + 1);
+        arr[N] = element;
+        return arr;
     }
 
 }

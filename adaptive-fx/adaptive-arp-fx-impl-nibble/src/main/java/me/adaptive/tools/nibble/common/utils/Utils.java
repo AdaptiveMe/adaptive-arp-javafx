@@ -100,22 +100,11 @@ public class Utils {
     }
 
     /**
-     * Returns the byte[] content of a File
-     *
-     * @param file to read
-     * @return the byte[] data
-     * @throws IOException
-     */
-    public static byte[] readFile(String file) throws IOException {
-        return readFile(new File(file));
-    }
-
-    /**
      * Returns a byte[]
      *
      * @param file to read
      * @return the byte[]
-     * @throws IOException
+     * @throws IOException IOException
      */
     public static byte[] readFile(File file) throws IOException {
         // Open file

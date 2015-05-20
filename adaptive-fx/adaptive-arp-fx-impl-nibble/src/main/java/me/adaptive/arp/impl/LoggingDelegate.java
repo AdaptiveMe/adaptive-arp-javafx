@@ -66,8 +66,11 @@ public class LoggingDelegate extends BaseUtilDelegate implements ILogging {
      */
     public void log(ILoggingLogLevel level, String message) {
 
-        app = AbstractEmulator.getCurrentEmulator().getApp();
-        app.log(level, "GENERAL", message);
+        // Maybe during initialization the app is not available
+        if (AbstractEmulator.getCurrentEmulator() != null) {
+            app = AbstractEmulator.getCurrentEmulator().getApp();
+            app.log(level, "GENERAL", message);
+        }
     }
 
     /**
@@ -80,8 +83,11 @@ public class LoggingDelegate extends BaseUtilDelegate implements ILogging {
      */
     public void log(ILoggingLogLevel level, String category, String message) {
 
-        app = AbstractEmulator.getCurrentEmulator().getApp();
-        app.log(level, category, message);
+        // Maybe during initialization the app is not available
+        if (AbstractEmulator.getCurrentEmulator() != null) {
+            app = AbstractEmulator.getCurrentEmulator().getApp();
+            app.log(level, category, message);
+        }
     }
 
 }

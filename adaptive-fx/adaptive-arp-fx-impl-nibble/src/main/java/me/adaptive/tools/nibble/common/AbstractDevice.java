@@ -254,4 +254,11 @@ public abstract class AbstractDevice {
      * @return true if supported, false otherwise.
      */
     public abstract boolean hasSensorSupport(ICapabilitiesSensor type);
+
+    /**
+     * Returns if the device has been modified in anyhow
+     *
+     * @return true if the device has been modified; false otherwise
+     */
+    public abstract boolean isDeviceModified();
 }

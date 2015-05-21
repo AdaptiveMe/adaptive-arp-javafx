@@ -117,4 +117,12 @@ public abstract class AbstractOs {
      * @return Staus of the call
      */
     public abstract ITelephonyStatus call(String number);
+
+    /**
+     * Method for consulting the user agent of the current emulator and
+     * operating System
+     *
+     * @return USer agent descriptor
+     */
+    public abstract String getUserAgent();
 }

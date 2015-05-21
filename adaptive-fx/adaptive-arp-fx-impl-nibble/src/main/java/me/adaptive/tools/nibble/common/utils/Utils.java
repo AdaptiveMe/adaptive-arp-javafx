@@ -34,9 +34,13 @@
 package me.adaptive.tools.nibble.common.utils;
 
 import me.adaptive.arp.api.FileDescriptor;
+import me.adaptive.arp.api.*;
+import me.adaptive.tools.nibble.common.utils.parser.xml.XmlParser;
 
 import java.io.*;
 import java.util.Arrays;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Utils class for public static methods
@@ -122,6 +126,44 @@ public class Utils {
         } finally {
             f.close();
         }
+    }
+
+    /**
+     * Validate an url against a regexp
+     *
+     * @param test  url
+     * @param regex test
+     * @return true if valid, false otherwise
+     */
+    public static boolean validateURI(String test, String regex) {
+        return test.matches(regex);
+    }
+
+    /**
+     * Check whether a service should be handled or not
+     *
+     * @param serviceToken to validate
+     * @return true if should be handled, false otherwise
+     */
+    public static boolean validateService(ServiceToken serviceToken) {
+        Service serv = XmlParser.getInstance().getServices().get(serviceToken.getServiceName());
+        for (ServiceEndpoint serviceEndpoint : serv.getServiceEndpoints()) {
+            String endpointName = serviceToken.getEndpointName();
+            if (endpointName.equals(serviceEndpoint.getHostURI())) {
+                Pattern pattern = Pattern.compile(endpointName);
+                Matcher m = pattern.matcher(serviceToken.getEndpointName());
+                if (m.matches()) {
+                    for (ServicePath servicePath : serviceEndpoint.getPaths()) {
+                        pattern = Pattern.compile(servicePath.getPath());
+                        m = pattern.matcher(serviceToken.getFunctionName());
+                        if (m.matches()) return true;
+                    }
+                }
+
+            }
+        }
+        return false;
+
     }
 
 }

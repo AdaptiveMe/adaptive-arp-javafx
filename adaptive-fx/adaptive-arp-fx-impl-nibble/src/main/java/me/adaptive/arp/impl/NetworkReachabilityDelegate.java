@@ -33,9 +33,12 @@
  */
 package me.adaptive.arp.impl;
 
-import me.adaptive.arp.api.BaseCommunicationDelegate;
-import me.adaptive.arp.api.INetworkReachability;
-import me.adaptive.arp.api.INetworkReachabilityCallback;
+import me.adaptive.arp.api.*;
+
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 /**
  * Interface for Managing the Network reachability operations
@@ -44,10 +47,21 @@ import me.adaptive.arp.api.INetworkReachabilityCallback;
 public class NetworkReachabilityDelegate extends BaseCommunicationDelegate implements INetworkReachability {
 
     /**
+     * Logging Tag for this Implementation
+     */
+    private static final String LOG_TAG = "NetworkReachabilityDelegate";
+
+    /**
+     * Logger reference
+     */
+    private ILogging logger;
+
+    /**
      * Default Constructor.
      */
     public NetworkReachabilityDelegate() {
         super();
+        logger = AppRegistryBridge.getInstance().getLoggingBridge();
     }
 
     /**
@@ -58,8 +72,7 @@ public class NetworkReachabilityDelegate extends BaseCommunicationDelegate imple
      * @since v2.0
      */
     public void isNetworkReachable(String host, INetworkReachabilityCallback callback) {
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":isNetworkReachable");
+        checkHttpConnection(host, callback);
     }
 
     /**
@@ -70,8 +83,41 @@ public class NetworkReachabilityDelegate extends BaseCommunicationDelegate imple
      * @since v2.0
      */
     public void isNetworkServiceReachable(String url, INetworkReachabilityCallback callback) {
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":isNetworkServiceReachable");
+        checkHttpConnection(url, callback);
+    }
+
+    /**
+     * Check the connectivity with a host
+     *
+     * @param testUrl URl for testing purposes
+     * @param cb      Callback
+     */
+    private void checkHttpConnection(String testUrl, INetworkReachabilityCallback cb) {
+
+        boolean hasScheme = testUrl.contains("://");
+        if (!hasScheme) {
+            testUrl = "http://" + testUrl;
+        }
+
+        try {
+            URL url = new URL(testUrl);
+            HttpURLConnection urlc = (HttpURLConnection) url.openConnection();
+            urlc.setConnectTimeout(10 * 1000);
+            urlc.connect();
+            if (urlc.getResponseCode() == 200) {
+                logger.log(ILoggingLogLevel.Debug, LOG_TAG, "Connection: Success !");
+                cb.onResult(true);
+            } else {
+                logger.log(ILoggingLogLevel.Error, LOG_TAG, "Connection: Failure ! response code " + urlc.getResponseCode());
+                cb.onError(INetworkReachabilityCallbackError.NoResponse);
+            }
+        } catch (MalformedURLException e) {
+            logger.log(ILoggingLogLevel.Error, LOG_TAG, "Connection: Failure ! MalformedURLException");
+            cb.onError(INetworkReachabilityCallbackError.WrongParams);
+        } catch (IOException e) {
+            cb.onError(INetworkReachabilityCallbackError.NotAllowed);
+            logger.log(ILoggingLogLevel.Error, LOG_TAG, "Connection: Failure ! IOException");
+        }
     }
 
 }

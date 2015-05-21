@@ -34,6 +34,26 @@
 package me.adaptive.arp.impl;
 
 import me.adaptive.arp.api.*;
+import me.adaptive.tools.nibble.common.AbstractEmulator;
+import me.adaptive.tools.nibble.common.AbstractOs;
+import me.adaptive.tools.nibble.common.utils.Utils;
+import me.adaptive.tools.nibble.common.utils.parser.xml.XmlParser;
+import org.apache.http.Header;
+import org.apache.http.HttpResponse;
+import org.apache.http.StatusLine;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.entity.ContentType;
+import org.apache.http.impl.client.HttpClientBuilder;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Interface for Managing the Services operations
@@ -42,10 +62,28 @@ import me.adaptive.arp.api.*;
 public class ServiceDelegate extends BaseCommunicationDelegate implements IService {
 
     /**
+     * Logging Tag for this Implementation
+     */
+    private static final String LOG_TAG = "ServiceDelegate";
+
+    /**
+     * Logger reference
+     */
+    private ILogging logger;
+
+    /**
+     * List of registered service sessions
+     */
+    private Map<String, Session> serviceSession;
+
+    /**
      * Default Constructor.
      */
     public ServiceDelegate() {
         super();
+        logger = AppRegistryBridge.getInstance().getLoggingBridge();
+        serviceSession = new HashMap<>();
+
     }
 
     /**
@@ -59,10 +97,28 @@ public class ServiceDelegate extends BaseCommunicationDelegate implements IServi
      * @since v2.0.6
      */
     public ServiceRequest getServiceRequest(ServiceToken serviceToken) {
-        ServiceRequest response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":getServiceRequest");
-        // return response;
+
+        AbstractOs os = AbstractEmulator.getCurrentEmulator().getOs();
+
+        if (!isServiceRegistered(serviceToken)) {
+            return null;
+        }
+
+        ServiceRequest request = new ServiceRequest(null, serviceToken);
+        request.setContentEncoding(IServiceContentEncoding.Utf8);
+        request.setServiceToken(serviceToken);
+
+        request.setUserAgent(os.getUserAgent());
+        request.setContentType(String.valueOf(XmlParser.getInstance().getContentType(serviceToken)));
+
+        if (serviceSession.containsKey(serviceToken.getEndpointName())) {
+            Session session = serviceSession.get(serviceToken.getEndpointName());
+            request.setServiceHeaders(session.headers);
+            request.setServiceSession(new ServiceSession(session.cookies, session.attributes));
+            request.setUserAgent(session.userAgent);
+        }
+
+        return request;
     }
 
     /**
@@ -77,10 +133,24 @@ public class ServiceDelegate extends BaseCommunicationDelegate implements IServi
      * @since v2.0.6
      */
     public ServiceToken getServiceToken(String serviceName, String endpointName, String functionName, IServiceMethod method) {
-        ServiceToken response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":getServiceToken");
-        // return response;
+
+        if (XmlParser.getInstance().getServices().containsKey(serviceName)) {
+            Service serv = XmlParser.getInstance().getServices().get(serviceName);
+            for (ServiceEndpoint endpoint : serv.getServiceEndpoints()) {
+                if (endpoint.getHostURI().equals(endpointName)) {
+                    for (ServicePath path : endpoint.getPaths()) {
+                        if (path.getPath().equals(functionName)) {
+                            for (IServiceMethod serviceMethod : path.getMethods()) {
+                                if (serviceMethod.equals(method)) {
+                                    return new ServiceToken(serviceName, endpoint.getHostURI(), path.getPath(), serviceMethod);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return null;
     }
 
     /**
@@ -94,10 +164,23 @@ public class ServiceDelegate extends BaseCommunicationDelegate implements IServi
      * @since v2.1.4
      */
     public ServiceToken getServiceTokenByUri(String uri) {
-        ServiceToken response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":getServiceTokenByUri");
-        // return response;
+
+        URL url;
+        if (!Utils.validateURI(uri, "^https?://.*")) return null;
+        try {
+            url = new URL(uri);
+        } catch (MalformedURLException e) {
+            logger.log(ILoggingLogLevel.Error, LOG_TAG, "uri Error: " + e.getLocalizedMessage());
+            return null;
+        }
+        for (Service ser : XmlParser.getInstance().getServices().values())
+            for (ServiceEndpoint endpoint : ser.getServiceEndpoints())
+                if (url.getProtocol().concat("://").concat(url.getHost()).equals(endpoint.getHostURI()))
+                    for (ServicePath path : endpoint.getPaths())
+                        if (url.getPath().equals(path.getPath()))
+                            return new ServiceToken(ser.getName(), endpoint.getHostURI(), path.getPath(), path.getMethods()[0]);
+
+        return null;
     }
 
     /**
@@ -107,22 +190,18 @@ public class ServiceDelegate extends BaseCommunicationDelegate implements IServi
      * @since v2.0.6
      */
     public ServiceToken[] getServicesRegistered() {
-        ServiceToken[] response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":getServicesRegistered");
-        // return response;
-    }
 
-    /**
-     * Executes the given ServiceRequest and provides responses to the given callback handler.
-     *
-     * @param serviceRequest ServiceRequest with the request body.
-     * @param callback       IServiceResultCallback to handle the ServiceResponse.
-     * @since v2.0.6
-     */
-    public void invokeService(ServiceRequest serviceRequest, IServiceResultCallback callback) {
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":invokeService");
+        List<ServiceToken> tokens = new ArrayList<>();
+        for (Service serv : XmlParser.getInstance().getServices().values()) {
+            for (ServiceEndpoint endpoint : serv.getServiceEndpoints()) {
+                for (ServicePath path : endpoint.getPaths()) {
+                    for (IServiceMethod method : path.getMethods()) {
+                        tokens.add(new ServiceToken(serv.getName(), endpoint.getHostURI(), path.getPath(), method));
+                    }
+                }
+            }
+        }
+        return tokens.toArray(new ServiceToken[tokens.size()]);
     }
 
     /**
@@ -137,10 +216,231 @@ public class ServiceDelegate extends BaseCommunicationDelegate implements IServi
      * @since v2.0.6
      */
     public boolean isServiceRegistered(String serviceName, String endpointName, String functionName, IServiceMethod method) {
-        boolean response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":isServiceRegistered");
-        // return response;
+
+        if (XmlParser.getInstance().getServices().containsKey(serviceName)) {
+            Service serv = XmlParser.getInstance().getServices().get(serviceName);
+            for (ServiceEndpoint endpoint : serv.getServiceEndpoints()) {
+                if (endpoint.getHostURI().equals(endpointName)) {
+                    for (ServicePath path : endpoint.getPaths()) {
+                        if (path.getPath().equals(functionName)) {
+                            for (IServiceMethod serviceMethod : path.getMethods()) {
+                                if (serviceMethod.equals(method))
+                                    return true;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Executes the given ServiceRequest and provides responses to the given callback handler.
+     *
+     * @param serviceRequest ServiceRequest with the request body.
+     * @param callback       IServiceResultCallback to handle the ServiceResponse.
+     * @since v2.0.6
+     */
+    public void invokeService(ServiceRequest serviceRequest, IServiceResultCallback callback) {
+
+        if (!Utils.validateService(serviceRequest.getServiceToken())) {
+            callback.onError(IServiceResultCallbackError.NotRegisteredService);
+            return;
+
+        }
+
+        //HttpClient httpClient = new DefaultHttpClient();
+        HttpClient httpClient = HttpClientBuilder.create().build();
+
+        ServiceResponse serviceResponse = new ServiceResponse();
+        HttpResponse response = null;
+        String url = null;
+        try {
+
+            switch (serviceRequest.getServiceToken().getInvocationMethod()) {
+                case Get:
+                    url = getURL(serviceRequest);
+                    response = httpClient.execute(new HttpGet(url));
+                    break;
+                case Post:
+                    break;
+                case Head:
+                    break;
+                default:
+            }
+
+            StatusLine statusLine = response.getStatusLine();
+
+            int status = statusLine.getStatusCode();
+
+            if (isBetween(status, 200, 406) || isBetween(status, 500, 599)) {
+                ByteArrayOutputStream out = new ByteArrayOutputStream();
+                response.getEntity().writeTo(out);
+
+                String responseString = out.toString();
+                out.close();
+
+                // TODO: Prepare the session attributes
+                //serviceResponse.setContentType(EntityUtils.getContentCharSet(response.getEntity()));
+                serviceResponse.setContentType(ContentType.getOrDefault(response.getEntity()).toString());
+                serviceResponse.setContentEncoding(IServiceContentEncoding.Utf8);
+                serviceResponse.setContent(responseString);
+                serviceResponse.setContentLength(responseString.length());
+                serviceResponse.setServiceHeaders(getHeaders(response.getAllHeaders()));
+                serviceResponse.setStatusCode(status);
+                if (!url.startsWith("https://")) {
+                    logger.log(ILoggingLogLevel.Warn, LOG_TAG, "Not Secured URL (https): " + url);
+                    callback.onWarning(serviceResponse, IServiceResultCallbackWarning.NotSecure);
+                    return;
+                }
+
+                if (isBetween(status, 200, 299)) {
+
+                    callback.onResult(serviceResponse);
+                    return;
+                } else if (isBetween(status, 300, 399)) {
+                    logger.log(ILoggingLogLevel.Warn, LOG_TAG, "Redirected Response");
+                    callback.onWarning(serviceResponse, IServiceResultCallbackWarning.Redirected);
+                    return;
+                } else if (status == 400) {
+                    logger.log(ILoggingLogLevel.Warn, LOG_TAG, "Wrong params: " + url);
+                    callback.onWarning(serviceResponse, IServiceResultCallbackWarning.WrongParams);
+                    return;
+                } else if (status == 401) {
+                    logger.log(ILoggingLogLevel.Warn, LOG_TAG, "Not authenticaded: " + url);
+                    callback.onWarning(serviceResponse, IServiceResultCallbackWarning.NotAuthenticated);
+                    return;
+                } else if (status == 402) {
+                    logger.log(ILoggingLogLevel.Warn, LOG_TAG, "Payment Required: " + url);
+                    callback.onWarning(serviceResponse, IServiceResultCallbackWarning.PaymentRequired);
+                    return;
+                } else if (status == 403) {
+                    logger.log(ILoggingLogLevel.Warn, LOG_TAG, "Forbidden: " + url);
+                    callback.onWarning(serviceResponse, IServiceResultCallbackWarning.Forbidden);
+                    return;
+                } else if (status == 404) {
+                    logger.log(ILoggingLogLevel.Warn, LOG_TAG, "NotFound: " + url);
+                    callback.onWarning(serviceResponse, IServiceResultCallbackWarning.NotFound);
+                    return;
+                } else if (status == 405) {
+                    logger.log(ILoggingLogLevel.Warn, LOG_TAG, "Method not allowed: " + url);
+                    callback.onWarning(serviceResponse, IServiceResultCallbackWarning.MethodNotAllowed);
+                    return;
+                } else if (status == 406) {
+                    logger.log(ILoggingLogLevel.Warn, LOG_TAG, "Not allowed: " + url);
+                    callback.onWarning(serviceResponse, IServiceResultCallbackWarning.NotAllowed);
+                    return;
+                }
+                if (isBetween(status, 500, 599)) {
+                    logger.log(ILoggingLogLevel.Warn, LOG_TAG, "Server error: " + url);
+                    callback.onWarning(serviceResponse, IServiceResultCallbackWarning.ServerError);
+                    return;
+                } else {
+                    logger.log(ILoggingLogLevel.Warn, LOG_TAG, "The status code received [" + status + "] is not handled by the platform");
+                    callback.onError(IServiceResultCallbackError.Unreachable);
+                    return;
+                }
+
+
+            } else if (status == 408) {
+                logger.log(ILoggingLogLevel.Error, LOG_TAG, "There is a timeout calling the service: " + url);
+                callback.onError(IServiceResultCallbackError.TimeOut);
+                return;
+            } else if (status == 444) {
+                logger.log(ILoggingLogLevel.Error, LOG_TAG, "There is no response calling the service: " + url);
+                callback.onError(IServiceResultCallbackError.NoResponse);
+                return;
+            } else {
+                logger.log(ILoggingLogLevel.Error, LOG_TAG, "The status code received [" + status + "] is not handled by the platform");
+                callback.onError(IServiceResultCallbackError.Unknown);
+                return;
+
+            }
+
+        } catch (IOException e) {
+            logger.log(ILoggingLogLevel.Error, LOG_TAG, "invokeService Error: " + e.getLocalizedMessage());
+            assert response != null;
+            try {
+                response.getEntity().getContent().close();
+            } catch (IOException e1) {
+                logger.log(ILoggingLogLevel.Error, LOG_TAG, "Error closing the response: " + e1.getLocalizedMessage());
+            }
+        }
+
+        logger.log(ILoggingLogLevel.Error, LOG_TAG, "The status code received is not handled by the platform");
+        callback.onError(IServiceResultCallbackError.Unreachable);
+    }
+
+    /**
+     * Get ServiceHeader[] from Header[]
+     *
+     * @param headers array
+     * @return serviceHeader array
+     */
+    private ServiceHeader[] getHeaders(Header[] headers) {
+        ServiceHeader[] serviceHeaders = new ServiceHeader[0];
+
+        for (Header header : headers) {
+            ServiceHeader serviceHeader = new ServiceHeader(header.getName(), header.getValue());
+            serviceHeaders = Utils.append(serviceHeaders, serviceHeader);
+        }
+        return serviceHeaders;
+    }
+
+    /**
+     * Return the url string from a ServiceRequest
+     *
+     * @param request Request object
+     * @return Url string
+     */
+    public String getURL(ServiceRequest request) {
+        String urlString;
+        ServiceToken token = request.getServiceToken();
+        String parameters = "";
+
+        if (request.getQueryParameters() != null) {
+            for (ServiceRequestParameter serviceRequestParameter : request.getQueryParameters()) {
+                if (!parameters.isEmpty()) parameters += "&";
+                parameters += serviceRequestParameter.getKeyName() + "=" + serviceRequestParameter.getKeyData();
+            }
+        }
+
+        urlString = token.getEndpointName() + token.getFunctionName() + (parameters.isEmpty() ? "" : ("?" + parameters));
+        return urlString;
+    }
+
+    /**
+     * Method for testing if a service is registered
+     *
+     * @param serviceToken Service Token to test
+     * @return TRue is registered, false otherwise
+     */
+    private boolean isServiceRegistered(ServiceToken serviceToken) {
+        return isServiceRegistered(serviceToken.getServiceName(), serviceToken.getEndpointName(), serviceToken.getFunctionName(), serviceToken.getInvocationMethod());
+    }
+
+    /**
+     * Check if a number is between two numbers
+     *
+     * @param x     Number to check
+     * @param lower Lower number
+     * @param upper Upper number
+     * @return Returns true or false
+     */
+    private boolean isBetween(int x, int lower, int upper) {
+        return lower <= x && x <= upper;
+
+    }
+
+    /**
+     * Internal class to represent a session object travelling for the ARP
+     */
+    private class Session {
+        ServiceHeader[] headers;
+        ServiceSessionCookie[] cookies;
+        ServiceSessionAttribute[] attributes;
+        String userAgent;
     }
 
 }

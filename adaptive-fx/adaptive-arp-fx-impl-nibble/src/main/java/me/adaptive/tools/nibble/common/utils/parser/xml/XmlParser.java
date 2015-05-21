@@ -348,6 +348,25 @@ public class XmlParser {
     }
 
     /**
+     * Returns the content type for a ServiceToken
+     *
+     * @param serviceToken Service Token for consulting
+     * @return IServiceType
+     */
+    public IServiceType getContentType(ServiceToken serviceToken) {
+        if (services.containsKey(serviceToken.getServiceName())) {
+            for (ServiceEndpoint serviceEndpoint : services.get(serviceToken.getServiceName()).getServiceEndpoints()) {
+                for (ServicePath servicePath : serviceEndpoint.getPaths()) {
+                    if (servicePath.getPath().equals(serviceToken.getFunctionName())) {
+                        return servicePath.getType();
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
+    /**
      * get the absolute path for resources
      *
      * @param locale data

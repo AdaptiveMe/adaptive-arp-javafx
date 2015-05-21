@@ -33,10 +33,14 @@
  */
 package me.adaptive.arp.impl;
 
-import me.adaptive.arp.api.BaseSecurityDelegate;
-import me.adaptive.arp.api.ISecurity;
-import me.adaptive.arp.api.ISecurityResultCallback;
-import me.adaptive.arp.api.SecureKeyPair;
+import me.adaptive.arp.api.*;
+import me.adaptive.tools.nibble.common.AbstractApp;
+import me.adaptive.tools.nibble.common.AbstractDevice;
+import me.adaptive.tools.nibble.common.AbstractEmulator;
+import me.adaptive.tools.nibble.common.utils.Utils;
+
+import java.io.*;
+import java.util.Properties;
 
 /**
  * Interface for Managing the Security operations
@@ -45,49 +49,21 @@ import me.adaptive.arp.api.SecureKeyPair;
 public class SecurityDelegate extends BaseSecurityDelegate implements ISecurity {
 
     /**
+     * Logging Tag for this Implementation
+     */
+    private static final String LOG_TAG = "SecurityDelegate";
+
+    /**
+     * Logger reference
+     */
+    private ILogging logger;
+
+    /**
      * Default Constructor.
      */
     public SecurityDelegate() {
         super();
-    }
-
-    /**
-     * Deletes from the device internal storage the entry/entries containing the specified key names.
-     *
-     * @param keys             Array with the key names to delete.
-     * @param publicAccessName The name of the shared internal storage object (if needed).
-     * @param callback         callback to be executed upon function result.
-     * @since v2.0
-     */
-    public void deleteSecureKeyValuePairs(String[] keys, String publicAccessName, ISecurityResultCallback callback) {
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":deleteSecureKeyValuePairs");
-    }
-
-    /**
-     * Retrieves from the device internal storage the entry/entries containing the specified key names.
-     *
-     * @param keys             Array with the key names to retrieve.
-     * @param publicAccessName The name of the shared internal storage object (if needed).
-     * @param callback         callback to be executed upon function result.
-     * @since v2.0
-     */
-    public void getSecureKeyValuePairs(String[] keys, String publicAccessName, ISecurityResultCallback callback) {
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":getSecureKeyValuePairs");
-    }
-
-    /**
-     * Returns if the device has been modified in anyhow
-     *
-     * @return true if the device has been modified; false otherwise
-     * @since v2.0
-     */
-    public boolean isDeviceModified() {
-        boolean response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":isDeviceModified");
-        // return response;
+        logger = AppRegistryBridge.getInstance().getLoggingBridge();
     }
 
     /**
@@ -99,8 +75,116 @@ public class SecurityDelegate extends BaseSecurityDelegate implements ISecurity 
      * @since v2.0
      */
     public void setSecureKeyValuePairs(SecureKeyPair[] keyValues, String publicAccessName, ISecurityResultCallback callback) {
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":setSecureKeyValuePairs");
+
+        // MARK: since in the emulator we don't have a security keychaing
+        // we are emulating the keychain with a properties file
+
+        Properties props = new Properties();
+        AbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
+
+        for (SecureKeyPair k : keyValues) {
+            props.setProperty(k.getSecureKey(), k.getSecureData());
+        }
+
+        try {
+
+            File f = new File(app.getTempDirectory() + "/" + publicAccessName);
+            OutputStream out = new FileOutputStream(f);
+            props.store(out, null);
+
+            callback.onResult(keyValues);
+
+        } catch (Exception e) {
+            logger.log(ILoggingLogLevel.Error, LOG_TAG, e.getMessage());
+            callback.onError(ISecurityResultCallbackError.Unknown);
+        }
+    }
+
+    /**
+     * Retrieves from the device internal storage the entry/entries containing the specified key names.
+     *
+     * @param keys             Array with the key names to retrieve.
+     * @param publicAccessName The name of the shared internal storage object (if needed).
+     * @param callback         callback to be executed upon function result.
+     * @since v2.0
+     */
+    public void getSecureKeyValuePairs(String[] keys, String publicAccessName, ISecurityResultCallback callback) {
+
+        // MARK: since in the emulator we don't have a security keychaing
+        // we are emulating the keychain with a properties file
+
+        Properties props = new Properties();
+        AbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
+        SecureKeyPair[] keyValues = new SecureKeyPair[0];
+        InputStream is;
+
+        try {
+
+            File f = new File(app.getTempDirectory() + "/" + publicAccessName);
+            is = new FileInputStream(f);
+            props.load(is);
+
+            for (String k : keys) {
+                keyValues = Utils.append(keyValues, new SecureKeyPair(k, props.getProperty(k)));
+            }
+
+            callback.onResult(keyValues);
+
+        } catch (Exception e) {
+            logger.log(ILoggingLogLevel.Error, LOG_TAG, e.getMessage());
+            callback.onError(ISecurityResultCallbackError.Unknown);
+        }
+    }
+
+    /**
+     * Deletes from the device internal storage the entry/entries containing the specified key names.
+     *
+     * @param keys             Array with the key names to delete.
+     * @param publicAccessName The name of the shared internal storage object (if needed).
+     * @param callback         callback to be executed upon function result.
+     * @since v2.0
+     */
+    public void deleteSecureKeyValuePairs(String[] keys, String publicAccessName, ISecurityResultCallback callback) {
+
+        // MARK: since in the emulator we don't have a security keychaing
+        // we are emulating the keychain with a properties file
+
+        Properties props = new Properties();
+        AbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
+        SecureKeyPair[] keyValues = new SecureKeyPair[0];
+        InputStream is;
+
+        try {
+
+            File f = new File(app.getTempDirectory() + "/" + publicAccessName);
+            is = new FileInputStream(f);
+            props.load(is);
+
+            for (String k : keys) {
+                props.remove(k);
+            }
+
+            OutputStream out = new FileOutputStream(f);
+            props.store(out, null);
+
+            callback.onResult(keyValues);
+
+        } catch (Exception e) {
+            logger.log(ILoggingLogLevel.Error, LOG_TAG, e.getMessage());
+            callback.onError(ISecurityResultCallbackError.Unknown);
+        }
+    }
+
+    /**
+     * Returns if the device has been modified in anyhow
+     *
+     * @return true if the device has been modified; false otherwise
+     * @since v2.0
+     */
+    public boolean isDeviceModified() {
+
+        AbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
+        return device.isDeviceModified();
     }
 
 }

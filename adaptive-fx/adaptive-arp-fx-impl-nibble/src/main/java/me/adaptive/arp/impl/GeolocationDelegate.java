@@ -33,9 +33,10 @@
  */
 package me.adaptive.arp.impl;
 
-import me.adaptive.arp.api.BaseSensorDelegate;
-import me.adaptive.arp.api.IGeolocation;
-import me.adaptive.arp.api.IGeolocationListener;
+import me.adaptive.arp.api.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Interface for Managing the Geolocation operations
@@ -44,10 +45,27 @@ import me.adaptive.arp.api.IGeolocationListener;
 public class GeolocationDelegate extends BaseSensorDelegate implements IGeolocation {
 
     /**
+     * Logging Tag for this Implementation
+     */
+    private static final String LOG_TAG = "GeolocationDelegate";
+
+    /**
+     * Logger reference
+     */
+    private ILogging logger;
+
+    /**
+     * List of registered LifeCycle listeners
+     */
+    private List<IGeolocationListener> listeners;
+
+    /**
      * Default Constructor.
      */
     public GeolocationDelegate() {
         super();
+        logger = AppRegistryBridge.getInstance().getLoggingBridge();
+        listeners = new ArrayList<>();
     }
 
     /**
@@ -57,8 +75,12 @@ public class GeolocationDelegate extends BaseSensorDelegate implements IGeolocat
      * @since v2.0
      */
     public void addGeolocationListener(IGeolocationListener listener) {
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":addGeolocationListener");
+
+        if (!listeners.contains(listener)) {
+            listeners.add(listener);
+            logger.log(ILoggingLogLevel.Debug, LOG_TAG, "addGeolocationListener: " + listener.toString() + " added!");
+        } else
+            logger.log(ILoggingLogLevel.Error, LOG_TAG, "addGeolocationListener: " + listener.toString() + " is already added!");
     }
 
     /**
@@ -68,8 +90,12 @@ public class GeolocationDelegate extends BaseSensorDelegate implements IGeolocat
      * @since v2.0
      */
     public void removeGeolocationListener(IGeolocationListener listener) {
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":removeGeolocationListener");
+
+        if (listeners.contains(listener)) {
+            listeners.remove(listener);
+            logger.log(ILoggingLogLevel.Debug, LOG_TAG, "removeGeolocationListener" + listener.toString() + " removed!");
+        } else
+            logger.log(ILoggingLogLevel.Error, LOG_TAG, "removeGeolocationListener: " + listener.toString() + " is not registered");
     }
 
     /**
@@ -78,8 +104,18 @@ public class GeolocationDelegate extends BaseSensorDelegate implements IGeolocat
      * @since v2.0
      */
     public void removeGeolocationListeners() {
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":removeGeolocationListeners");
+
+        listeners.clear();
+        logger.log(ILoggingLogLevel.Debug, LOG_TAG, "removeGeolocationListeners: all GeolocationListeners have been removed!");
+    }
+
+    /**
+     * Getter for registered listeners
+     *
+     * @return List of registered listeners
+     */
+    public List<IGeolocationListener> getListeners() {
+        return listeners;
     }
 
 }

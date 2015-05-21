@@ -117,6 +117,4 @@ public abstract class AbstractOs {
      * @return Staus of the call
      */
     public abstract ITelephonyStatus call(String number);
-
-    // TODO: inform all the os capabilities of the current emulator
 }

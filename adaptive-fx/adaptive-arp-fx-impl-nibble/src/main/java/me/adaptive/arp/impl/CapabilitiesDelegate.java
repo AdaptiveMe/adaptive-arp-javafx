@@ -34,6 +34,8 @@
 package me.adaptive.arp.impl;
 
 import me.adaptive.arp.api.*;
+import me.adaptive.tools.nibble.common.AbstractDevice;
+import me.adaptive.tools.nibble.common.AbstractEmulator;
 
 /**
  * Interface for testing the Capabilities operations
@@ -57,10 +59,9 @@ public class CapabilitiesDelegate extends BaseSystemDelegate implements ICapabil
      * @since v2.0.5
      */
     public ICapabilitiesOrientation getOrientationDefault() {
-        ICapabilitiesOrientation response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":getOrientationDefault");
-        // return response;
+
+        final AbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
+        return device.getOrientationDefault();
     }
 
     /**
@@ -71,10 +72,9 @@ public class CapabilitiesDelegate extends BaseSystemDelegate implements ICapabil
      * @since v2.0.5
      */
     public ICapabilitiesOrientation[] getOrientationsSupported() {
-        ICapabilitiesOrientation[] response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":getOrientationsSupported");
-        // return response;
+
+        final AbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
+        return device.getOrientationsSupported();
     }
 
     /**
@@ -85,10 +85,9 @@ public class CapabilitiesDelegate extends BaseSystemDelegate implements ICapabil
      * @since v2.0
      */
     public boolean hasButtonSupport(ICapabilitiesButton type) {
-        boolean response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":hasButtonSupport");
-        // return response;
+
+        final AbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
+        return device.hasButtonSupport(type);
     }
 
     /**
@@ -100,10 +99,9 @@ public class CapabilitiesDelegate extends BaseSystemDelegate implements ICapabil
      * @since v2.0
      */
     public boolean hasCommunicationSupport(ICapabilitiesCommunication type) {
-        boolean response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":hasCommunicationSupport");
-        // return response;
+
+        final AbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
+        return device.hasCommunicationSupport(type);
     }
 
     /**
@@ -114,10 +112,9 @@ public class CapabilitiesDelegate extends BaseSystemDelegate implements ICapabil
      * @since v2.0
      */
     public boolean hasDataSupport(ICapabilitiesData type) {
-        boolean response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":hasDataSupport");
-        // return response;
+
+        final AbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
+        return device.hasDataSupport(type);
     }
 
     /**
@@ -129,10 +126,9 @@ public class CapabilitiesDelegate extends BaseSystemDelegate implements ICapabil
      * @since v2.0
      */
     public boolean hasMediaSupport(ICapabilitiesMedia type) {
-        boolean response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":hasMediaSupport");
-        // return response;
+
+        final AbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
+        return device.hasMediaSupport(type);
     }
 
     /**
@@ -143,10 +139,9 @@ public class CapabilitiesDelegate extends BaseSystemDelegate implements ICapabil
      * @since v2.0
      */
     public boolean hasNetSupport(ICapabilitiesNet type) {
-        boolean response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":hasNetSupport");
-        // return response;
+
+        final AbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
+        return device.hasNetSupport(type);
     }
 
     /**
@@ -158,10 +153,9 @@ public class CapabilitiesDelegate extends BaseSystemDelegate implements ICapabil
      * @since v2.0
      */
     public boolean hasNotificationSupport(ICapabilitiesNotification type) {
-        boolean response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":hasNotificationSupport");
-        // return response;
+
+        final AbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
+        return device.hasNotificationSupport(type);
     }
 
     /**
@@ -172,10 +166,9 @@ public class CapabilitiesDelegate extends BaseSystemDelegate implements ICapabil
      * @since v2.0.5
      */
     public boolean hasOrientationSupport(ICapabilitiesOrientation orientation) {
-        boolean response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":hasOrientationSupport");
-        // return response;
+
+        final AbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
+        return device.hasOrientationSupport(orientation);
     }
 
     /**
@@ -187,10 +180,9 @@ public class CapabilitiesDelegate extends BaseSystemDelegate implements ICapabil
      * @since v2.0
      */
     public boolean hasSensorSupport(ICapabilitiesSensor type) {
-        boolean response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":hasSensorSupport");
-        // return response;
+
+        final AbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
+        return device.hasSensorSupport(type);
     }
 
 }

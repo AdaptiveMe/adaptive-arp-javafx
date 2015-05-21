@@ -34,6 +34,14 @@
 package me.adaptive.arp.impl;
 
 import me.adaptive.arp.api.*;
+import me.adaptive.tools.nibble.common.utils.Utils;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Interface for Managing the File operations
@@ -42,10 +50,21 @@ import me.adaptive.arp.api.*;
 public class FileDelegate extends BaseDataDelegate implements IFile {
 
     /**
+     * Log Tag
+     */
+    private static final String LOG_TAG = "FileDelegate";
+
+    /**
+     * Logger instance
+     */
+    private ILogging logger;
+
+    /**
      * Default Constructor.
      */
     public FileDelegate() {
         super();
+        logger = AppRegistryBridge.getInstance().getLoggingBridge();
     }
 
     /**
@@ -56,10 +75,8 @@ public class FileDelegate extends BaseDataDelegate implements IFile {
      * @since v2.0
      */
     public boolean canRead(FileDescriptor descriptor) {
-        boolean response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":canRead");
-        // return response;
+
+        return new File(descriptor.getPathAbsolute()).canRead();
     }
 
     /**
@@ -70,10 +87,8 @@ public class FileDelegate extends BaseDataDelegate implements IFile {
      * @since v2.0
      */
     public boolean canWrite(FileDescriptor descriptor) {
-        boolean response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":canWrite");
-        // return response;
+
+        return new File(descriptor.getPathAbsolute()).canWrite();
     }
 
     /**
@@ -84,8 +99,13 @@ public class FileDelegate extends BaseDataDelegate implements IFile {
      * @since v2.0
      */
     public void create(FileDescriptor descriptor, IFileResultCallback callback) {
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":create");
+        try {
+            new File(descriptor.getPathAbsolute()).createNewFile();
+        } catch (IOException e) {
+            logger.log(ILoggingLogLevel.Error, LOG_TAG, "error: " + e.getLocalizedMessage());
+            callback.onError(IFileResultCallbackError.Unauthorized);
+        }
+        callback.onResult(descriptor);
     }
 
     /**
@@ -98,10 +118,22 @@ public class FileDelegate extends BaseDataDelegate implements IFile {
      * @since v2.0
      */
     public boolean delete(FileDescriptor descriptor, boolean cascade) {
-        boolean response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":delete");
-        // return response;
+        boolean response = true;
+        try {
+            File file = new File(descriptor.getPathAbsolute());
+
+            if (cascade && file.isDirectory()) {
+                String[] children = file.list();
+                for (String aChildren : children) {
+                    new File(file, aChildren).delete();
+                }
+
+            } else file.delete();
+        } catch (Exception e) {
+            logger.log(ILoggingLogLevel.Error, LOG_TAG, "delete Error: " + e.getLocalizedMessage());
+            response = false;
+        }
+        return response;
     }
 
     /**
@@ -112,10 +144,8 @@ public class FileDelegate extends BaseDataDelegate implements IFile {
      * @since v2.0
      */
     public boolean exists(FileDescriptor descriptor) {
-        boolean response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":exists");
-        // return response;
+
+        return new File(descriptor.getPathAbsolute()).exists();
     }
 
     /**
@@ -126,8 +156,17 @@ public class FileDelegate extends BaseDataDelegate implements IFile {
      * @since v2.0
      */
     public void getContent(FileDescriptor descriptor, IFileDataLoadResultCallback callback) {
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":getContent");
+
+        File file = new File(descriptor.getPathAbsolute());
+        if (!file.exists())
+            callback.onError(IFileDataLoadResultCallbackError.InexistentFile);
+        else {
+            try {
+                callback.onResult(Utils.readFile(file));
+            } catch (IOException e) {
+                callback.onError(IFileDataLoadResultCallbackError.Unauthorized);
+            }
+        }
     }
 
     /**
@@ -138,10 +177,8 @@ public class FileDelegate extends BaseDataDelegate implements IFile {
      * @since v2.0
      */
     public IFileSystemStorageType getFileStorageType(FileDescriptor descriptor) {
-        IFileSystemStorageType response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":getFileStorageType");
-        // return response;
+        
+        return IFileSystemStorageType.Application;
     }
 
     /**
@@ -152,10 +189,14 @@ public class FileDelegate extends BaseDataDelegate implements IFile {
      * @since v2.0
      */
     public IFileSystemType getFileType(FileDescriptor descriptor) {
+
         IFileSystemType response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":getFileType");
-        // return response;
+        File file = new File(descriptor.getPathAbsolute());
+        if (!file.exists()) response = IFileSystemType.Unknown;
+        else if (file.isDirectory())
+            response = IFileSystemType.Directory;
+        else response = IFileSystemType.File;
+        return response;
     }
 
     /**
@@ -166,10 +207,11 @@ public class FileDelegate extends BaseDataDelegate implements IFile {
      * @since v2.0
      */
     public IFileSystemSecurity getSecurityType(FileDescriptor descriptor) {
-        IFileSystemSecurity response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":getSecurityType");
-        // return response;
+
+        if (descriptor.getPathAbsolute().startsWith(AppRegistryBridge.getInstance().getFileSystemBridge().getApplicationProtectedFolder().getPathAbsolute())) {
+            return IFileSystemSecurity.Protected;
+        }
+        return IFileSystemSecurity.Default;
     }
 
     /**
@@ -180,10 +222,8 @@ public class FileDelegate extends BaseDataDelegate implements IFile {
      * @since v2.0
      */
     public boolean isDirectory(FileDescriptor descriptor) {
-        boolean response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":isDirectory");
-        // return response;
+
+        return new File(descriptor.getPathAbsolute()).isDirectory();
     }
 
     /**
@@ -195,8 +235,12 @@ public class FileDelegate extends BaseDataDelegate implements IFile {
      * @since v2.0
      */
     public void listFiles(FileDescriptor descriptor, IFileListResultCallback callback) {
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":listFiles");
+        if (isDirectory(descriptor)) {
+            File file = new File(descriptor.getPathAbsolute());
+            List<FileDescriptor> descriptors = walk(file);
+            callback.onResult(descriptors.toArray(new FileDescriptor[descriptors.size()]));
+
+        } else callback.onError(IFileListResultCallbackError.InexistentFile);
     }
 
     /**
@@ -209,8 +253,13 @@ public class FileDelegate extends BaseDataDelegate implements IFile {
      * @since v2.0
      */
     public void listFilesForRegex(FileDescriptor descriptor, String regex, IFileListResultCallback callback) {
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":listFilesForRegex");
+
+        if (isDirectory(descriptor)) {
+            File file = new File(descriptor.getPathAbsolute());
+            List<FileDescriptor> descriptors = walk(file, regex);
+            callback.onResult(descriptors.toArray(new FileDescriptor[descriptors.size()]));
+
+        } else callback.onError(IFileListResultCallbackError.InexistentFile);
     }
 
     /**
@@ -222,10 +271,20 @@ public class FileDelegate extends BaseDataDelegate implements IFile {
      * @since v2.0
      */
     public boolean mkDir(FileDescriptor descriptor, boolean recursive) {
-        boolean response;
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":mkDir");
-        // return response;
+        boolean response = true;
+        try {
+            File file = new File(descriptor.getPathAbsolute());
+            if (file.isFile()) {
+                file = file.getParentFile();
+            }
+            if (recursive)
+                file.mkdirs();
+            else file.mkdir();
+        } catch (Exception e) {
+            logger.log(ILoggingLogLevel.Error, LOG_TAG, "mkDir Error: " + e.getLocalizedMessage());
+            response = false;
+        }
+        return response;
     }
 
     /**
@@ -240,8 +299,26 @@ public class FileDelegate extends BaseDataDelegate implements IFile {
      * @since v2.0
      */
     public void move(FileDescriptor source, FileDescriptor destination, boolean createPath, boolean overwrite, IFileResultCallback callback) {
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":move");
+        try {
+            File from = new File(source.getPathAbsolute());
+            if (!from.exists()) {
+                callback.onError(IFileResultCallbackError.SourceInexistent);
+                return;
+            }
+            File to = new File(destination.getPathAbsolute());
+            if (overwrite) to.delete();
+            else if (to.exists()) {
+                callback.onError(IFileResultCallbackError.DestionationExists);
+                return;
+            }
+            if (createPath) to.mkdirs();
+            from.renameTo(to);
+            from.delete();
+            callback.onResult(destination);
+        } catch (Exception e) {
+            logger.log(ILoggingLogLevel.Error, LOG_TAG, "mode Error: " + e.getLocalizedMessage());
+            callback.onError(IFileResultCallbackError.Unauthorized);
+        }
     }
 
     /**
@@ -253,8 +330,80 @@ public class FileDelegate extends BaseDataDelegate implements IFile {
      * @since v2.0
      */
     public void setContent(FileDescriptor descriptor, byte[] content, IFileDataStoreResultCallback callback) {
-        // TODO: Not implemented.
-        throw new UnsupportedOperationException(this.getClass().getName() + ":setContent");
+
+        FileOutputStream fos = null;
+        try {
+            File f = new File(descriptor.getPathAbsolute());
+            fos = new FileOutputStream(f);
+            fos.write(content);
+            fos.flush();
+            fos.close();
+            callback.onResult(descriptor);
+        } catch (FileNotFoundException e) {
+            logger.log(ILoggingLogLevel.Error, LOG_TAG, e.getLocalizedMessage());
+            callback.onError(IFileDataStoreResultCallbackError.InexistentFile);
+        } catch (IOException e) {
+            logger.log(ILoggingLogLevel.Error, LOG_TAG, e.getLocalizedMessage());
+            callback.onError(IFileDataStoreResultCallbackError.Unauthorized);
+        } catch (Exception e) {
+            logger.log(ILoggingLogLevel.Error, LOG_TAG, e.getLocalizedMessage());
+            callback.onError(IFileDataStoreResultCallbackError.Unknown);
+        } finally {
+            try {
+                fos.close();
+            } catch (IOException e) {
+                logger.log(ILoggingLogLevel.Error, LOG_TAG, e.getLocalizedMessage());
+            }
+        }
+    }
+
+    /**
+     * Recursive list directory
+     *
+     * @param root Root entry point
+     * @return FileDescriptor
+     */
+    private List<FileDescriptor> walk(File root) {
+        List<FileDescriptor> descriptors = new ArrayList<>();
+        File[] list = root.listFiles();
+        for (File f : list) {
+            if (f.isDirectory()) {
+                logger.log(ILoggingLogLevel.Debug, LOG_TAG, "Dir: " + f.getAbsoluteFile());
+            } else {
+                logger.log(ILoggingLogLevel.Debug, LOG_TAG, "File: " + f.getAbsoluteFile());
+            }
+            descriptors.add(Utils.toArp(f));
+            if (f.listFiles().length > 0) {
+                descriptors.addAll(walk(f));
+            }
+
+        }
+        return descriptors;
+    }
+
+    /**
+     * Recursive list directory
+     *
+     * @param root
+     * @return FileDescriptor
+     */
+    private List<FileDescriptor> walk(File root, String regexp) {
+        List<FileDescriptor> descriptors = new ArrayList<>();
+        File[] list = root.listFiles();
+        for (File f : list) {
+            if (f.isDirectory()) {
+                logger.log(ILoggingLogLevel.Debug, LOG_TAG, "Dir: " + f.getAbsoluteFile());
+            } else {
+                logger.log(ILoggingLogLevel.Debug, LOG_TAG, "File: " + f.getAbsoluteFile());
+            }
+            if (f.getName().matches(regexp))
+                descriptors.add(Utils.toArp(f));
+            if (f.listFiles().length > 0) {
+                descriptors.addAll(walk(f));
+            }
+
+        }
+        return descriptors;
     }
 
 }

@@ -33,9 +33,10 @@
  */
 package me.adaptive.tools.nibble.common.utils;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import me.adaptive.arp.api.FileDescriptor;
+
+import java.io.*;
+import java.util.Arrays;
 
 /**
  * Utils class for public static methods
@@ -60,6 +61,66 @@ public class Utils {
             return os.toByteArray();
         } catch (IOException e) {
             return null;
+        }
+    }
+
+    /**
+     * Static method for appending element to an array
+     *
+     * @param arr     Array
+     * @param element Element
+     * @param <T>     Type of the element
+     * @return Return the element
+     */
+    public static <T> T[] append(T[] arr, T element) {
+        final int N = arr.length;
+        arr = Arrays.copyOf(arr, N + 1);
+        arr[N] = element;
+        return arr;
+    }
+
+    /**
+     * Returns a FileDescriptor from a java File
+     *
+     * @param file to read
+     * @return the FileDescriptor
+     */
+    public static FileDescriptor toArp(File file) {
+
+        FileDescriptor fd = new FileDescriptor();
+        fd.setName(file.getName());
+        fd.setDateCreated(file.lastModified());
+        fd.setDateModified(file.lastModified());
+        fd.setPath(file.getPath());
+        fd.setPathAbsolute(file.getAbsolutePath());
+        fd.setSize(file.getTotalSpace());
+
+        return fd;
+
+    }
+
+    /**
+     * Returns a byte[]
+     *
+     * @param file to read
+     * @return the byte[]
+     * @throws IOException IOException
+     */
+    public static byte[] readFile(File file) throws IOException {
+        // Open file
+        RandomAccessFile f = new RandomAccessFile(file, "r");
+        try {
+            // Get and check length
+            long longlength = f.length();
+            int length = (int) longlength;
+            if (length != longlength)
+                throw new IOException("File size >= 2 GB");
+            // Read file and return data
+            byte[] data = new byte[length];
+            f.readFully(data);
+            return data;
+        } finally {
+            f.close();
         }
     }
 

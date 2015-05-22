@@ -34,7 +34,7 @@
 package me.adaptive.arp.impl;
 
 import me.adaptive.arp.api.*;
-import me.adaptive.tools.nibble.common.AbstractApp;
+import me.adaptive.tools.nibble.common.IAbstractApp;
 import me.adaptive.tools.nibble.common.AbstractEmulator;
 import me.adaptive.tools.nibble.common.utils.Utils;
 
@@ -75,7 +75,7 @@ public class DatabaseDelegate extends BaseDataDelegate implements IDatabase {
      */
     public void createDatabase(Database database, IDatabaseResultCallback callback) {
 
-        AbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
+        IAbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
         Connection c;
 
         try {
@@ -98,7 +98,7 @@ public class DatabaseDelegate extends BaseDataDelegate implements IDatabase {
      */
     public void deleteDatabase(Database database, IDatabaseResultCallback callback) {
 
-        AbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
+        IAbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
 
         try {
             File file = new File(app.getTempDirectory() + "/" + database.getName() + ".db");
@@ -124,7 +124,7 @@ public class DatabaseDelegate extends BaseDataDelegate implements IDatabase {
      */
     public boolean existsDatabase(Database database) {
 
-        AbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
+        IAbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
 
         try {
             File file = new File(app.getTempDirectory() + "/" + database.getName() + ".db");
@@ -145,7 +145,7 @@ public class DatabaseDelegate extends BaseDataDelegate implements IDatabase {
      */
     public void createTable(Database database, DatabaseTable databaseTable, IDatabaseTableResultCallback callback) {
 
-        AbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
+        IAbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
         Connection c;
         Statement stmt;
 
@@ -188,7 +188,7 @@ public class DatabaseDelegate extends BaseDataDelegate implements IDatabase {
      */
     public boolean existsTable(Database database, DatabaseTable databaseTable) {
 
-        AbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
+        IAbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
         boolean result = false;
         Connection c;
         Statement stmt;
@@ -225,7 +225,7 @@ public class DatabaseDelegate extends BaseDataDelegate implements IDatabase {
      */
     public void deleteTable(Database database, DatabaseTable databaseTable, IDatabaseTableResultCallback callback) {
 
-        AbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
+        IAbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
         Connection c;
         Statement stmt;
 
@@ -260,7 +260,7 @@ public class DatabaseDelegate extends BaseDataDelegate implements IDatabase {
      */
     public void executeSqlStatement(Database database, String statement, String[] replacements, IDatabaseTableResultCallback callback) {
 
-        AbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
+        IAbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
         Connection c;
         Statement stmt;
 
@@ -298,7 +298,7 @@ public class DatabaseDelegate extends BaseDataDelegate implements IDatabase {
      */
     public void executeSqlTransactions(Database database, String[] statements, boolean rollbackFlag, IDatabaseTableResultCallback callback) {
 
-        AbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
+        IAbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
         Connection c = null;
         PreparedStatement preparedStatement = null;
 

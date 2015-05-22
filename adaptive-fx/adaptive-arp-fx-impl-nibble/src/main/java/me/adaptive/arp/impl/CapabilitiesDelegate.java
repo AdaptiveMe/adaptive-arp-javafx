@@ -34,7 +34,7 @@
 package me.adaptive.arp.impl;
 
 import me.adaptive.arp.api.*;
-import me.adaptive.tools.nibble.common.AbstractDevice;
+import me.adaptive.tools.nibble.common.IAbstractDevice;
 import me.adaptive.tools.nibble.common.AbstractEmulator;
 
 /**
@@ -60,7 +60,7 @@ public class CapabilitiesDelegate extends BaseSystemDelegate implements ICapabil
      */
     public ICapabilitiesOrientation getOrientationDefault() {
 
-        final AbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
+        final IAbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
         return device.getOrientationDefault();
     }
 
@@ -73,7 +73,7 @@ public class CapabilitiesDelegate extends BaseSystemDelegate implements ICapabil
      */
     public ICapabilitiesOrientation[] getOrientationsSupported() {
 
-        final AbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
+        final IAbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
         return device.getOrientationsSupported();
     }
 
@@ -86,7 +86,7 @@ public class CapabilitiesDelegate extends BaseSystemDelegate implements ICapabil
      */
     public boolean hasButtonSupport(ICapabilitiesButton type) {
 
-        final AbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
+        final IAbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
         return device.hasButtonSupport(type);
     }
 
@@ -100,7 +100,7 @@ public class CapabilitiesDelegate extends BaseSystemDelegate implements ICapabil
      */
     public boolean hasCommunicationSupport(ICapabilitiesCommunication type) {
 
-        final AbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
+        final IAbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
         return device.hasCommunicationSupport(type);
     }
 
@@ -113,7 +113,7 @@ public class CapabilitiesDelegate extends BaseSystemDelegate implements ICapabil
      */
     public boolean hasDataSupport(ICapabilitiesData type) {
 
-        final AbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
+        final IAbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
         return device.hasDataSupport(type);
     }
 
@@ -127,7 +127,7 @@ public class CapabilitiesDelegate extends BaseSystemDelegate implements ICapabil
      */
     public boolean hasMediaSupport(ICapabilitiesMedia type) {
 
-        final AbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
+        final IAbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
         return device.hasMediaSupport(type);
     }
 
@@ -140,7 +140,7 @@ public class CapabilitiesDelegate extends BaseSystemDelegate implements ICapabil
      */
     public boolean hasNetSupport(ICapabilitiesNet type) {
 
-        final AbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
+        final IAbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
         return device.hasNetSupport(type);
     }
 
@@ -154,7 +154,7 @@ public class CapabilitiesDelegate extends BaseSystemDelegate implements ICapabil
      */
     public boolean hasNotificationSupport(ICapabilitiesNotification type) {
 
-        final AbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
+        final IAbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
         return device.hasNotificationSupport(type);
     }
 
@@ -167,7 +167,7 @@ public class CapabilitiesDelegate extends BaseSystemDelegate implements ICapabil
      */
     public boolean hasOrientationSupport(ICapabilitiesOrientation orientation) {
 
-        final AbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
+        final IAbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
         return device.hasOrientationSupport(orientation);
     }
 
@@ -181,7 +181,7 @@ public class CapabilitiesDelegate extends BaseSystemDelegate implements ICapabil
      */
     public boolean hasSensorSupport(ICapabilitiesSensor type) {
 
-        final AbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
+        final IAbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
         return device.hasSensorSupport(type);
     }
 

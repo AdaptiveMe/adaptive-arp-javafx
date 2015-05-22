@@ -38,7 +38,7 @@ import me.adaptive.arp.api.Email;
 import me.adaptive.arp.api.IMail;
 import me.adaptive.arp.api.IMessagingCallback;
 import me.adaptive.tools.nibble.common.AbstractEmulator;
-import me.adaptive.tools.nibble.common.AbstractOs;
+import me.adaptive.tools.nibble.common.IAbstractOs;
 
 /**
  * Interface for Managing the Mail operations
@@ -62,7 +62,7 @@ public class MailDelegate extends BasePIMDelegate implements IMail {
      */
     public void sendEmail(Email data, IMessagingCallback callback) {
 
-        AbstractOs os = AbstractEmulator.getCurrentEmulator().getOs();
+        IAbstractOs os = AbstractEmulator.getCurrentEmulator().getOs();
         os.sendEmail(data, callback);
     }
 

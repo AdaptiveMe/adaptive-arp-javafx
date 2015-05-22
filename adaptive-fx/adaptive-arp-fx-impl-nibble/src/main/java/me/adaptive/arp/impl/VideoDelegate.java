@@ -36,7 +36,7 @@ package me.adaptive.arp.impl;
 import me.adaptive.arp.api.BaseMediaDelegate;
 import me.adaptive.arp.api.IVideo;
 import me.adaptive.tools.nibble.common.AbstractEmulator;
-import me.adaptive.tools.nibble.common.AbstractOs;
+import me.adaptive.tools.nibble.common.IAbstractOs;
 
 /**
  * Interface for Managing the Video operations
@@ -59,7 +59,7 @@ public class VideoDelegate extends BaseMediaDelegate implements IVideo {
      */
     public void playStream(String url) {
 
-        AbstractOs os = AbstractEmulator.getCurrentEmulator().getOs();
+        IAbstractOs os = AbstractEmulator.getCurrentEmulator().getOs();
         os.playStream(url);
     }
 

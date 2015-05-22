@@ -34,8 +34,8 @@
 package me.adaptive.arp.impl;
 
 import me.adaptive.arp.api.*;
-import me.adaptive.tools.nibble.common.AbstractApp;
-import me.adaptive.tools.nibble.common.AbstractDevice;
+import me.adaptive.tools.nibble.common.IAbstractApp;
+import me.adaptive.tools.nibble.common.IAbstractDevice;
 import me.adaptive.tools.nibble.common.AbstractEmulator;
 import me.adaptive.tools.nibble.common.utils.Utils;
 
@@ -80,7 +80,7 @@ public class SecurityDelegate extends BaseSecurityDelegate implements ISecurity 
         // we are emulating the keychain with a properties file
 
         Properties props = new Properties();
-        AbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
+        IAbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
 
         for (SecureKeyPair k : keyValues) {
             props.setProperty(k.getSecureKey(), k.getSecureData());
@@ -114,7 +114,7 @@ public class SecurityDelegate extends BaseSecurityDelegate implements ISecurity 
         // we are emulating the keychain with a properties file
 
         Properties props = new Properties();
-        AbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
+        IAbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
         SecureKeyPair[] keyValues = new SecureKeyPair[0];
         InputStream is;
 
@@ -150,7 +150,7 @@ public class SecurityDelegate extends BaseSecurityDelegate implements ISecurity 
         // we are emulating the keychain with a properties file
 
         Properties props = new Properties();
-        AbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
+        IAbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
         SecureKeyPair[] keyValues = new SecureKeyPair[0];
         InputStream is;
 
@@ -183,7 +183,7 @@ public class SecurityDelegate extends BaseSecurityDelegate implements ISecurity 
      */
     public boolean isDeviceModified() {
 
-        AbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
+        IAbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
         return device.isDeviceModified();
     }
 

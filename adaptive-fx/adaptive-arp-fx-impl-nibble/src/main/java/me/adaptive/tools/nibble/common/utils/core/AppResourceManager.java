@@ -39,6 +39,7 @@ import me.adaptive.arp.api.ILogging;
 import me.adaptive.arp.api.ILoggingLogLevel;
 import me.adaptive.tools.nibble.common.AbstractApp;
 import me.adaptive.tools.nibble.common.AbstractEmulator;
+import me.adaptive.tools.nibble.common.IAbstractApp;
 import me.adaptive.tools.nibble.common.utils.Utils;
 
 import java.io.FileInputStream;
@@ -51,7 +52,7 @@ import java.net.URLConnection;
  */
 public class AppResourceManager {
 
-    private AbstractApp app;
+    private IAbstractApp app;
 
     // Logger
     private static final String LOG_TAG = "AppResourceManager";

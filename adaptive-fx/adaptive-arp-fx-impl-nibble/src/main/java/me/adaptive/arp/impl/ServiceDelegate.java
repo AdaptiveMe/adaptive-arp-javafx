@@ -35,7 +35,7 @@ package me.adaptive.arp.impl;
 
 import me.adaptive.arp.api.*;
 import me.adaptive.tools.nibble.common.AbstractEmulator;
-import me.adaptive.tools.nibble.common.AbstractOs;
+import me.adaptive.tools.nibble.common.IAbstractOs;
 import me.adaptive.tools.nibble.common.utils.Utils;
 import me.adaptive.tools.nibble.common.utils.parser.xml.XmlParser;
 import org.apache.http.Header;
@@ -98,7 +98,7 @@ public class ServiceDelegate extends BaseCommunicationDelegate implements IServi
      */
     public ServiceRequest getServiceRequest(ServiceToken serviceToken) {
 
-        AbstractOs os = AbstractEmulator.getCurrentEmulator().getOs();
+        IAbstractOs os = AbstractEmulator.getCurrentEmulator().getOs();
 
         if (!isServiceRegistered(serviceToken)) {
             return null;

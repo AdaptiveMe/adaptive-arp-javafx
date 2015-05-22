@@ -35,7 +35,7 @@ package me.adaptive.arp.impl;
 
 import me.adaptive.arp.api.BaseSystemDelegate;
 import me.adaptive.arp.api.IRuntime;
-import me.adaptive.tools.nibble.common.AbstractApp;
+import me.adaptive.tools.nibble.common.IAbstractApp;
 import me.adaptive.tools.nibble.common.AbstractEmulator;
 
 /**
@@ -47,7 +47,7 @@ public class RuntimeDelegate extends BaseSystemDelegate implements IRuntime {
     /**
      * Reference to the current application running on the emulator
      */
-    private AbstractApp app;
+    private IAbstractApp app;
 
     /**
      * Default Constructor.

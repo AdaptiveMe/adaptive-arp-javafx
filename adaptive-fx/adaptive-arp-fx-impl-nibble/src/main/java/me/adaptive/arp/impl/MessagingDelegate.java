@@ -37,7 +37,7 @@ import me.adaptive.arp.api.BasePIMDelegate;
 import me.adaptive.arp.api.IMessaging;
 import me.adaptive.arp.api.IMessagingCallback;
 import me.adaptive.tools.nibble.common.AbstractEmulator;
-import me.adaptive.tools.nibble.common.AbstractOs;
+import me.adaptive.tools.nibble.common.IAbstractOs;
 
 /**
  * Interface for Managing the Messaging operations
@@ -62,7 +62,7 @@ public class MessagingDelegate extends BasePIMDelegate implements IMessaging {
      */
     public void sendSMS(String number, String text, IMessagingCallback callback) {
 
-        AbstractOs os = AbstractEmulator.getCurrentEmulator().getOs();
+        IAbstractOs os = AbstractEmulator.getCurrentEmulator().getOs();
         os.sendSMS(number, text, callback);
     }
 

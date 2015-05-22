@@ -34,7 +34,7 @@
 package me.adaptive.arp.impl;
 
 import me.adaptive.arp.api.*;
-import me.adaptive.tools.nibble.common.AbstractApp;
+import me.adaptive.tools.nibble.common.IAbstractApp;
 import me.adaptive.tools.nibble.common.AbstractEmulator;
 
 import java.util.ArrayList;
@@ -94,7 +94,7 @@ public class LifecycleDelegate extends BaseApplicationDelegate implements ILifec
      */
     public boolean isBackground() {
 
-        AbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
+        IAbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
         return app.isBackground();
     }
 

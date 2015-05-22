@@ -33,36 +33,32 @@
  */
 package me.adaptive.tools.nibble.common;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * Abstract class for inter-communication between the emulator (adaptive-tools-nibble)
  * and the API implementation. This class is for sharing information about the
  * current emulator (Operating System and Device)
  */
-public abstract class AbstractEmulator {
+public final class AbstractEmulator {
 
     /**
-     * List of current Devices Registered on the system. The current Thread
-     * is the identifier for this device on the Map.
+     * Singleton reference for Isolated Classloader.
      */
-    private static final Map<Thread, AbstractEmulator> ACTIVE_EMULATORS = new HashMap<>();
+    private static AbstractEmulator singletonInstance;
 
     /**
      * Device reference for the current emulator
      */
-    private AbstractDevice device;
+    private IAbstractDevice device;
 
     /**
      * Operating System reference for the current emulator
      */
-    private AbstractOs os;
+    private IAbstractOs os;
 
     /**
      * Application reference for the current emulator
      */
-    private AbstractApp app;
+    private IAbstractApp app;
 
     /**
      * Default constructor. Its mandatory to set all the references when creating a new emulator
@@ -71,10 +67,22 @@ public abstract class AbstractEmulator {
      * @param os     Operating System Reference
      * @param app    Application Reference
      */
-    public AbstractEmulator(AbstractDevice device, AbstractOs os, AbstractApp app) {
+    public AbstractEmulator(IAbstractDevice device, IAbstractOs os, IAbstractApp app) {
         this.device = device;
         this.os = os;
         this.app = app;
+    }
+
+    public static final void setInstance(IAbstractDevice device, IAbstractOs os, IAbstractApp app) {
+        if (singletonInstance == null) {
+            singletonInstance = new AbstractEmulator(device, os, app);
+        } else {
+            synchronized (singletonInstance) {
+                singletonInstance.setDevice(device);
+                singletonInstance.setOs(os);
+                singletonInstance.setApp(app);
+            }
+        }
     }
 
     /**
@@ -84,25 +92,34 @@ public abstract class AbstractEmulator {
      */
     public static AbstractEmulator getCurrentEmulator() {
 
-        return ACTIVE_EMULATORS.get(Thread.currentThread());
+        return singletonInstance;
     }
 
     /**
-     * Registers a new emulator for the current Thread
+     * Set current device. Called internally.
      *
-     * @param emulator Information of the current emulator
+     * @param device Current device.
      */
-    public static void registerThread(AbstractEmulator emulator) {
-
-        ACTIVE_EMULATORS.put(Thread.currentThread(), emulator);
+    private void setDevice(IAbstractDevice device) {
+        this.device = device;
     }
 
     /**
-     * Deregister the current emulator on the map by passing the current Thread
+     * Set current os. Called internally.
+     *
+     * @param os Current os.
      */
-    public static void deregisterThread() {
+    private void setOs(IAbstractOs os) {
+        this.os = os;
+    }
 
-        ACTIVE_EMULATORS.remove(Thread.currentThread());
+    /**
+     * Set current app. Called internally.
+     *
+     * @param app Current app.
+     */
+    private void setApp(IAbstractApp app) {
+        this.app = app;
     }
 
     /**
@@ -110,7 +127,7 @@ public abstract class AbstractEmulator {
      *
      * @return Device reference
      */
-    public AbstractDevice getDevice() {
+    public IAbstractDevice getDevice() {
         return device;
     }
 
@@ -119,7 +136,7 @@ public abstract class AbstractEmulator {
      *
      * @return Operating System reference
      */
-    public AbstractOs getOs() {
+    public IAbstractOs getOs() {
         return os;
     }
 
@@ -128,7 +145,7 @@ public abstract class AbstractEmulator {
      *
      * @return Application reference
      */
-    public AbstractApp getApp() {
+    public IAbstractApp getApp() {
         return app;
     }
 }

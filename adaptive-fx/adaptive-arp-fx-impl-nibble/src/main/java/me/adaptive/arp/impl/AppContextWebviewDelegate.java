@@ -35,7 +35,7 @@ package me.adaptive.arp.impl;
 
 import me.adaptive.arp.api.IAppContextWebview;
 import me.adaptive.tools.nibble.common.AbstractEmulator;
-import me.adaptive.tools.nibble.common.AbstractOs;
+import me.adaptive.tools.nibble.common.IAbstractOs;
 
 /**
  * Interface for webview context management purposes
@@ -46,7 +46,7 @@ public class AppContextWebviewDelegate implements IAppContextWebview {
     /**
      * Reference to the current operating system
      */
-    private AbstractOs os;
+    private IAbstractOs os;
 
     /**
      * Default Constructor.

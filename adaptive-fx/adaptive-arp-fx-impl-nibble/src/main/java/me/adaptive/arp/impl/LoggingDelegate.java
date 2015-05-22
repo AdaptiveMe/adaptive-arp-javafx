@@ -36,7 +36,7 @@ package me.adaptive.arp.impl;
 import me.adaptive.arp.api.BaseUtilDelegate;
 import me.adaptive.arp.api.ILogging;
 import me.adaptive.arp.api.ILoggingLogLevel;
-import me.adaptive.tools.nibble.common.AbstractApp;
+import me.adaptive.tools.nibble.common.IAbstractApp;
 import me.adaptive.tools.nibble.common.AbstractEmulator;
 
 /**
@@ -48,7 +48,7 @@ public class LoggingDelegate extends BaseUtilDelegate implements ILogging {
     /**
      * Reference to the current application
      */
-    private AbstractApp app;
+    private IAbstractApp app;
 
     /**
      * Default Constructor.

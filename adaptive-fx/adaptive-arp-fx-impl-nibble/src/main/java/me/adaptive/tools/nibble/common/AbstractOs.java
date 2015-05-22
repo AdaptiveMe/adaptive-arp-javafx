@@ -43,7 +43,7 @@ import me.adaptive.arp.api.OSInfo;
  * and the API implementation. This class is for sharing information about the
  * operating system of the current emulator
  */
-public abstract class AbstractOs {
+public abstract class AbstractOs implements IAbstractOs {
 
     /**
      * Operating System Information
@@ -64,65 +64,9 @@ public abstract class AbstractOs {
      *
      * @return Operating System information
      */
+    @Override
     public OSInfo getOsInfo() {
         return osInfo;
     }
 
-    /**
-     * Method that plays a url video inside the emulator. The emulator should
-     * implement a video player in JavaFx
-     *
-     * @param url URl of the stream
-     */
-    public abstract void playStream(String url);
-
-    /**
-     * This method executes a javascript inside the emulator's webview
-     *
-     * @param javaScriptText Javascript to execute
-     */
-    public abstract void executeJavaScript(String javaScriptText);
-
-    /**
-     * Method for sending an SMS to a concrete number with a text. The method executes a
-     * callback when there is a result to show
-     *
-     * @param number   Number to send the SMS
-     * @param text     Text to send.
-     * @param callback Callback fired when there is a result.
-     */
-    public abstract void sendSMS(String number, String text, IMessagingCallback callback);
-
-    /**
-     * Method for sending an Email to one or more receivers.  The method executes a
-     * callback when there is a result to show
-     *
-     * @param data     Email data encapsulated into a bean
-     * @param callback Callback fired when there is a result.
-     */
-    public abstract void sendEmail(Email data, IMessagingCallback callback);
-
-    /**
-     * Method that opens a browser on the operating system of the running emulator.
-     *
-     * @param url URl to open. HAs to be a valid URL
-     * @return Returns the result of the operation.
-     */
-    public abstract boolean openExtenalBrowser(String url);
-
-    /**
-     * Method for emulating a call in the current emulator and operating system.
-     *
-     * @param number Number to call
-     * @return Staus of the call
-     */
-    public abstract ITelephonyStatus call(String number);
-
-    /**
-     * Method for consulting the user agent of the current emulator and
-     * operating System
-     *
-     * @return USer agent descriptor
-     */
-    public abstract String getUserAgent();
 }

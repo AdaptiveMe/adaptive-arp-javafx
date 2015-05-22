@@ -37,7 +37,7 @@ import me.adaptive.arp.api.BaseCommunicationDelegate;
 import me.adaptive.arp.api.ITelephony;
 import me.adaptive.arp.api.ITelephonyStatus;
 import me.adaptive.tools.nibble.common.AbstractEmulator;
-import me.adaptive.tools.nibble.common.AbstractOs;
+import me.adaptive.tools.nibble.common.IAbstractOs;
 
 /**
  * Interface for Managing the Telephony operations
@@ -61,7 +61,7 @@ public class TelephonyDelegate extends BaseCommunicationDelegate implements ITel
      */
     public ITelephonyStatus call(String number) {
 
-        AbstractOs os = AbstractEmulator.getCurrentEmulator().getOs();
+        IAbstractOs os = AbstractEmulator.getCurrentEmulator().getOs();
         return os.call(number);
     }
 

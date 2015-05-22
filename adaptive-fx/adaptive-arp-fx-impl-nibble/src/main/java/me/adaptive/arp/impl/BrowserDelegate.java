@@ -35,9 +35,9 @@ package me.adaptive.arp.impl;
 
 import me.adaptive.arp.api.BaseUIDelegate;
 import me.adaptive.arp.api.IBrowser;
-import me.adaptive.tools.nibble.common.AbstractApp;
+import me.adaptive.tools.nibble.common.IAbstractApp;
 import me.adaptive.tools.nibble.common.AbstractEmulator;
-import me.adaptive.tools.nibble.common.AbstractOs;
+import me.adaptive.tools.nibble.common.IAbstractOs;
 
 /**
  * Interface for Managing the browser operations
@@ -48,7 +48,7 @@ public class BrowserDelegate extends BaseUIDelegate implements IBrowser {
     /**
      * Reference to the current application running on the emulator
      */
-    private AbstractApp app;
+    private IAbstractApp app;
 
     /**
      * Default Constructor.
@@ -66,7 +66,7 @@ public class BrowserDelegate extends BaseUIDelegate implements IBrowser {
      */
     public boolean openExtenalBrowser(String url) {
 
-        AbstractOs os = AbstractEmulator.getCurrentEmulator().getOs();
+        IAbstractOs os = AbstractEmulator.getCurrentEmulator().getOs();
         return os.openExtenalBrowser(url);
     }
 

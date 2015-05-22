@@ -34,7 +34,7 @@
 package me.adaptive.arp.impl;
 
 import me.adaptive.arp.api.*;
-import me.adaptive.tools.nibble.common.AbstractDevice;
+import me.adaptive.tools.nibble.common.IAbstractDevice;
 import me.adaptive.tools.nibble.common.AbstractEmulator;
 
 import java.util.ArrayList;
@@ -83,7 +83,7 @@ public class DeviceDelegate extends BaseSystemDelegate implements IDevice {
      * @since v2.0
      */
     public DeviceInfo getDeviceInfo() {
-        final AbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
+        final IAbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
         return device.getDeviceInfo();
     }
 
@@ -110,7 +110,7 @@ public class DeviceDelegate extends BaseSystemDelegate implements IDevice {
      * @since v2.0.5
      */
     public ICapabilitiesOrientation getOrientationCurrent() {
-        final AbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
+        final IAbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
         return device.getDeviceOrientationCurrent();
     }
 

@@ -44,34 +44,7 @@ import me.adaptive.arp.impl.LifecycleDelegate;
  * and the API implementation. This class is for sharing information about the
  * running application of the current emulator
  */
-public abstract class AbstractApp {
-
-    /**
-     * Abstract method implemented by the emulator to show the errors of the native
-     * platform inside the Javascript console of the webview emulator.
-     * The output format should be: ("[DEBUG - \(category)] \(message)")
-     *
-     * @param level    Log level
-     * @param category Category/tag name to identify/filter the log.
-     * @param message  Message to be logged
-     */
-    public abstract void log(ILoggingLogLevel level, String category, String message);
-
-    /**
-     * Returns the root folder of the application running in the emulator. This method is used to obtain
-     * reference paths to application files.
-     *
-     * @return Application Root Path
-     */
-    public abstract String getApplicationPath();
-
-    /**
-     * Returns the path of the temporary folder created for every instance of the emulator (or the
-     * same if they're in sync) to create provisional data for testing the File, Database delegates.
-     *
-     * @return Path to temporary folder
-     */
-    public abstract String getTempDirectory();
+public abstract class AbstractApp implements IAbstractApp {
 
     /**
      * External method to notify all the registered lifecycle listeners that
@@ -79,7 +52,8 @@ public abstract class AbstractApp {
      *
      * @param lifecycle Lifecycle event with all the information of the change
      */
-    public void notifyLifecycleListeners(Lifecycle lifecycle) {
+    @Override
+    public final void notifyLifecycleListeners(Lifecycle lifecycle) {
 
         LifecycleDelegate delegate = (LifecycleDelegate) AppRegistryBridge.getInstance().getLifecycleBridge().getDelegate();
 
@@ -88,43 +62,4 @@ public abstract class AbstractApp {
         }
     }
 
-    /**
-     * Method that closes the actual application and displays the main page of
-     * the operating system.
-     */
-    public abstract void dismissApplication();
-
-    /**
-     * Method that opens a url inside the embedded browser of the application.
-     *
-     * @param url            Url to show
-     * @param title          Window title
-     * @param backButtonText Back button label
-     * @return Returns the result of the operation
-     */
-    public abstract boolean openInternalBrowser(String url, String title, String backButtonText);
-
-    /**
-     * Method for opening a browser embedded into the application in a modal window
-     *
-     * @param url            Url to open
-     * @param title          Title of the Navigation bar
-     * @param backButtonText Title of the Back button bar
-     * @return The result of the operation
-     */
-    public abstract boolean openInternalBrowserModal(String url, String title, String backButtonText);
-
-    /**
-     * Method for closing the splash screen of the application
-     *
-     * @return Result of the operation
-     */
-    public abstract boolean dismissSplashScreen();
-
-    /**
-     * Whether the application is in background or not
-     *
-     * @return true if the application is in background;false otherwise
-     */
-    public abstract boolean isBackground();
 }

@@ -34,7 +34,7 @@
 package me.adaptive.arp.impl;
 
 import me.adaptive.arp.api.*;
-import me.adaptive.tools.nibble.common.AbstractDevice;
+import me.adaptive.tools.nibble.common.IAbstractDevice;
 import me.adaptive.tools.nibble.common.AbstractEmulator;
 
 import java.util.ArrayList;
@@ -94,7 +94,7 @@ public class DisplayDelegate extends BaseSystemDelegate implements IDisplay {
      */
     public ICapabilitiesOrientation getOrientationCurrent() {
 
-        final AbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
+        final IAbstractDevice device = AbstractEmulator.getCurrentEmulator().getDevice();
         return device.getDisplayOrientationCurrent();
     }
 

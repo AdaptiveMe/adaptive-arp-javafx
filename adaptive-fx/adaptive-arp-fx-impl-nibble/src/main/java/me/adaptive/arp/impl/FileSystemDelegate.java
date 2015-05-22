@@ -34,7 +34,7 @@
 package me.adaptive.arp.impl;
 
 import me.adaptive.arp.api.*;
-import me.adaptive.tools.nibble.common.AbstractApp;
+import me.adaptive.tools.nibble.common.IAbstractApp;
 import me.adaptive.tools.nibble.common.AbstractEmulator;
 import me.adaptive.tools.nibble.common.utils.Utils;
 
@@ -96,7 +96,7 @@ public class FileSystemDelegate extends BaseDataDelegate implements IFileSystem 
      */
     public FileDescriptor getApplicationCacheFolder() {
 
-        AbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
+        IAbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
         return Utils.toArp(new File(app.getApplicationPath()));
     }
 
@@ -122,7 +122,7 @@ public class FileSystemDelegate extends BaseDataDelegate implements IFileSystem 
      */
     public FileDescriptor getApplicationDocumentsFolder() {
 
-        AbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
+        IAbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
         return Utils.toArp(new File(app.getApplicationPath()));
     }
 
@@ -135,7 +135,7 @@ public class FileSystemDelegate extends BaseDataDelegate implements IFileSystem 
      */
     public FileDescriptor getApplicationFolder() {
 
-        AbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
+        IAbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
         return Utils.toArp(new File(app.getApplicationPath()));
     }
 
@@ -148,7 +148,7 @@ public class FileSystemDelegate extends BaseDataDelegate implements IFileSystem 
      */
     public FileDescriptor getApplicationProtectedFolder() {
 
-        AbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
+        IAbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
         return Utils.toArp(new File(app.getApplicationPath()));
     }
 
@@ -173,7 +173,7 @@ public class FileSystemDelegate extends BaseDataDelegate implements IFileSystem 
      */
     public FileDescriptor getSystemExternalFolder() {
 
-        AbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
+        IAbstractApp app = AbstractEmulator.getCurrentEmulator().getApp();
         return Utils.toArp(new File(app.getApplicationPath()));
     }
 

@@ -6,15 +6,7 @@ before_install:
 language: java
 jdk:
   - oraclejdk8
-install: echo "Installing..."
-script: |-
-  if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
-    echo "Executing a full build"
-    ./gradlew build 
-  elif [ "$TRAVIS_PULL_REQUEST" == "true" ]; then
-    echo "Skipping archives signing"
-    ./gradlew classes 
-  fi
+install: ./gradlew check
 after_success: |-
   if [ "$TRAVIS_BRANCH" == "$TRAVIS_TAG" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     echo "Releasing successful build."

@@ -6,7 +6,7 @@ before_install:
 language: java
 jdk:
   - oraclejdk8
-install: |-
+script: |-
   if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     echo "Executing a full build"
     ./gradlew build 

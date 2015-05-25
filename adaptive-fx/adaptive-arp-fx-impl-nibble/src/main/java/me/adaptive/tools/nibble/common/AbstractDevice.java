@@ -43,28 +43,12 @@ import me.adaptive.arp.impl.*;
  */
 public abstract class AbstractDevice implements IAbstractDevice {
 
-    /**
-     * Device Information: Vendor, Name, UUID
-     */
-    private DeviceInfo deviceInfo;
 
     /**
      * Cosntructor passing the device information
      *
-     * @param deviceInfo Device information
      */
-    public AbstractDevice(DeviceInfo deviceInfo) {
-        this.deviceInfo = deviceInfo;
-    }
-
-    /**
-     * Returns the current device information
-     *
-     * @return Device Information Bean
-     */
-    @Override
-    public final DeviceInfo getDeviceInfo() {
-        return deviceInfo;
+    public AbstractDevice() {
     }
 
     /**

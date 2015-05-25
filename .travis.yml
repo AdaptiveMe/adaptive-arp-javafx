@@ -1,8 +1,19 @@
 sudo: false
-before_install: cd adaptive-fx
+before_install:
+- cd adaptive-fx
+- export CURRENT_TAG=`git describe --abbrev=0`
+- export CURRENT_TAG=`echo ${CURRENT_TAG//[v]/ }`
 language: java
 jdk:
   - oraclejdk8
+install: |-
+  if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
+    echo "Executing a full build"
+    ./gradlew build 
+  elif [ "$TRAVIS_PULL_REQUEST" == "true" ]; then
+    echo "Skipping archives signing"
+    ./gradlew classes 
+  fi
 after_success: |-
   if [ "$TRAVIS_BRANCH" == "$TRAVIS_TAG" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     echo "Releasing successful build."
@@ -11,3 +22,12 @@ after_success: |-
   elif [ "$TRAVIS_PULL_REQUEST" == "true" ]; then
     echo "Processed successful build after pull."
   fi
+before_deploy:
+- ./gradlew distZip
+deploy:
+  provider: releases
+  api_key: ${GH_TOKEN}
+  file: "adaptive-fx/adaptive-arp-fx-impl-nibble/build/distributions/adaptive-arp-fx-impl-nibble-all-${CURRENT_TAG}.zip"
+  skip_cleanup: true
+  on:
+    tags: true

@@ -64,6 +64,13 @@ task sourcesJar(type: Jar) {
     from sourceSets.main.allSource
 }
 
+//create a single Jar with all dependencies
+task distZip(type: Zip) {
+    baseName = project.name + '-all'
+    from jar.outputs.files
+    from configurations.compile
+}
+
 artifacts {
     archives javadocJar, sourcesJar
 }

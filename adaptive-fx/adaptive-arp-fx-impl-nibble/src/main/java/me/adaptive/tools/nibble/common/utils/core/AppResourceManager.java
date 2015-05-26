@@ -37,7 +37,6 @@ import me.adaptive.arp.api.AppRegistryBridge;
 import me.adaptive.arp.api.AppResourceData;
 import me.adaptive.arp.api.ILogging;
 import me.adaptive.arp.api.ILoggingLogLevel;
-import me.adaptive.tools.nibble.common.AbstractApp;
 import me.adaptive.tools.nibble.common.AbstractEmulator;
 import me.adaptive.tools.nibble.common.IAbstractApp;
 import me.adaptive.tools.nibble.common.utils.Utils;

@@ -3,8 +3,10 @@ package me.adaptive.tools.nibble.common;
 import me.adaptive.arp.api.ILoggingLogLevel;
 import me.adaptive.arp.api.Lifecycle;
 
+import java.io.Serializable;
 
-public interface IAbstractApp {
+
+public interface IAbstractApp extends Serializable {
     /**
      * Abstract method implemented by the emulator to show the errors of the native
      * platform inside the Javascript console of the webview emulator.

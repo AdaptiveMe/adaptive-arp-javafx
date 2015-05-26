@@ -2,10 +2,12 @@ package me.adaptive.tools.nibble.common;
 
 import me.adaptive.arp.api.*;
 
+import java.io.Serializable;
+
 /**
  * Created by clozano on 22/05/15.
  */
-public interface IAbstractDevice {
+public interface IAbstractDevice extends Serializable {
     /**
      * Returns the current device information
      *

@@ -5,10 +5,12 @@ import me.adaptive.arp.api.IMessagingCallback;
 import me.adaptive.arp.api.ITelephonyStatus;
 import me.adaptive.arp.api.OSInfo;
 
+import java.io.Serializable;
+
 /**
  * Created by clozano on 22/05/15.
  */
-public interface IAbstractOs {
+public interface IAbstractOs extends Serializable {
     /**
      * Returns the Operating System information encapsulated in a bean.
      *

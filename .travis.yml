@@ -1,5 +1,6 @@
 sudo: false
 before_install:
+- export HOME=`pwd`
 - cd adaptive-fx
 - export CURRENT_TAG=`git describe --abbrev=0`
 - export CURRENT_TAG=`echo ${CURRENT_TAG//[v]/ }`
@@ -17,10 +18,11 @@ after_success: |-
   fi
 before_deploy:
 - ./gradlew distZip
+- ls -lart $HOME/adaptive-fx/adaptive-arp-fx-impl-nibble/build/distributions/
 deploy:
   provider: releases
   api_key: ${GH_TOKEN}
-  file: "adaptive-fx/adaptive-arp-fx-impl-nibble/build/distributions/adaptive-arp-fx-impl-nibble-all-${CURRENT_TAG}.zip"
+  file: "${HOME}/adaptive-fx/adaptive-arp-fx-impl-nibble/build/distributions/adaptive-arp-fx-impl-nibble-all-${CURRENT_TAG}.zip"
   skip_cleanup: true
   on:
-    tags: true
+    tags: false

@@ -18,11 +18,10 @@ after_success: |-
   fi
 before_deploy:
 - ./gradlew distZip
-- ls -lart $HOME/adaptive-fx/adaptive-arp-fx-impl-nibble/build/distributions/
 deploy:
   provider: releases
   api_key: ${GH_TOKEN}
   file: "${HOME}/adaptive-fx/adaptive-arp-fx-impl-nibble/build/distributions/adaptive-arp-fx-impl-nibble-all-${CURRENT_TAG}.zip"
   skip_cleanup: true
   on:
-    tags: false
+    tags: true

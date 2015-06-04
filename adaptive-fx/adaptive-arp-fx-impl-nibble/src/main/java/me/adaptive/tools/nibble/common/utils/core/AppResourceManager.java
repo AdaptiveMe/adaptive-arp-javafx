@@ -41,6 +41,7 @@ import me.adaptive.tools.nibble.common.AbstractEmulator;
 import me.adaptive.tools.nibble.common.IAbstractApp;
 import me.adaptive.tools.nibble.common.utils.Utils;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -76,8 +77,8 @@ public class AppResourceManager {
      */
     public AppResourceData retrieveWebResource(String url) {
 
-        String file = url.replaceFirst("https://adaptiveapp/", "www/");
-        return this.retriveResource(file);
+        String file = url.replaceFirst("https://adaptiveapp/", "www" + File.separator);
+        return this.retrieveResource(file);
     }
 
     /**
@@ -88,7 +89,7 @@ public class AppResourceManager {
      */
     public AppResourceData retrieveConfigResource(String url) {
 
-        return this.retriveResource("config/" + url);
+        return this.retrieveResource(File.separator + ".." + File.separator + "config" + File.separator + url);
     }
 
     /**
@@ -97,7 +98,7 @@ public class AppResourceManager {
      * @param url Url of the resource
      * @return Application Resource Data
      */
-    private AppResourceData retriveResource(String url) {
+    private AppResourceData retrieveResource(String url) {
 
         logger.log(ILoggingLogLevel.Debug, LOG_TAG, "Retrieveing resource: " + url);
         app = AbstractEmulator.getCurrentEmulator().getApp();
